@@ -1,5 +1,6 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
+
 
 /*
 import facebook from '../img/social/facebook.svg'
@@ -14,7 +15,10 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           
-        
+
+
+  <Link to="/#top">Scroll To My Cool Header</Link>
+
         
         </div>
       </footer>

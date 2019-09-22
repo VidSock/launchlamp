@@ -38,7 +38,9 @@
     "react-dom": "^16.8.4",
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.0",
+    "react-icons": "^3.7.0",
     "react-theme-switcher": "^1.1.1",
+    "smooth-scroll": "^16.1.0",
     "typeface-francois-one": "0.0.71",
     "uuid": "^3.2.1"
   },

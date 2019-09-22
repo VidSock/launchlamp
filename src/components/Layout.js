@@ -5,8 +5,14 @@ import Navbar from '../components/Navbar'
 import 'typeface-francois-one';
 import "../css/index.scss";
 
+
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
+
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -24,9 +30,13 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
       </Helmet>
+      
       <Navbar />
      
       <main>{children}</main>
+      
+      
+      
       <Footer />
     </div>
   )

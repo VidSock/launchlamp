@@ -28,7 +28,7 @@ const Navbar = class extends React.Component {
 
             <ul id="menu" className="menu">
                <li>
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="/capabilities">
                 Capabilities
               </Link>
               </li>

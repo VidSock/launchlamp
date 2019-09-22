@@ -17,7 +17,7 @@ const Footer = class extends React.Component {
           
 
 
-  <Link to="/#top">Scroll To My Cool Header</Link>
+
 
         
         </div>

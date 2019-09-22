@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import FsLightbox from 'fslightbox-react';
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
+  const [toggler, setToggler] = useState(false);
 
   return (
     <section className="section section--gradient">
@@ -17,6 +19,22 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 {title}
               </h2>
               <PageContent className="content" content={content} />
+              
+              
+              <>
+            <button onClick={ () => setToggler(!toggler) }>
+                Toggle Lightbox
+            </button>
+            <FsLightbox
+                toggler={ toggler }
+                sources={ [
+                    'https://i.imgur.com/fsyrScY.jpg',
+                    'https://www.youtube.com/watch?v=xshEZzpS4CQ',
+                    'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+                ] }
+            />
+        </>
+
             </div>
           </div>
         </div>

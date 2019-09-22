@@ -7,6 +7,7 @@ import { FaArrowAltCircleUp } from 'react-icons/fa';
 
 
 
+
 const Navbar = class extends React.Component {
   
 
@@ -71,7 +72,7 @@ const Navbar = class extends React.Component {
           <label htmlFor="themeSlide"></label></div>
         )}
       </ThemeToggler></div>
-      <Link to="/#top" title="Back To Top" className="back-to-top"><FaArrowAltCircleUp /></Link>
+      <a href="#topofpage" title="Back To Top" className="back-to-top"><FaArrowAltCircleUp /></a>
 </Headroom>
         
       

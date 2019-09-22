@@ -191,7 +191,7 @@ body.light * {
 body.dark * {
   border-color: #999 !important; }
 
-.container {
+body.home .container {
   padding: 0 2rem 2rem 2rem; }
 
 .headroom {

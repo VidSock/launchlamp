@@ -167,6 +167,13 @@ export const productPageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
+              tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+        sizes
             }
           }
         }
@@ -178,6 +185,13 @@ export const productPageQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
                   ...GatsbyImageSharpFluid
+                  tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+        sizes
                 }
               }
             }
@@ -195,6 +209,13 @@ export const productPageQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 526, quality: 92) {
                   ...GatsbyImageSharpFluid
+                  tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+        sizes
                 }
               }
             }
@@ -205,6 +226,13 @@ export const productPageQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 526, quality: 92) {
                   ...GatsbyImageSharpFluid
+                  tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+        sizes
                 }
               }
             }
@@ -215,6 +243,13 @@ export const productPageQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 1075, quality: 72) {
                   ...GatsbyImageSharpFluid
+                  tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+        sizes
                 }
               }
             }
@@ -228,6 +263,13 @@ export const productPageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
+              tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+        sizes
             }
           }
         }

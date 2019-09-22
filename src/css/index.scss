@@ -6,26 +6,23 @@ $primary: #fe09f0;
 $red: #ff0000;
 
 
-
-/*
-nav{background-color:#222; display: flex; top:0; width:100vw; z-index: 1;}
-.navbar-brand{height:60px; margin:0 1rem 0 2rem;}
-.navbar-start{display: flex; justify-content: space-around;}
-.navbar-start li{margin-right:1rem; }
-.navbar-start li a{display: block; color:#fff; text-decoration: none; text-transform: uppercase; font-size:18px; padding:.5rem;}
-*/
-
-html {
-	scroll-behavior: smooth;
-}
-
-[aria-current] {
-  background-color: #fe09f0;
-  padding: .5rem; }
   
- [aria-current].logolink {
-  background-color: none;
-  padding: inherit; }
+body{margin: 0; padding:0; font-family: Francois One;}
+.homepage .container{padding:0 2rem 2rem 2rem;}
+
+
+// BASE TYPOGRAPHY
+body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif;
+	font-size:1rem;
+    font-weight: 400;
+    line-height:1.35}
+
+h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu{font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-style: italic;}
+
+#menu{font-size:1rem;}
+
+p{line-height: 2rem}
+// BASE TYPOGRAPHY
 
 
 /* header */
@@ -138,6 +135,14 @@ html {
   top: 0;
 }
 
+[aria-current] {
+  background-color: #fe09f0;
+  padding: .5rem; }
+  
+ [aria-current].logolink {
+  background-color: none;
+  padding: inherit; }
+
 /* 48em = 768px */
 
 @media (min-width: 48rem) {
@@ -160,27 +165,7 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body{margin: 0; padding:0; font-family: Francois One;}
-
-
-
-
+// Theme switcher
 .themeSlide {
   width: 80px;
   height: 16px;
@@ -250,29 +235,25 @@ body.light * {
 
 body.dark * {
   border-color: #999 !important; }
+// Theme switcher
 
-
-
-.homepage .container{padding:0 2rem 2rem 2rem;}
-
-
+// Header
 .headroom {
   will-change: transform;
-  transition: transform 200ms linear;
+  transition: transform 200ms linear; 
 }
 .headroom--pinned {
   transform: translateY(0%);
+  transition: opacity .25s ease-in-out;
+  opacity: 0.9;
 }
 .headroom--unpinned {
   transform: translateY(-100%);
 }
-
-
 .headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
 
 .themer { position:absolute; z-index:1; top:64px; right:10px; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 4px; color:#fff;/*  box-shadow: 0px 0px 1px 1px black; */}
 .button-switcher{border:1px solid;}
-
 
 .headroom--unpinned .themer{display: none;}
 
@@ -286,3 +267,4 @@ font-weight: bold;
 background-color:$primary;
 border-radius: 8px 0 0 8px;
 }
+// Header

@@ -1,20 +1,26 @@
-/*
-nav{background-color:#222; display: flex; top:0; width:100vw; z-index: 1;}
-.navbar-brand{height:60px; margin:0 1rem 0 2rem;}
-.navbar-start{display: flex; justify-content: space-around;}
-.navbar-start li{margin-right:1rem; }
-.navbar-start li a{display: block; color:#fff; text-decoration: none; text-transform: uppercase; font-size:18px; padding:.5rem;}
-*/
-html {
-  scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Francois One; }
 
-[aria-current] {
-  background-color: #fe09f0;
-  padding: .5rem; }
+.homepage .container {
+  padding: 0 2rem 2rem 2rem; }
 
-[aria-current].logolink {
-  background-color: none;
-  padding: inherit; }
+body {
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.35; }
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4, #menu {
+  font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
+  font-style: italic; }
+
+#menu {
+  font-size: 1rem; }
+
+p {
+  line-height: 2rem; }
 
 /* header */
 .header {
@@ -101,6 +107,14 @@ html {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0; }
 
+[aria-current] {
+  background-color: #fe09f0;
+  padding: .5rem; }
+
+[aria-current].logolink {
+  background-color: none;
+  padding: inherit; }
+
 /* 48em = 768px */
 @media (min-width: 48rem) {
   .header {
@@ -118,11 +132,6 @@ html {
     max-height: none; }
   .header .menu-icon {
     display: none; } }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Francois One; }
 
 .themeSlide {
   width: 80px;
@@ -194,15 +203,14 @@ body.light * {
 body.dark * {
   border-color: #999 !important; }
 
-.homepage .container {
-  padding: 0 2rem 2rem 2rem; }
-
 .headroom {
   will-change: transform;
   transition: transform 200ms linear; }
 
 .headroom--pinned {
-  transform: translateY(0%); }
+  transform: translateY(0%);
+  transition: opacity 0.25s ease-in-out;
+  opacity: 0.9; }
 
 .headroom--unpinned {
   transform: translateY(-100%); }

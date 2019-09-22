@@ -3,6 +3,7 @@ var proxy = require('http-proxy-middleware')
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',
+    siteUrl: `https://hytron.netlify.com`,
     description:
       'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
   },
@@ -31,9 +32,28 @@ module.exports = {
         name: 'images',
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `hytron.com`,
+        short_name: `Hytron`,
+        start_url: `/`,
+        background_color: `#FFF`,
+        theme_color: `#FAE042`,
+        display: `standalone`,
+        icon: `src/img/icon.svg`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        TrackingId: 'UA-140479230-1',
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-dark-mode',
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -62,6 +82,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

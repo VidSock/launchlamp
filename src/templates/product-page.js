@@ -165,9 +165,8 @@ export const productPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxWidth: 2048, quality: 64) {
               ...GatsbyImageSharpFluid
-              tracedSVG
         aspectRatio
         src
         srcSet
@@ -185,7 +184,6 @@ export const productPageQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
                   ...GatsbyImageSharpFluid
-                  tracedSVG
         aspectRatio
         src
         srcSet
@@ -207,9 +205,8 @@ export const productPageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
+                fluid(maxWidth: 526, quality: 64) {
                   ...GatsbyImageSharpFluid
-                  tracedSVG
         aspectRatio
         src
         srcSet
@@ -224,9 +221,8 @@ export const productPageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
+                fluid(maxWidth: 526, quality: 64) {
                   ...GatsbyImageSharpFluid
-                  tracedSVG
         aspectRatio
         src
         srcSet
@@ -241,9 +237,8 @@ export const productPageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
+                fluid(maxWidth: 1075, quality: 64) {
                   ...GatsbyImageSharpFluid
-                  tracedSVG
         aspectRatio
         src
         srcSet
@@ -261,9 +256,8 @@ export const productPageQuery = graphql`
         }
         full_image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxWidth: 2048, quality: 64) {
               ...GatsbyImageSharpFluid
-              tracedSVG
         aspectRatio
         src
         srcSet

@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import BodyClassName from 'react-body-classname';
 
 export const IndexPageTemplate = ({
   image,
@@ -126,10 +127,13 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
+
+
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
+	  <BodyClassName className="home">
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
@@ -140,7 +144,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
-    </Layout>
+    </Layout></BodyClassName>
   )
 }
 

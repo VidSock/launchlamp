@@ -191,6 +191,9 @@ body.light * {
 body.dark * {
   border-color: #999 !important; }
 
+.container {
+  padding: 0 2rem 2rem 2rem; }
+
 .headroom {
   will-change: transform;
   transition: transform 200ms linear; }

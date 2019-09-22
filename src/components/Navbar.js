@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/hytron-logo.svg'
 import Headroom from "react-headroom"
-// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const Navbar = class extends React.Component {
   
@@ -56,6 +56,18 @@ const Navbar = class extends React.Component {
       
       
    </header>
+    <div className="themer"><ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <div className="themeSlide">
+            <input
+              type="checkbox" value="None" id="themeSlide" name="check"
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />{' '}
+            
+          <label htmlFor="themeSlide"></label></div>
+        )}
+      </ThemeToggler></div>
 </Headroom>
         
       

@@ -2,7 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import 'typeface-francois-one';
 import "../css/index.scss";
 
@@ -49,18 +48,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
       </Helmet>
       <Navbar />
-      <div className="themer"><ThemeToggler>
-        {({ theme, toggleTheme }) => (
-          <div className="themeSlide">
-            <input
-              type="checkbox" value="None" id="themeSlide" name="check"
-              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-              checked={theme === 'dark'}
-            />{' '}
-            
-          <label htmlFor="themeSlide"></label></div>
-        )}
-      </ThemeToggler></div>
+     
       <main>{children}</main>
       <Footer />
     </div>

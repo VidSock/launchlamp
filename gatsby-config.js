@@ -2,10 +2,10 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Precision Parts Machining | Hytron Manufacturing',
     siteUrl: `https://hytron.netlify.com`,
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Hytron Manufacturing is the leading precision machining and lathe company for over 40 years. We offer production machining of aluminum, brass, & steel.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

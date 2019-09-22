@@ -1,0 +1,282 @@
+// 
+// Hytron - by Todd Lambert
+// 
+
+$primary: #fe09f0;
+$red: #ff0000;
+
+
+
+/*
+nav{background-color:#222; display: flex; top:0; width:100vw; z-index: 1;}
+.navbar-brand{height:60px; margin:0 1rem 0 2rem;}
+.navbar-start{display: flex; justify-content: space-around;}
+.navbar-start li{margin-right:1rem; }
+.navbar-start li a{display: block; color:#fff; text-decoration: none; text-transform: uppercase; font-size:18px; padding:.5rem;}
+*/
+
+
+[aria-current] {
+  background-color: #fe09f0;
+  padding: .5rem; }
+  
+ [aria-current].logolink {
+  background-color: none;
+  padding: inherit; }
+
+
+/* header */
+
+.header {
+  background-color: #222;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color:#fff;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+//   color:#ff0000;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 0 2rem 0 1.5rem;
+  text-decoration: none;
+  background:none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48rem) {
+	.header {display: flex; justify-content: space-between;}
+	.header ul{display: flex;}
+   [aria-current].logolink {
+   background:none;
+  }
+  .header li a {
+	  display: block;
+	  height: 100%;
+    padding: 20px 30px;
+  }
+  .header .menu {
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{margin: 0; padding:0; font-family: Francois One;}
+
+
+
+
+.themeSlide {
+  width: 80px;
+  height: 16px;
+  background: #333;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2); }
+
+.themeSlide:after {
+  content: 'Light';
+  color: #fe09f0;
+  position: absolute;
+  right: 8px;
+  z-index: 0;
+  font: 10px/16px Arial, sans-serif;
+  font-weight: bold; }
+
+.themeSlide:before {
+  content: 'Dark';
+  color: #fe09f0;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font: 10px/16px Arial, sans-serif;
+  font-weight: bold; }
+
+.themeSlide label {
+  display: block;
+  width: 34px;
+  height: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  background: #fcfff4;
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3); }
+
+.themeSlide input[type=checkbox] {
+  visibility: hidden; }
+
+.themeSlide input[type=checkbox]:checked + label {
+  left: 43px; }
+
+body.dark {
+  background-color: #333;
+  color: #fff; }
+
+body.light {
+  background-color: #e6e3e3;
+  color: #222; }
+
+body.dark a {
+  color: #fe09f0; }
+
+body.light a {
+  color: #fe09f0; }
+
+body.light .header li a, body.dark .header li a, body.light #section-footer, body.light #section-footer a, body.dark #section-footer a {
+  color: #fff !important; }
+
+body.light * {
+  border-color: #666 !important; }
+
+body.dark * {
+  border-color: #999 !important; }
+
+
+
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+.headroom--unpinned .back-to-top{display: block; position:fixed; bottom:0; right:0; border:1px solid; transform: translateY(100vh); padding:.3rem;
+z-index: 99999999;
+color: #fff;
+font-size:240%;
+font-weight: bold;
+background-color:$primary;
+border-radius: 8px 0 0 0;
+}
+.headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
+
+.themer { position:absolute; z-index:1; top:64px; right:10px; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 4px; color:#fff;/*  box-shadow: 0px 0px 1px 1px black; */}
+.button-switcher{border:1px solid;}
+
+
+.headroom--unpinned .themer{display: none;}
+
+.headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto; box-shadow: 0px 0px 4px 1px black;}
+

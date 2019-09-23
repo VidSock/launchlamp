@@ -58,7 +58,7 @@ CapabilitiesPage.propTypes = {
 
 export default CapabilitiesPage
 
-export const CapabilitiesPageQuery = graphql`
+export const capabilitiesPageQuery = graphql`
   query CapabilitiesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html

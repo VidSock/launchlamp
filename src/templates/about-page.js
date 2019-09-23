@@ -10,7 +10,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const [toggler, setToggler] = useState(false);
 
   return (
-    <section className="section section--gradient">
+    <section className="outer section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">

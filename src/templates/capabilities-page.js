@@ -10,7 +10,7 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
 
 
   return (
-    <section className="section">
+    <section className="outer section">
       <div className="container">
  
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">

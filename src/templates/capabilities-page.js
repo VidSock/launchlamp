@@ -11,12 +11,7 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
 
   return (
     <section className="section">
-      <div className="container" style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '0 1rem',
-        }}>
+      <div className="container">
  
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}

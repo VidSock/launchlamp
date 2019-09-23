@@ -79,6 +79,35 @@ export default class Contact extends React.Component {
                   </div>
                 </div>
                 <div className="field">
+                  <label className="label" htmlFor={'email'}>
+                    Email
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'email'}
+                      name={'email'}
+                      onChange={this.handleChange}
+                      id={'email'}
+                      required={true}
+                    />
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'message'}>
+                    Message
+                  </label>
+                  <div className="control">
+                    <textarea
+                      className="textarea"
+                      name={'message'}
+                      onChange={this.handleChange}
+                      id={'message'}
+                      required={true}
+                    />
+                  </div>
+                </div>
+                <div className="field">
                   <div className="file">
                     <label className="file-label">
                       <input

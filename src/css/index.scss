@@ -9,7 +9,7 @@ $red: #ff0000;
 html{font-size: 100%;}
 body{margin: 0; padding:0;}
 
-.outer .container{padding:2rem; margin:1rem 6%; box-shadow: 0px 1px 1px 1px #9a9999; border-radius: 10px; background:#fdfcfc;}
+.outer .container{padding:2rem; margin:1rem 6%; border:1px solid #f0eded; /* box-shadow: 0px 1px 1px 1px #e2dfdf; */ border-radius: 10px; background:#fdfcfc;}
 
 @media (max-width: 48rem) {  
   .outer .container{padding:2rem; margin:1rem 1rem; box-shadow: 0px 1px 1px 1px #9a9999; border-radius: 10px; background:#fdfcfc;}
@@ -24,6 +24,7 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
     
 
 
+// ANIMATIONs
 .moveLeft {
   position: relative;
   left:-100vw;
@@ -38,6 +39,7 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
 }
 
 
+footer{background-color: #222; padding:1rem 2rem;  animation: fadeIn 3s;}
 
 @keyframes slideLeft {
   0% {
@@ -56,6 +58,31 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
     transform: translateX(-100vw);
   }
 }
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+//  ANIMATIONS
+
 
 
     
@@ -278,11 +305,12 @@ p{line-height: 2rem}
 
 body.dark, body.dark .outer .container {
   background-color: #333;
-  color: #fff; }
+  color: #fff; 
+  box-shadow: inherit;}
 
 
 body.light {
-  background-color: #e6e3e3;
+  background-color: #ffffff;
   color: #222; }
 
 body.dark a {
@@ -295,10 +323,10 @@ body.light .header li a, body.dark .header li a, body.light footer, body.light f
   color: #fff !important; }
 
 body.light * {
-  border-color: #666 !important; }
+  border-color: #f0eaea !important; }
 
 body.dark * {
-  border-color: #999 !important; }
+  border-color: #3a3636 !important; }
 // Theme switcher
 
  body.light{
@@ -323,7 +351,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 .headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
 
 .themer { position:absolute; z-index:1; top:64px; right:10px; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 4px; color:#fff;/*  box-shadow: 0px 0px 1px 1px black; */}
-.button-switcher{border:1px solid;}
+.button-switcher{border:1px solid; animation: slideDown 1s forwards;}
 
 .headroom--unpinned .themer{display: none;}
 

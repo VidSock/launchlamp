@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import 'typeface-francois-one';
 import "../css/index.scss";
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
@@ -36,8 +36,9 @@ const TemplateWrapper = ({ children }) => {
       <main>{children}</main>
       
       
-      
+      <ScrollAnimation animateIn="fadeIn">
       <Footer />
+      </ScrollAnimation>
     </div>
   )
 }

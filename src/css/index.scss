@@ -2,7 +2,7 @@
 // Hytron - by Todd Lambert
 // 
 
-$primary:#ff0000;
+$primary: #ff0000;
 $red: #ff0000;
 
 
@@ -106,7 +106,7 @@ p{line-height: 2rem}
 
 .header li a:hover,
 .header .menu-btn:hover {
-//   color:#ff0000;
+  color:#ff0000;
 }
 
 .header .logo {
@@ -198,7 +198,7 @@ p{line-height: 2rem}
 }
 
 [aria-current] {
-  background-color: #fe09f0;
+  background-color: #666;
   padding: .5rem; }
   
  [aria-current].logolink {
@@ -278,7 +278,7 @@ p{line-height: 2rem}
 
 body.dark, body.dark .outer .container {
   background-color: #333;
-  color: #fff; box-shadow: inherit;}
+  color: #fff; }
 
 
 body.light {
@@ -286,10 +286,10 @@ body.light {
   color: #222; }
 
 body.dark a {
-  color: $primary; }
+  color: #fe09f0; }
 
 body.light a {
-  color: $primary; }
+  color: #fe09f0; }
 
 body.light .header li a, body.dark .header li a, body.light footer, body.light footer a, body.dark footer a, body.dark .outer a, body.light .outer a {
   color: #fff !important; }

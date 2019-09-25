@@ -27,17 +27,17 @@ export const ProductPageTemplate = ({
         })`,
       }}
     >
-      <h2
+      <div
         className="has-text-weight-bold is-size-1"
         style={{
           boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
+          backgroundColor: '#666',
           color: 'white',
           padding: '1rem',
         }}
       >
         {title}FUCK
-      </h2>
+      </div>
     </div>
     <section className="section section--gradient">
       <div className="container">

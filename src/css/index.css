@@ -85,6 +85,10 @@ p {
   text-decoration: none;
   color: #fff; }
 
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #ff0000; }
+
 .header .logo {
   display: block;
   float: left;
@@ -157,7 +161,7 @@ p {
   top: 0; }
 
 [aria-current] {
-  background-color: #fe09f0;
+  background-color: #666;
   padding: .5rem; }
 
 [aria-current].logolink {
@@ -231,18 +235,17 @@ p {
 
 body.dark, body.dark .outer .container {
   background-color: #333;
-  color: #fff;
-  box-shadow: inherit; }
+  color: #fff; }
 
 body.light {
   background-color: #e6e3e3;
   color: #222; }
 
 body.dark a {
-  color: #ff0000; }
+  color: #fe09f0; }
 
 body.light a {
-  color: #ff0000; }
+  color: #fe09f0; }
 
 body.light .header li a, body.dark .header li a, body.light footer, body.light footer a, body.dark footer a, body.dark .outer a, body.light .outer a {
   color: #fff !important; }

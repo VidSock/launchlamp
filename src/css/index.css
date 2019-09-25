@@ -102,13 +102,17 @@ p {
   float: left;
   padding: 0 2rem 0 1.5rem;
   text-decoration: none;
-  background: none; }
+  background: none;
+  max-width: 150px;
+  max-height: 55px;
+  height: 55px; }
 
 /* menu */
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out; }
+  transition: max-height 0.2s ease-out;
+  max-height: 55px; }
 
 /* menu icon */
 .header .menu-icon {
@@ -250,7 +254,7 @@ body.dark a {
 body.light a {
   color: #fe09f0; }
 
-body.light .header li a, body.dark .header li a, body.light footer, body.light footer a, body.dark footer a {
+body.light .header li a, body.dark .header li a, body.light footer, body.light footer a, body.dark footer a, body.dark .outer a, body.light .outer a {
   color: #fff !important; }
 
 body.light * {

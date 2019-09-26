@@ -166,7 +166,7 @@ export const productPageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 64) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
         aspectRatio
         src
         srcSet
@@ -183,7 +183,7 @@ export const productPageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp
         aspectRatio
         src
         srcSet
@@ -206,7 +206,7 @@ export const productPageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 526, quality: 64) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp
         aspectRatio
         src
         srcSet
@@ -222,7 +222,7 @@ export const productPageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 526, quality: 64) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp
         aspectRatio
         src
         srcSet
@@ -238,7 +238,7 @@ export const productPageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 1075, quality: 64) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp
         aspectRatio
         src
         srcSet
@@ -257,7 +257,7 @@ export const productPageQuery = graphql`
         full_image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 64) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
         aspectRatio
         src
         srcSet

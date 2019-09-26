@@ -1,7 +1,7 @@
 ---
 templateKey: example-page
 title: Example Page
-image: /img/blog-index.jpg
+image: /img/img_3136.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:

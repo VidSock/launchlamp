@@ -128,8 +128,7 @@ p {
 /* menu */
 .header .menu {
   clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out; }
+  max-height: 0; }
 
 /* menu icon */
 .header .menu-icon {
@@ -198,13 +197,16 @@ p {
     display: flex;
     justify-content: space-between; }
   .header ul {
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
   [aria-current].logolink {
     background: none; }
+  .header ul li {
+    display: flex;
+    margin-right: 1rem; }
   .header li a {
-    display: block;
     height: 100%;
-    padding: 20px 30px; }
+    padding: 20px 10px; }
   .header .menu {
     max-height: none; }
   .header .menu-icon {

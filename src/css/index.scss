@@ -124,6 +124,7 @@ p{line-height: 2rem}
   padding: 0;
   list-style: none;
   overflow: hidden;
+
 }
 
 .header li a {
@@ -156,7 +157,7 @@ p{line-height: 2rem}
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+//   transition: max-height .2s ease-out;
 //   max-height: 55px;
 }
 
@@ -238,14 +239,16 @@ p{line-height: 2rem}
 
 @media (min-width: 48rem) {
 	.header {display: flex; justify-content: space-between;}
-	.header ul{display: flex;}
+	.header ul{display: flex; justify-content: space-around;}
    [aria-current].logolink {
    background:none;
   }
+  
+  .header ul li{display:flex; margin-right:1rem;}
+  
   .header li a {
-	  display: block;
-	  height: 100%;
-    padding: 20px 30px;
+	height: 100%;
+    padding: 20px 10px;
   }
   .header .menu {
     max-height: none;

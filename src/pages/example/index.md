@@ -1,11 +1,11 @@
 ---
 templateKey: example-page
-title: Example Page
+title: Precision Parts
 image: /img/img_3136.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Why our process matters
+subheading: On Time and Under Budget
 mainpitch:
-  title: Why Kaldi
+  title: Why Hytron?
   description: >
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the

@@ -25,9 +25,10 @@ export const ExamplePageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
+        backgroundPosition: `top right`,
         backgroundAttachment: `fixed`,
         backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         height: '100vh',
       }}
     >
@@ -46,7 +47,8 @@ export const ExamplePageTemplate = ({
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+//             backgroundColor: 'rgb(255, 68, 0)',
+			textShadow: '0px 1px 4px black',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',

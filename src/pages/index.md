@@ -5,7 +5,7 @@ image: /img/img_2487.jpg
 heading: Great coffee with a conscience
 subheading: 'We''re an ISO 9001:2015 company'
 mainpitch:
-  title: Why Kaldi
+  title: Why Hytron
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans

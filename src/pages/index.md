@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Hytron Manufacturing
 image: /img/img_2487.jpg
-heading: Great coffee with a conscience
+heading: Great parts - great service
 subheading: 'We''re an ISO 9001:2015 company'
 mainpitch:
   title: Why Hytron

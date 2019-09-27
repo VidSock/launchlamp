@@ -105,7 +105,7 @@ p {
 
 .header li a {
   display: block;
-  padding: 10px 20px;
+  padding: 10px 30px;
   text-decoration: none;
   color: #fff; }
 
@@ -222,7 +222,7 @@ p {
 
 .themeSlide:after {
   content: 'Light';
-  color: #fe09f0;
+  color: #ff0000;
   position: absolute;
   right: 8px;
   z-index: 0;
@@ -231,7 +231,7 @@ p {
 
 .themeSlide:before {
   content: 'Dark';
-  color: #fe09f0;
+  color: #ff0000;
   position: absolute;
   left: 10px;
   z-index: 0;
@@ -269,10 +269,10 @@ body.light {
   color: #222; }
 
 body.dark a {
-  color: #fe09f0; }
+  color: #ff0000; }
 
 body.light a {
-  color: #fe09f0; }
+  color: #ff0000; }
 
 body.light .header li a, body.dark .header li a, body.light footer, body.light footer a, body.dark footer a, body.dark .outer a, body.light .outer a {
   color: #fff !important; }
@@ -291,7 +291,8 @@ body.dark {
 
 .headroom {
   will-change: transform;
-  transition: transform 200ms linear; }
+  transition: transform 200ms linear;
+  position: fixed; }
 
 .headroom--pinned {
   transform: translateY(0%);

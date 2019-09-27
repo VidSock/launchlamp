@@ -129,7 +129,7 @@ p{line-height: 2rem}
 
 .header li a {
   display: block;
-  padding: 10px 20px;
+  padding: 10px 30px;
   text-decoration: none;
   color:#fff;
 }
@@ -271,7 +271,7 @@ p{line-height: 2rem}
 
 .themeSlide:after {
   content: 'Light';
-  color: #fe09f0;
+  color: $primary;
   position: absolute;
   right: 8px;
   z-index: 0;
@@ -280,7 +280,7 @@ p{line-height: 2rem}
 
 .themeSlide:before {
   content: 'Dark';
-  color: #fe09f0;
+  color: $primary;
   position: absolute;
   left: 10px;
   z-index: 0;
@@ -319,10 +319,10 @@ body.light {
   color: #222; }
 
 body.dark a {
-  color: #fe09f0; }
+  color: $primary; }
 
 body.light a {
-  color: #fe09f0; }
+  color: $primary; }
 
 body.light .header li a, body.dark .header li a, body.light footer, body.light footer a, body.dark footer a, body.dark .outer a, body.light .outer a {
   color: #fff !important; }
@@ -344,6 +344,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 .headroom {
   will-change: transform;
   transition: transform 200ms linear; 
+  position: fixed;
 }
 .headroom--pinned {
   transform: translateY(0%);

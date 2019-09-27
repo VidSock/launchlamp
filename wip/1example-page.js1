@@ -29,7 +29,7 @@ export const ExamplePageTemplate = ({
         backgroundAttachment: `fixed`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        height: '50vh',
+        height: '100vh',
       }}
     >
       <div
@@ -65,7 +65,7 @@ export const ExamplePageTemplate = ({
             backgroundColor: 'rgb(255, 68, 0)',
             color: 'white',
             lineHeight: '1',
-            padding: '.25rem 2rem',
+            padding: '0.25em',
           }}
         >
           {subheading}
@@ -76,11 +76,11 @@ export const ExamplePageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column">
+            <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h2 className="title">{mainpitch.title}</h2>
+                    <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
@@ -88,7 +88,7 @@ export const ExamplePageTemplate = ({
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <h3>
+                    <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
                     <p>{description}</p>

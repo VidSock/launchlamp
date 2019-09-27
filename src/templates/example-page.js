@@ -27,7 +27,7 @@ export const ExamplePageTemplate = ({
         })`,
         backgroundPosition: `top right`,
         backgroundAttachment: `fixed`,
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         height: '50vh',
       }}

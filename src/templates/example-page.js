@@ -20,16 +20,16 @@ export const ExamplePageTemplate = ({
 }) => (
   <div className="outer">
     <div
-      className="full-width-image margin-top-0"
+      className="full-width-image"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top right`,
+        backgroundPosition: `top center`,
         backgroundAttachment: `fixed`,
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
-        height: '50vh',
+        height: '70vh',
       }}
     >
       <div
@@ -43,7 +43,7 @@ export const ExamplePageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-mobile"
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
@@ -58,7 +58,7 @@ export const ExamplePageTemplate = ({
           {title}
         </h1>
         <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="has-mobile"
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
@@ -87,7 +87,7 @@ export const ExamplePageTemplate = ({
                   </div>
                 </div>
                 <div className="columns">
-                  <div className="column is-12">
+                  <div className="column">
                     <h3>
                       {heading}
                     </h3>
@@ -96,7 +96,7 @@ export const ExamplePageTemplate = ({
                 </div>
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
-                  <div className="column is-12 has-text-centered">
+                  <div className="column centered">
                     <Link className="btn" to="/products">
                       See all products
                     </Link>

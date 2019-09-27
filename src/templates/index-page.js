@@ -46,7 +46,8 @@ export const IndexPageTemplate = ({
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+//             backgroundColor: 'rgb(255, 68, 0)',
+			textShadow: '0px 1px 4px black',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -63,7 +64,7 @@ export const IndexPageTemplate = ({
             backgroundColor: 'rgb(255, 68, 0)',
             color: 'white',
             lineHeight: '1',
-            padding: '0.25em',
+            padding: '.25rem 2rem',
           }}
         >
           {subheading}

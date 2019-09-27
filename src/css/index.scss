@@ -9,11 +9,9 @@ $red: #ff0000;
 html{font-size: 100%;}
 body{margin: 0; padding:0;}
 
-.outer .container{padding:2rem; margin:1rem 6%; border:1px solid #f0eded; /* box-shadow: 0px 1px 1px 1px #e2dfdf; */ border-radius: 10px; background:#fdfcfc;}
 
-@media (max-width: 48rem) {  
-  .outer .container{padding:2rem; margin:1rem 1rem; box-shadow: 0px 1px 1px 1px #9a9999; border-radius: 10px; background:#fdfcfc;}
-}
+
+.outer .container{padding:1rem;}
 
 
 // BASE TYPOGRAPHY
@@ -22,6 +20,8 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
     font-weight: 400;
     line-height:1.35}
     
+    
+    .full-width-image{background-size: cover !important;}
 
 // .full-width-image{background-position: right bottom !important;}
 
@@ -257,6 +257,14 @@ p{line-height: 2rem}
     display: none;
   }
   
+  .outer .container{padding:2rem; margin:1rem 6%; border:1px solid #f0eded; /* box-shadow: 0px 1px 1px 1px #e2dfdf; */ border-radius: 10px; background:#fdfcfc;}
+  
+   body.light{
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.16' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
+
+ body.dark{
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.16' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
+  
 }
 
 
@@ -334,11 +342,7 @@ body.dark * {
   border-color: #3a3636 !important; }
 // Theme switcher
 
- body.light{
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.16' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
 
- body.dark{
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.16' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
 
 // Header
 .headroom {

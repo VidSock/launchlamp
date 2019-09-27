@@ -20,7 +20,7 @@ export const ExamplePageTemplate = ({
 }) => (
   <div className="outer">
     <div
-      className="full-width-image"
+      className="partial-width-image"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -66,6 +66,8 @@ export const ExamplePageTemplate = ({
             color: 'white',
             lineHeight: '1',
             padding: '.25rem 2rem',
+            position: 'absolute',
+            bottom: '30%',
           }}
         >
           {subheading}

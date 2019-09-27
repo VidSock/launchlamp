@@ -29,25 +29,25 @@ const Navbar = class extends React.Component {
             <ul id="menu" className="menu">
                <li>
               <Link className="navbar-item" to="/capabilities">
-                Capabilities
+                What We Do
               </Link>
               </li>
               
               <li>
               <Link className="navbar-item" to="/products">
-                Industries Served
+                How We Do It
               </Link>
               </li>
               
               <li>
               <Link className="navbar-item" to="/example">
-                Example
+               Our Work
               </Link>
               </li>
               
               <li>
               <Link className="navbar-item" to="/about">
-                About Us
+                Who We Are
               </Link>
               </li>
               
@@ -55,7 +55,7 @@ const Navbar = class extends React.Component {
               
               <li>
               <Link className="navbar-item" to="/contact">
-                Contact Us
+                Get A Quote
               </Link>
               </li>
               

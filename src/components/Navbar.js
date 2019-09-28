@@ -19,7 +19,7 @@ const Navbar = class extends React.Component {
 <Headroom>
     <header id="topofpage" className="header">
     
-    <Link to="/" className="logolink" title="Logo">
+    <Link to="/" className="logolink" title="Logo - Back To Home">
     <img className="logo" src={logo} alt="Hytron Manufacturing Logo" style={{ width: '150px' }} />
     </Link>
     

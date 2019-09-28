@@ -15,7 +15,8 @@ body {
   line-height: 1.35; }
 
 .full-width-image {
-  background-size: cover !important; }
+  background-size: cover !important;
+  background-size: 100vmax 100vmax; }
 
 .full-width-image:after {
   content: "[SCROLL - MORE]";

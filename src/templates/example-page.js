@@ -26,8 +26,7 @@ export const ExamplePageTemplate = ({
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `top center`,
-        backgroundAttachment: `fixed`,
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height: '70vh',
       }}

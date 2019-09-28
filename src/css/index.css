@@ -119,6 +119,7 @@ p {
 .header {
   background-color: #222;
   width: 100%;
+  height: 60px;
   z-index: 3; }
 
 .header ul {
@@ -171,17 +172,17 @@ p {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 20px 20px;
   position: relative;
   user-select: none;
   right: 20px;
-  top: 8px; }
+  top: 12px; }
 
 .header .menu-icon:before {
   content: 'MENU';
   color: #fff;
   position: absolute;
-  top: 0;
+  top: -8px;
   right: 8px; }
 
 .header .menu-icon .navicon {
@@ -213,7 +214,8 @@ p {
   display: none; }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 80vh; }
+  max-height: 60vh;
+  background-color: #222; }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent; }
@@ -375,7 +377,7 @@ body.dark * {
 .themer {
   position: absolute;
   z-index: 1;
-  top: 58px;
+  top: 55px;
   right: 0;
   font-size: 60%;
   vertical-align: center;

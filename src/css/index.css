@@ -266,7 +266,7 @@ p {
   .header .menu-icon {
     display: none; }
   .outer .container {
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem 6%;
     border: 1px solid #f0eded;
     /* box-shadow: 0px 1px 1px 1px #e2dfdf; */

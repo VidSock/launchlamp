@@ -66,6 +66,7 @@ const Navbar = class extends React.Component {
       
       
    </header>
+   
     <div className="themer"><ThemeToggler>
         {({ theme, toggleTheme }) => (
           <div className="themeSlide">
@@ -78,6 +79,7 @@ const Navbar = class extends React.Component {
           <label htmlFor="themeSlide"></label></div>
         )}
       </ThemeToggler></div>
+      
       <a href="#topofpage" title="Back To Top" className="back-to-top"><FaArrowAltCircleUp /></a>
 </Headroom>
         

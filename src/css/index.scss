@@ -154,6 +154,11 @@ p{line-height: 2rem}
 
 }
 
+.header ul li:first-child{border-top:1px solid; margin-top:10px; }
+.header ul li:last-child{margin-bottom:0;}
+
+.header ul li a{border-bottom:1px solid #444 !important; padding-top:20px; padding-bottom: 20px;}
+
 .header li a {
   display: block;
   padding: 10px 30px;
@@ -234,7 +239,7 @@ p{line-height: 2rem}
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 80vh;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -256,11 +261,13 @@ p{line-height: 2rem}
 
 [aria-current] {
   background-color: #666;
-  padding: .5rem; }
+  padding: .5rem; 
+  cursor: default; 
+   }
   
  [aria-current].logolink {
   background-color: none;
-  padding: inherit; }
+  padding: inherit; cursor: default; }
 
 /* 48em = 768px */
 
@@ -270,9 +277,16 @@ p{line-height: 2rem}
    [aria-current].logolink {
    background:none;
   }
-  
+ 
   .header ul li{display:flex; margin-right:1rem;}
   
+.header ul li:first-child{border-top:0px solid; margin-top:0; }
+.header ul li:last-child{margin-bottom:0;}
+
+.header ul li a{border-bottom:0px solid #444 !important;}
+
+
+
   .header li a {
 	height: 100%;
     padding: 20px 10px;
@@ -387,12 +401,26 @@ body.dark * {
 }
 .headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
 
-.themer { position:absolute; z-index:1; top:61px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: -24px 0 0 0; color:#fff;}
+.themer { position:absolute; z-index:1; top:58px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 0 0 0 4px; color:#fff;
+}
+.themer:after{content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid #222;
+  border-bottom: 20px solid transparent;
+//   border-radius: 30px;
+//   box-shadow: 7px 7px 7px ;
+  }
+    
 .button-switcher{border:1px solid; animation: slideDown 1s forwards;}
 
 .headroom--unpinned .themer{display: none;}
 
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto;}
+.headroom-wrapper{height:58px !important;}
 
 .back-to-top{display: block; position:fixed; bottom:2rem; right:0; border:1px solid; transform: translateY(100vh); padding:.3rem .3rem 0 .3rem;
 z-index: 99999999;

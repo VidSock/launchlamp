@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: '5px' }
@@ -8,16 +9,16 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+      <ScrollAnimation animateIn="moveLeft" animateOnce={true}><Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} /></ScrollAnimation>
     )
   }
 
   if (!!childImageSharp) {
-    return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
+    return <ScrollAnimation animateIn="moveLeft" animateOnce={true}><Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} /></ScrollAnimation>
   }
 
   if (!!image && typeof image === 'string')
-    return <img style={imageStyle} src={image} alt={alt} />
+    return <ScrollAnimation animateIn="moveLeft" animateOnce={true}><img style={imageStyle} src={image} alt={alt} /></ScrollAnimation>
 
   return null
 }

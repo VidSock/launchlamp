@@ -56,13 +56,13 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
 // ANIMATIONs
 .moveLeft {
   position: relative;
-  left:-100vw;
+
 //   animation: move 3s ease ;
   animation: slideLeft 1s forwards;
 }
 .moveRight {
   position: relative;
-  right:-100vw;
+
 //   animation: move 3s ease ;
   animation: slideRight 1s forwards;
 }
@@ -75,19 +75,19 @@ footer{background-color: #222; padding:1rem 2rem;  animation: fadeIn 3s;}
 
 @keyframes slideLeft {
   0% {
-    transform: translateX(0);
+    transform: translateX(-100vw);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(0);
   }
 }
 
 @keyframes slideRight {
   0% {
-    transform: translateX(0);
+    transform: translateX(100vw);
   }
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(0);
   }
 }
 
@@ -136,7 +136,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before{font-family: Franc
 
 #menu{font-size:1rem;}
 
-p{line-height: 2rem}
+p{line-height: 2rem; max-width:70vw;}
 // BASE TYPOGRAPHY
 
 
@@ -149,10 +149,9 @@ p{line-height: 2rem}
   width: 100%;
   height:60px;
   z-index: 3;
-  
-
-    
+ 
 }
+
 
 .header ul {
   margin: 0;
@@ -438,6 +437,20 @@ body.dark * {
 
 .themer { position:absolute; z-index:1; top:55px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 0 0 0 4px; color:#fff;
 }
+.headroom--unfixed:before,
+.headroom--pinned:before{
+    content:('');
+    position:absolute;
+    left:-24px;
+    bottom:-20px;
+    width: 0px;
+      height: 0px;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #222;
+}
+
+
 .themer:after{content: '';
   position: absolute;
   top: 0;

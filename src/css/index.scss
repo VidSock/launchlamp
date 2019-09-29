@@ -67,7 +67,7 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
   animation: slideRight 1s forwards;
 }
 
-div.column{ padding:1rem 2rem;  animation: fadeIn 3s;}
+div.column{ padding:1rem 0rem;  animation: fadeIn 3s;}
 
 
 
@@ -136,7 +136,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before{font-family: Franc
 
 #menu{font-size:1rem;}
 
-p{line-height: 2rem; max-width:70vw;}
+p{line-height: 2rem; max-width:748px;}
 // BASE TYPOGRAPHY
 
 
@@ -249,6 +249,7 @@ p{line-height: 2rem; max-width:70vw;}
   top: -5px;
 }
 
+div.column{ padding:1rem 0rem;}
 /* menu btn */
 
 .header .menu-btn {
@@ -319,7 +320,9 @@ p{line-height: 2rem; max-width:70vw;}
   .header .menu-icon {
     display: none;
   }
-  
+
+div.column{ padding:1rem 1.5rem;}
+
   .outer .container{padding:1rem; margin:1rem 6%; border:1px solid #f0eded;  border-radius: 10px; background:#fdfcfc;}
   
    body.light{

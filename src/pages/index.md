@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Hytron Manufacturing
+title: Highest quality machined parts & manufacturing
 image: /img/img_2487.jpg
 heading: Great parts - great service
 subheading: 'We''re an ISO 9001:2015 company'

@@ -502,7 +502,7 @@ body.dark * {
 }
 .headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
 
-.themer { position:absolute; z-index:1; top:55px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 0 0 0 4px; color:#fff;
+.themer { position:absolute; z-index:1; top:58px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 0 0 0 4px; color:#fff;
 }
 .headroom--unfixed:before,
 .headroom--pinned:before{
@@ -524,8 +524,8 @@ body.dark * {
   left: -10px;
   width: 0px;
   height: 0px;
-  border-right: 10px solid #222;
-  border-bottom: 20px solid transparent;
+  border-right: 11px solid #222;
+  border-bottom: 19px solid transparent;
 //   border-radius: 30px;
 //   box-shadow: 7px 7px 7px ;
   }

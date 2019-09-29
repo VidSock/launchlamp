@@ -43,9 +43,9 @@ export default class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
+        <section className="outer section">
           <div className="container">
-            <div className="content" style={{padding: '0rem 2rem'}}>
+            <div className="content">
 
               <h1>Contact Us</h1>
 

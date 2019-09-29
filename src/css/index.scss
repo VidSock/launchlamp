@@ -194,6 +194,15 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before{font-family: Franc
 p{line-height: 2rem; max-width:748px;}
 // BASE TYPOGRAPHY
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
 
 /* header */
 

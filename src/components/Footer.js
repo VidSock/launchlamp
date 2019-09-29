@@ -30,7 +30,7 @@ const Footer = class extends React.Component {
 
 
 
-<div style={{textAlign: 'center', justifyContent: 'center'}}>Copyright &copy; {(new Date().getFullYear())} Hytron Manufacturing Inc.</div>
+<div style={{textAlign: 'center', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Hytron Manufacturing Inc.</div>
         </div>
       </footer>
     )

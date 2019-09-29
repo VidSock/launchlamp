@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Contact from '../components/Contact'
 import 'typeface-francois-one';
 import "../css/index.scss";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -35,7 +36,7 @@ const TemplateWrapper = ({ children }) => {
      
       <main>{children}</main>
       
-      
+      <Contact />
       <ScrollAnimation animateIn="fadeIn">
       <Footer />
       </ScrollAnimation>

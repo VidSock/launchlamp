@@ -124,10 +124,11 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
 
 
 .form {
-  text-align: center;
+  text-align: left !important;
   margin: 0;
   display: flex;
   flex-flow: row;
+
  }
  
  .form label{font-size: 70%; text-align: left;}
@@ -393,7 +394,6 @@ div.column{ padding:1rem 0rem;}
     max-width: 80%;
    }
 
-   .form label{margin:0; padding:0;}
 
 
 div.column{ padding:1rem 1.5rem;}
@@ -585,3 +585,5 @@ border-radius: 8px 0 0 8px;
 
 .back-to-top svg{color:#fff;}
 .back-to-top svg:hover{color:$primary;}
+
+

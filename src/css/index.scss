@@ -2,7 +2,7 @@
 // Hytron - by Todd Lambert
 // 
 
-$primary: #ff4400;
+$primary: #DB2600;
 $red: #ff0000;
 
 
@@ -34,7 +34,7 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
 	word-wrap: break-word;
     }
     .has-text-weight-color{
-    background-color: #ff4400;
+    background-color: #DB2600;
     color: white;
     line-height: 1;
     padding: .25rem 2rem;
@@ -151,11 +151,11 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
 input.special {
     color: white; 
     font-weight: bold;
-    font-size:110%;
-    background: $primary;
+    font-size:120%;
+    background: #DB2600;
     cursor: pointer;
     border:0; outline:0;
-    padding: .5em 0;
+    padding: .2em 0;
     border-radius:(4px);
     width:40%;
      box-shadow: 1px 2px 3px 0px #554f4f;

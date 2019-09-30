@@ -71,7 +71,7 @@ export default class Contact extends React.Component {
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
               >
-                <h3 id="contact" style={{padding: '1rem 0 0 2rem'}}>Contact Us</h3>
+                <h3 id="contact" style={{padding: '2rem 0 0 10%'}}>Contact Us</h3>
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="file-upload" />
                 <div hidden>
@@ -92,7 +92,7 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Name"
                     />
-                
+                <label htmlFor="name">Your name:</label>
                     <input
                       className="input"
                       type={'email'}
@@ -102,12 +102,14 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Email"
                     />
+                    <label htmlFor="email">Your e-mail:</label>
                     <input
                         className="file-input"
                         type="file"
                         name="attachment"
                         onChange={this.handleAttachment}
                       />
+                      <label htmlFor="attachment">Attach Files: We Prefer PDF</label>
                 </div>
 
                 <div className="field half right">

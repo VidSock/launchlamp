@@ -2,7 +2,7 @@
 // Hytron - by Todd Lambert
 // 
 
-$primary: #ff0000;
+$primary: #ff4400;
 $red: #ff0000;
 
 
@@ -30,11 +30,11 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
 	font-weight: normal;
 	font-size:300%;
 	text-shadow: 0px 3px 0px black;
-	margin:2rem 0 0 1rem;
+	margin:2rem 0 0 10%;
 	word-wrap: break-word;
     }
     .has-text-weight-color{
-    background-color: rgb(255, 68, 0);
+    background-color: #ff4400;
     color: white;
     line-height: 1;
     padding: .25rem 2rem;
@@ -125,23 +125,24 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
 
 .form {
   text-align: center;
-  margin: 30px 0;
+  margin: 0;
   display: flex;
   flex-flow: row;
  }
  
+ .form label{font-size: 70%; text-align: left;}
  .form input, .form textarea {
     border:0; outline:0;
     padding: 1em;
     border-radius:(4px);
     background: #e0e1eb;
-    margin-top: 1em;
+    margin-top: 1.3em;
     box-shadow: 0px 0px 1px 1px black;
     color:#222;
     width: 99%;
     }
     
- .form textarea{height:116px;}
+ .form textarea{height:160px;}
 
  .actionable{width:100%; text-align: center; justify-content: center; margin-bottom: 3rem;}
  
@@ -289,7 +290,7 @@ input[type="submit"],
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background .6s ease-out;
   width: 18px;
 }
 
@@ -386,11 +387,15 @@ div.column{ padding:1rem 0rem;}
 
   .form {
     text-align: center;
-    margin: 30px auto;
+    margin: 0 auto;
     display: flex;
     flex-flow: row;
     max-width: 80%;
    }
+
+   .form label{margin:0; padding:0;}
+
+
 div.column{ padding:1rem 1.5rem;}
 
 .outer .container{padding:1rem; margin:1rem 6%; border:1px solid #f0eded;  border-radius: 10px; background:#fdfcfc;}
@@ -573,7 +578,10 @@ z-index: 99999999;
 color: #fff !important;
 font-size:240%;
 font-weight: bold;
-background-color:$primary;
+background-color:#222;
 border-radius: 8px 0 0 8px;
 }
 // Header
+
+.back-to-top svg{color:#fff;}
+.back-to-top svg:hover{color:$primary;}

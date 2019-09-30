@@ -81,7 +81,7 @@ export default class Contact extends React.Component {
                 </div>
 
                 <div className="form">
-                <div className="field half first">
+                <div className="field half left">
                     <input
                       className="input"
                       type={'text'}

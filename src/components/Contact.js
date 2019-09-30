@@ -104,13 +104,14 @@ export default class Contact extends React.Component {
                       placeholder="Email"
                     />
                     <label htmlFor="email">Your e-mail:</label>
-                    <input
+                    <label htmlFor="attachment"><input
                         className="file-input"
                         type="file"
+                        id="attachment"
                         name="attachment"
                         onChange={this.handleAttachment}
                       />
-                      <label htmlFor="attachment">Attach file: PDF preferred</label>
+                      Attach file: PDF preferred</label>
                 </div>
 
                 <div className="field half right">

@@ -73,12 +73,13 @@ export default class Contact extends React.Component {
               >
                 <h3 id="contact" style={{padding: '2rem 0 0 10%'}}>Contact Us</h3>
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="file-upload" />
+                
                 <div hidden>
                   <label>
                     Don’t fill this out:{' '}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
+                  <label htmlFor="form-name">upload</label><input type="hidden" name="form-name" value="file-upload" />
                 </div>
 
                 <div className="form">

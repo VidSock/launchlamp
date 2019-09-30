@@ -150,13 +150,15 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
 input.special {
     color: white; 
     font-weight: bold;
+    font-size:110%;
     background: $primary;
     cursor: pointer;
     border:0; outline:0;
-    padding: 1em;
+    padding: .5em 0;
     border-radius:(4px);
     width:40%;
      box-shadow: 1px 2px 3px 0px #554f4f;
+     text-shadow: 0px 1px 0px black;
     }
 .half {
  justify-content: space-between;

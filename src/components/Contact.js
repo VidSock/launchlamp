@@ -109,7 +109,7 @@ export default class Contact extends React.Component {
                         name="attachment"
                         onChange={this.handleAttachment}
                       />
-                      <label htmlFor="attachment">Attach File: PDF preferred</label>
+                      <label htmlFor="file-input">Attach file: PDF preferred</label>
                 </div>
 
                 <div className="field half right">
@@ -122,6 +122,9 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Message"
                     />
+                    <label className="label" htmlFor={'message'}>
+                    Your Message
+                  </label>
 
                       
                   </div>

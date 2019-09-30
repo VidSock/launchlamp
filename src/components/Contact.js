@@ -57,9 +57,9 @@ export default class Contact extends React.Component {
       
         <section className="outer section">
           <div className="container">
-            <div className="content">
+            <div className="content" style={{padding: '0 0 5px 0'}}>
 
-              <h3 id="contact">Contact Us</h3>
+              <h3 id="contact" style={{padding: '1rem 0 0 1rem'}}>Contact Us</h3>
 
               
 

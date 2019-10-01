@@ -676,17 +676,18 @@ body.dark * {
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto;}
 .headroom-wrapper{height:58px !important;}
 
-.back-to-top{display: block; position:fixed; bottom:3rem; right:1rem; /* border:1px solid; */ transform: translateY(100vh); padding:.3rem .3rem 0 .3rem;
+.back-to-top{display: block; position:fixed; bottom:3rem; right:1rem; transform: translateY(100vh); padding:.3rem .3rem 0 .3rem;
 z-index: 99999999;
 color: #fff !important;
 font-size:340%;
 font-weight: bold;
 background-color:transparent;
+text-shadow: 4px 3px 1px black;
 // border-radius: 8px 0 0 8px;
 }
 // Header
 
-.back-to-top svg{color:#fff;}
-.back-to-top svg:hover{color:$primary;}
+.back-to-top svg, .back-to-top svg:visited{color:#fff;}
+body.light .back-to-top svg, .back-to-top svg:hover{color:$primary;}
 
 

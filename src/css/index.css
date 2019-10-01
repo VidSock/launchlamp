@@ -617,17 +617,17 @@ body.dark * {
   position: fixed;
   bottom: 3rem;
   right: 1rem;
-  /* border:1px solid; */
   transform: translateY(100vh);
   padding: 0.3rem 0.3rem 0 0.3rem;
   z-index: 99999999;
   color: #fff !important;
   font-size: 340%;
   font-weight: bold;
-  background-color: transparent; }
+  background-color: transparent;
+  text-shadow: 4px 3px 1px black; }
 
-.back-to-top svg {
+.back-to-top svg, .back-to-top svg:visited {
   color: #fff; }
 
-.back-to-top svg:hover {
+body.light .back-to-top svg, .back-to-top svg:hover {
   color: #DB2600; }

@@ -32,11 +32,12 @@ body{margin: 0; padding:0;}
 #right span{font-size:300%; color:white; text-shadow: 0 2px 2px 0 black; text-decoration: overline; font-weight: bold; position:absolute; left:1%; top:30%;}
 
 @-webkit-keyframes slide {
-    100% { left: -51vw; }
+    100% { transform: translateX(-100vw); }
 }
 
+
 @keyframes slide {
-    100% { left: -51vw; }
+    100% { transform: translateX(-100vw); }
 }
 
 #right {
@@ -52,11 +53,11 @@ body{margin: 0; padding:0;}
 }
 
 @-webkit-keyframes slideR {
-    100% { right: -51vw; }
+    100% { transform: translateX(100vw);}
 }
 
 @keyframes slideR {
-    100% { right: -51vw; }
+    100% { transform: translateX(100vw); }
 }
 
 

@@ -38,11 +38,11 @@ body {
 
 @-webkit-keyframes slide {
   100% {
-    left: -51vw; } }
+    transform: translateX(-100vw); } }
 
 @keyframes slide {
   100% {
-    left: -51vw; } }
+    transform: translateX(-100vw); } }
 
 #right {
   z-index: 1;
@@ -57,11 +57,11 @@ body {
 
 @-webkit-keyframes slideR {
   100% {
-    right: -51vw; } }
+    transform: translateX(100vw); } }
 
 @keyframes slideR {
   100% {
-    right: -51vw; } }
+    transform: translateX(100vw); } }
 
 /*
 #left{

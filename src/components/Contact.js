@@ -56,7 +56,7 @@ export default class Contact extends React.Component {
     return (
       
         <section className="outer section">
-          <div className="container">
+          <div className="container contactpanel">
             <div className="content" style={{padding: '0 0 5px 0'}}>
 
               

@@ -451,6 +451,12 @@ body.dark, body.dark .outer .container {
   color: #fff;
   box-shadow: inherit; }
 
+body.dark .outer .contactpanel {
+  background-color: #222; }
+
+body.light .outer .contactpanel {
+  background-color: #dedede; }
+
 body.light {
   background-color: #ffffff;
   color: #222; }

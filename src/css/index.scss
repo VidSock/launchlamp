@@ -5,6 +5,13 @@
 $primary: #DB2600;
 $red: #ff0000;
 
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
 
 html{font-size: 100%;}
 body{margin: 0; padding:0;}
@@ -506,7 +513,9 @@ body.dark, body.dark .outer .container {
   background-color: #333;
   color: #fff; 
   box-shadow: inherit;}
-
+  
+  body.dark .outer .contactpanel { background-color: #222;}
+  body.light .outer .contactpanel{ background-color: #dedede;}
 
 body.light {
   background-color: #ffffff;

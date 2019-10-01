@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
-import Contact from '../components/Contact'
+
 
 /*
 import facebook from '../img/social/facebook.svg'
@@ -19,7 +19,7 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           
-<Contact />
+
 
 
 <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>

@@ -84,7 +84,7 @@ const Navbar = class extends React.Component {
         )}
       </ThemeToggler></div>
       
-      <a href="#topofpage" title="Back To Top" className="back-to-top"><FaArrowAltCircleUp /></a>
+      <a href="#___gatsby" title="Back To Top" className="back-to-top"><FaArrowAltCircleUp /></a>
 </Headroom>
         
       

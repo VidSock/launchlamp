@@ -14,7 +14,8 @@ body {
   background-image: linear-gradient(#585a60 0%, #232424 100%);
   border-right: 5px solid #222 !important;
   animation: slide 0.8s forwards;
-  animation-delay: .7s; }
+  animation-delay: .7s;
+  overflow: hidden; }
 
 #left span {
   font-size: 200%;
@@ -55,102 +56,17 @@ body {
   border-left: 5px solid #222 !important;
   animation: slideR 0.8s forwards;
   animation-delay: .7s;
-  content: "Certified"; }
+  overflow: hidden; }
 
 @-webkit-keyframes slideR {
   100% {
-    transform: translateX(100vw); } }
+    transform: translateX(100vw);
+    width: 0; } }
 
 @keyframes slideR {
   100% {
-    transform: translateX(100vw); } }
-
-/*
-#left{
-position:absolute;
-top:0;
-left:0;
-z-index: 999999;
-width: 50vw;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-background-repeat: no-repeat;
-background-position: left top;
-background-color:#333;
-    overflow: hidden;
-
-}
-*/
-/*
-#right{
-position:absolute;
-top:0;
-right:0;
-z-index: 999999;
-width: 50vw;
-height: 100%;
-display: flex;
-background-repeat: no-repeat;
-background-position: left top;
-background-color:#333;
-    overflow: hidden;
- 	right: 0;
- 	   
-    width: 50vw;
-    transition: all 0.7s ease-out;
-    right:50vw;
-}
-*/
-/*
-#___gatsby:before{
-position:absolute;
-top:0;
-left:0;
-z-index: 999999;
-width: 100vw;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-background-repeat: no-repeat;
-background-position: left top;
-
-    overflow: hidden;
-    background: transparent;
-content: url('../img/hytron-man.png');
-    animation: slide 1s ease 1.5s forwards;
-}
-*/
-/*
-#___gatsby:after{
-position:absolute;
-top:0;
-left:0;
-z-index: 999999;
-width: 100vw;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-background-repeat: no-repeat;
-background-position: left top;
-
-    overflow: hidden;
-    background: transparent;
-content: url('../img/hytron-man.png');
-    animation: slideDown .5s ease .5s forwards;
-}
-*/
-@keyframes slideRight
-{
-  from {
-    width: 50vw;
-    right: 0; }
-  to {
-    width: 10vw;
-    right: -10vw; } }
+    transform: translateX(100vw);
+    width: 0; } }
 
 .outer .container {
   padding: 1rem; }

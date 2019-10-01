@@ -11,8 +11,6 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="outer section section--gradient">
-    <div id="left"><span>ISO9001:2015 </span></div>
-  <div id="right"><span> Certified</span></div>
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">

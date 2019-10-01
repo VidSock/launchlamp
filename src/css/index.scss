@@ -28,8 +28,8 @@ body{margin: 0; padding:0;}
     animation-delay: .7s;
 }
 
-#left span{font-size:500%; text-shadow: 4px 4px 4px 0 black; text-decoration: overline; color:white; font-weight: bold; position:absolute; right:0; top:30%;}
-#right span{font-size:300%; color:white; font-weight: bold; position:absolute; left:0; top:30%;}
+#left span{font-size:300%; text-shadow: 4px 4px 4px 0 black; text-decoration: overline; color:white; font-weight: bold; position:absolute; right:2%; top:30%;}
+#right span{font-size:300%; color:white; text-shadow: 0 2px 2px 0 black; text-decoration: overline; font-weight: bold; position:absolute; left:1%; top:30%;}
 
 @-webkit-keyframes slide {
     100% { left: -51vw; }

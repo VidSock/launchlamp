@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/hytron-logo.png'
+import logo from '../img/hytron-logo.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { FaArrowAltCircleUp } from 'react-icons/fa';

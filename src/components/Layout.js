@@ -2,10 +2,12 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+// import { Link } from 'gatsby'
 // import Contact from '../components/Contact'
 import 'typeface-francois-one';
 import "../css/index.scss";
 import ScrollAnimation from 'react-animate-on-scroll';
+// import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
@@ -16,6 +18,10 @@ if (typeof window !== "undefined") {
 }
 
 const TemplateWrapper = ({ children }) => {
+  
+
+
+
   const { title, description } = useSiteMetadata()
   return (
     <div>
@@ -33,8 +39,9 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       
       <Navbar />
-     
+      
       <main>{children}</main>
+      
       
      
       <ScrollAnimation animateIn="fadeIn">

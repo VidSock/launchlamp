@@ -5,12 +5,7 @@
 $primary: #DB2600;
 $red: #ff0000;
 
-@function tint($color, $percentage) {
-  @return mix(white, $color, $percentage);
-}
-@function shade($color, $percentage) {
-  @return mix(black, $color, $percentage);
-}
+
 
 
 html{font-size: 100%;}
@@ -20,7 +15,7 @@ body{margin: 0; padding:0;}
 	z-index: 1;
     position: absolute;
     left: 0vw;
-    width: 50vw;
+    width: 50%;
     height: 100vh;
     background-image: linear-gradient(#585a60 0%,#232424  100%);
     border-right:5px solid #222 !important;
@@ -33,12 +28,12 @@ body{margin: 0; padding:0;}
 #right span{font-size:200%; color:white; text-shadow: 0 2px 2px 0 black; text-decoration: overline; font-weight: bold; position:absolute; left:1%; top:30%;}
 
 @-webkit-keyframes slide {
-    100% { transform: translateX(-100vw); }
+    100% { width:0; }
 }
 
 
 @keyframes slide {
-    100% { transform: translateX(-100vw); }
+    100% { width:0; }
 }
 
 #right {
@@ -46,7 +41,7 @@ body{margin: 0; padding:0;}
 	z-index: 2;
     position: absolute;
     right: 0vw;
-    width: 50vw;
+    width: 50%;
     height: 100vh;
     background-image: linear-gradient(#585a60 0%,#232424  100%);
     border-left:5px solid #222 !important;
@@ -56,11 +51,11 @@ body{margin: 0; padding:0;}
 }
 
 @-webkit-keyframes slideR {
-    100% { transform: translateX(100vw); width:0;}
+    100% {  width:0;}
 }
 
 @keyframes slideR {
-    100% { transform: translateX(100vw); width:0; }
+    100% { width:0; }
 }
 
 

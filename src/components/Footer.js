@@ -22,6 +22,10 @@ const Footer = class extends React.Component {
 
 
 
+ 
+
+
+
 <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
   <li><h3 className="socialtext">We're<br />Social:</h3></li>
 <li><a className="social"  href="https://facebook.com" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>

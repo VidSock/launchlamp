@@ -19,6 +19,8 @@ export const ExamplePageTemplate = ({
   intro,
 }) => (
   <div className="outer">
+  <div id="left"><span>ISO9001:2015 </span></div>
+  <div id="right"><span> Certified</span></div>
     <div
       className="partial-width-image"
       style={{

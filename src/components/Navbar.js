@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/hytron-logo.svg'
+import logo from '../img/hytron-logo.png'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { FaArrowAltCircleUp } from 'react-icons/fa';
@@ -22,6 +22,10 @@ const Navbar = class extends React.Component {
     <Link to="/" className="logolink" title="Logo - Back To Home">
     <img className="logo" src={logo} alt="Hytron Manufacturing Logo" style={{ width: '150px', position: 'fixed' }} />
     </Link>
+    
+   
+
+   
     
 <input className="menu-btn" type="checkbox" id="menu-btn" />
 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>

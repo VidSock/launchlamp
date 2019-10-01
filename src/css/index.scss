@@ -430,6 +430,21 @@ div.column{ padding:1rem 1.5rem;}
   // border:1px solid #ccc !important;
 }
 
+footer {
+  clip-path: 
+  polygon(
+    0% 30px,                 /* top left */
+    30px 0%,                 /* top left */
+    calc(100% - 30px) 0%,    /* top right */
+    100% 30px,               /* top right */
+    100% calc(100% - 0px),  /* bottom right */
+    calc(100% - 30px) 100%,  /* bottom right */
+    30px 100%,               /* bottom left */
+    0 calc(100% - 0px)      /* bottom left */
+  );
+  // border:1px solid #ccc !important;
+}
+
 
 body.light{
 background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.20' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
@@ -515,7 +530,7 @@ body.dark, body.dark .outer .container {
   box-shadow: inherit;}
   
   body.dark .outer .contactpanel { background-color: #222;}
-  body.light .outer .contactpanel{ background-color: #dedede;}
+  body.light .outer .contactpanel{ background-color: #e9eaec;}
 
 body.light {
   background-color: #ffffff;

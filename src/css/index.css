@@ -16,6 +16,24 @@ body {
   animation: slide 0.8s forwards;
   animation-delay: .7s; }
 
+#left span {
+  font-size: 500%;
+  text-shadow: 4px 4px 4px 0 black;
+  text-decoration: overline;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 30%; }
+
+#right span {
+  font-size: 300%;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 30%; }
+
 @-webkit-keyframes slide {
   100% {
     left: -51vw; } }

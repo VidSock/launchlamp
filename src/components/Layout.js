@@ -40,8 +40,8 @@ const TemplateWrapper = ({ children }) => {
       
       <Navbar />
       
-	  <div id="left"></div>
-     <div id="right"></div>
+	  <div id="left"><span>ISO9001</span></div>
+     <div id="right"><span>:2015</span></div>
       <main>{children}</main>
       
       

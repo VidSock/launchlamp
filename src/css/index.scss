@@ -29,10 +29,15 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
 	color:#fff;
 	font-weight: normal;
 	font-size:300%;
-	text-shadow: 0px 3px 0px black;
-	margin:2rem 0 0 10%;
-	word-wrap: break-word;
+	text-shadow: 0px 2px 0px black;
+	word-wrap:break-word;
     }
+    
+     body.light .has-text-weight-bold{
+	color:#ccc;
+    }
+    
+    
     .has-text-weight-color{
     background-color: #DB2600;
     color: white;
@@ -429,7 +434,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 	font-weight: normal;
 	font-size:400%;
 	text-shadow: 0px 5px 0px black;
-	margin:2rem 0 0 2rem;
+	margin:0 0 0 0;
 	word-wrap: break-word;
     }
 

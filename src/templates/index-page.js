@@ -45,6 +45,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             lineHeight: '1',
+            color: '#fff',
+            margin: '1rem 0 0 10%',
           }}
         >
           {title}

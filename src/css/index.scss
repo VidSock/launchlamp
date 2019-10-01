@@ -260,12 +260,15 @@ input[type="submit"],
 }
 
 .header .logo {
-  display: block;
-  float: left;
   padding: 0 2rem 0 1.5rem;
   text-decoration: none;
   background:none;
   max-width: 150px;
+  
+/*
+  max-height: 55px;
+  transition: max-height 2s ease-out;
+*/
 /*
   max-height: 55px;
   height:55px;

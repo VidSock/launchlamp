@@ -47,7 +47,6 @@ export const IndexPageTemplate = ({
           style={{
             lineHeight: '1',
             color: '#fff',
-            margin: '1rem 0 0 10%',
           }}
         >
           {title}
@@ -55,8 +54,7 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-color is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+           
           }}
         >
           {subheading}

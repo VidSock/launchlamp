@@ -92,9 +92,11 @@ body {
 .has-text-weight-bold {
   color: #fff;
   font-weight: normal;
-  font-size: 300%;
+  font-size: 280%;
   text-shadow: 0px 2px 0px black;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  padding: 1rem 0;
+  margin: 1rem 0 0 3rem; }
 
 body.light .has-text-weight-bold {
   color: #ccc; }
@@ -453,8 +455,9 @@ div.column {
     font-weight: normal;
     font-size: 400%;
     text-shadow: 0px 5px 0px black;
-    margin: 0 0 0 0;
-    word-wrap: break-word; } }
+    word-wrap: break-word;
+    padding: 1rem 0;
+    margin: 1rem 0 0 3rem; } }
 
 @media (min-width: 1024px) {
   #menu {

@@ -18,7 +18,7 @@ export const ExamplePageTemplate = ({
   description,
   intro,
 }) => (
-  <div className="outer">
+  <div className="outer intro">
     <div
       className="partial-width-image"
       style={{

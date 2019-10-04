@@ -16,7 +16,7 @@ const Navbar = class extends React.Component {
     return (
 	    
           
-<Headroom>
+<Headroom style={{ zIndex: '5', }}>
     <header className="header">
     
     <Link to="/" className="logolink" title="Logo - Back To Home">

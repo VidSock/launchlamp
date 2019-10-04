@@ -21,7 +21,7 @@ const TemplateWrapper = ({ children }) => {
 
   const { title, description } = useSiteMetadata()
   return (
-    <div id="topofpage" name="topofpage">
+    <><div id="topofpage" name="topofpage"></div>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -37,10 +37,6 @@ const TemplateWrapper = ({ children }) => {
       
       
       <Navbar />
-      
-      
- <div id="left"><span>ISO9001 </span></div>
-  <div id="right"><span> :2015 Certified</span></div>
   
       <main>{children}</main>
       
@@ -48,8 +44,8 @@ const TemplateWrapper = ({ children }) => {
      <Contact />
       
       <Footer />
-      
-    </div>
+      </>
+    
   )
 }
 

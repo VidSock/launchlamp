@@ -104,38 +104,49 @@ body {
 p {
   padding: 1rem 0; }
 
-#left {
-  z-index: 1;
+.intro:before {
   position: absolute;
-  left: 0vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 57%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: left top;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
   background-image: linear-gradient(#3a3a3b 40%, #111212 100%);
   animation: slide 0.6s forwards;
-  animation-delay: .5s;
+  animation-delay: .8s;
   overflow: hidden;
-  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%); }
-
-#left span {
+  content: "ISO9001:2015";
   font-size: 180%;
-  text-shadow: 4px 4px 4px 0 black;
-  text-decoration: overline;
-  color: white;
-  font-weight: bold;
-  position: absolute;
-  right: 14%;
-  top: 30%; }
+  color: #f8f8fc;
+  text-shadow: 12px 7px 15px 12px black; }
 
-#right span {
-  font-size: 180%;
-  color: white;
-  text-shadow: 0 2px 2px 0 black;
-  text-decoration: overline;
-  font-weight: bold;
+.intro:after {
   position: absolute;
-  left: 24%;
-  top: 30%; }
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 57%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+  background-image: linear-gradient(#3a3a3b 40%, #111212 100%);
+  animation: slide 0.6s forwards;
+  animation-delay: .8s;
+  overflow: hidden;
+  content: "Certified";
+  font-size: 180%;
+  color: #f8f8fc;
+  text-shadow: 12px 7px 15px 12px black; }
 
 @-webkit-keyframes slide {
   100% {
@@ -145,49 +156,6 @@ p {
   100% {
     width: 0; } }
 
-#right {
-  display: block;
-  z-index: 2;
-  position: absolute;
-  right: 0vw;
-  width: 57%;
-  height: 100vh;
-  background-image: linear-gradient(#3a3a3b 40%, #111212 100%);
-  animation: slideR 0.6s forwards;
-  animation-delay: .5s;
-  overflow: hidden;
-  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%); }
-
-@-webkit-keyframes slideR {
-  100% {
-    width: 0;
-    z-index: -1; } }
-
-@keyframes slideR {
-  100% {
-    width: 0;
-    z-index: -1; } }
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-/*
-.logo {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  animation:fadeIn 1s linear;
-}
-*/
 .outer .container {
   padding: 1rem; }
 
@@ -363,15 +331,7 @@ input.special {
   width: 50%;
   margin-right: 2rem; }
 
-/*
-    body{
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23656469' fill-opacity='0.3'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
-
-
-body{
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.16' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
-*/
-h1, h2, h3, h4, .h1, .h2, .h3, .h4, #menu, .header .menu-icon:before, input.special {
+h1, h2, h3, h4, .h1, .h2, .h3, .h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before {
   font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
   font-style: italic; }
 
@@ -526,6 +486,8 @@ div.column {
     justify-content: space-around; }
   [aria-current].logolink {
     background: none; }
+  .intro:after, .intro:before {
+    font-size: 380%; }
   .header ul li {
     display: flex;
     margin-right: 0rem; }
@@ -595,7 +557,9 @@ div.column {
   .header ul li a {
     border-bottom: 0px solid #444 !important;
     padding-top: 15px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+  .intro:after, .into:before {
+    font-size: 500%; } }
 
 .themeSlide {
   width: 80px;
@@ -678,7 +642,7 @@ body.dark * {
   will-change: transform;
   position: fixed;
   transition: opacity 0.5s linear;
-  z-index: 10; }
+  z-index: 3; }
 
 .headroom--pinned {
   transform: translateY(0%);
@@ -729,7 +693,7 @@ body.dark * {
   border: 1px solid;
   animation: slideDown 1s forwards; }
 
-.headroom--unpinned .themer {
+.headroom--unpinned .themer, .headroom--unpinned, .headroom--scrolled {
   display: none; }
 
 .headroom {
@@ -740,9 +704,6 @@ body.dark * {
   /* background:linear-gradient(#343435 0%, #131212 100%); */
   height: auto; }
 
-.headroom-wrapper {
-  height: 58px !important; }
-
 .back-to-top {
   display: block;
   position: fixed;
@@ -750,7 +711,7 @@ body.dark * {
   right: 1rem;
   transform: translateY(100vh);
   padding: 0.3rem 0.3rem 0 0.3rem;
-  z-index: 99999999;
+  z-index: 1;
   color: #fff !important;
   font-size: 340%;
   font-weight: bold;

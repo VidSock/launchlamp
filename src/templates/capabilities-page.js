@@ -11,9 +11,8 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
 
 
   return (
-    <section className="outer section">
-    <div id="left"><span>ISO9001:2015 </span></div>
-  <div id="right"><span> Certified</span></div>
+    <section className="outer intro section">
+    
     <ScrollAnimation animateIn="moveRight" animateOnce={true}>
       <div className="container">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">

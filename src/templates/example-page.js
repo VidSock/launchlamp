@@ -50,8 +50,8 @@ export const ExamplePageTemplate = ({
 			textShadow: '0px 1px 4px black',
             color: 'white',
             lineHeight: '1',
-            padding: '0.25em',
-            fontSize: '500%',
+            padding: '2rem 0 0 3rem',
+            fontSize: '300%',
           }}
         >
           {title}

@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Contact from '../components/Contact'
 import 'typeface-francois-one'
 import "../css/index.scss"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
 
@@ -21,7 +21,7 @@ const TemplateWrapper = ({ children }) => {
 
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <div id="topofpage" name="topofpage">
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -46,9 +46,9 @@ const TemplateWrapper = ({ children }) => {
       
       
      <Contact />
-      <ScrollAnimation animateIn="fadeIn">
+      
       <Footer />
-      </ScrollAnimation>
+      
     </div>
   )
 }

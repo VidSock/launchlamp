@@ -162,13 +162,32 @@ p {
 @-webkit-keyframes slideR {
   100% {
     width: 0;
-    border: 0; } }
+    z-index: -1; } }
 
 @keyframes slideR {
   100% {
     width: 0;
-    border: 0; } }
+    z-index: -1; } }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*
+.logo {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation:fadeIn 1s linear;
+}
+*/
 .outer .container {
   padding: 1rem; }
 
@@ -300,17 +319,18 @@ footer {
   outline: 0;
   padding: 1em;
   border-radius: 4px;
-  background: #e0e1eb;
+  background: #d0d2da;
   margin-top: 1.3em;
   box-shadow: 0px 0px 1px 1px #999;
-  color: #222;
-  width: 99%; }
+  color: #333;
+  width: 100%; }
 
 .form textarea {
-  height: 80%; }
+  height: 85%; }
 
 .actionable {
   width: 100%;
+  position: relative;
   text-align: center;
   justify-content: center;
   margin-bottom: 3rem; }
@@ -327,7 +347,13 @@ input.special {
   border-radius: 4px;
   width: 40%;
   box-shadow: 1px 2px 3px 0px #554f4f;
-  text-shadow: 0px 1px 0px black; }
+  text-shadow: 0px 1px 0px black;
+  position: relative; }
+
+input.special:after {
+  content: 'FaArrowAltCircleRight';
+  position: absolute;
+  right: 20px; }
 
 .half {
   justify-content: space-around;
@@ -339,7 +365,7 @@ input.special {
   margin-right: 1rem; }
 
 .left {
-  width: 40%;
+  width: 50%;
   margin-right: 2rem; }
 
 /*
@@ -654,7 +680,7 @@ body.dark * {
 .headroom {
   will-change: transform;
   position: fixed;
-  transition: all 0.4s ease-out;
+  transition: opacity 0.5s linear;
   z-index: 10; }
 
 .headroom--pinned {
@@ -737,5 +763,16 @@ body.dark * {
 .back-to-top svg, .back-to-top svg:visited {
   color: #fff; }
 
-body.light .back-to-top svg, .back-to-top svg:hover {
+body.light .back-to-top svg, body.light .back-to-top svg:visited {
+  color: #666; }
+
+body.light .back-to-top svg:hover, .back-to-top svg:hover {
   color: #DB2600; }
+
+@media print {
+  body {
+    color: #000;
+    background: #fff; }
+  #left, #right, .headroom-wrapper, main picture {
+    display: none !important;
+    height: 0px; } }

@@ -381,12 +381,12 @@ input.special {
     border:0; outline:0;
     padding: .2em 1rem;
     border-radius:(4px);
-    width:50%;
+    width:90%;
      box-shadow: 1px 2px 3px 0px #554f4f;
      text-shadow: 0px 1px 0px black;
      position:relative;
     }
-    input.special:after{content: '<span id="FaArrowAltCircleRight"></span>'; position:absolute; right:20px;}
+
 .half {
  justify-content: space-around;
  margin-bottom:1rem;
@@ -630,6 +630,8 @@ div.column{ padding:1rem 0rem;}
     max-width: 100%;
    }
 
+input.special {max-width: 50%;}
+	
 #left span, #right span{font-size: 340%;}
 
 div.column{ padding:1rem 1.5rem;}

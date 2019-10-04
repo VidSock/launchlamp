@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import logo from '../img/hytron-logo.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import { TiArrowUpOutline } from 'react-icons/ti';
+import { GoArrowUp } from 'react-icons/go';
 
 
 
@@ -17,7 +17,7 @@ const Navbar = class extends React.Component {
 	    
           
 <Headroom>
-    <header id="topofpage" name="topofpage" className="header">
+    <header className="header">
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
     <img className="logo" src={logo} alt="Hytron Manufacturing Logo" style={{ width: '150px', position: 'absolute', }} />
@@ -84,7 +84,7 @@ const Navbar = class extends React.Component {
         )}
       </ThemeToggler></div>
       
-      <a href="#topofpage" title="Back To Top" className="back-to-top"><TiArrowUpOutline /></a>
+      <a href="#topofpage" title="Back To Top" className="back-to-top"><GoArrowUp /></a>
 </Headroom>
         
       

@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import { FaArrowAltCircleRight } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 
 // const Contact = class extends React.Component {
 //   render() {
@@ -133,7 +133,7 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div className="actionable"><input type="submit" value="Send Message" className="special" /><FaArrowAltCircleRight style={{position: 'relative', top: '3px', left: '-20px', color: '#fff', fontSize: '120%',}} /></div>
+                <div className="actionable"><input type="submit" value="Send Message" className="special" /><FaEnvelope style={{position: 'relative', top: '3px', left: '-30px', color: '#fff', fontSize: '120%',}} /></div>
               </form>
               
             </div>

@@ -4,7 +4,7 @@ import Layout from '../components/Layout-noc'
 const Disclaimer = () => (
   <Layout>
     <section className="outer section section--gradient">
-      <div className="container" style={{padding: '0 2rem'}}>
+      <div className="container" style={{padding: '2rem'}}>
       <h1>Disclaimer</h1>
       <p>The www.hytronmanufacturing.com Web Site (the &#8220;Site&#8221;) is an online information service provided by Hytron Manufacturing (&#8220;www.hytronmanufacturing.com &#8220;), subject to your compliance with the terms and conditions set forth below. PLEASE READ THIS DOCUMENT CAREFULLY BEFORE ACCESSING OR USING THE SITE. BY ACCESSING OR USING THE SITE, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS SET FORTH BELOW. IF YOU DO NOT WISH TO BE BOUND BY THESE TERMS AND CONDITIONS, YOU MAY NOT ACCESS OR USE THE SITE. www.hytronmanufacturing.com MAY MODIFY THIS AGREEMENT AT ANY TIME, AND SUCH MODIFICATIONS SHALL BE EFFECTIVE IMMEDIATELY UPON POSTING OF THE MODIFIED AGREEMENT ON THE SITE. YOU AGREE TO REVIEW THE AGREEMENT PERIODICALLY TO BE AWARE OF SUCH MODIFICATIONS AND YOUR CONTINUED ACCESS OR USE OF THE SITE SHALL BE DEEMED YOUR CONCLUSIVE ACCEPTANCE OF THE MODIFIED AGREEMENT.</p>
 <h2>1. Copyright, Licenses and Idea Submissions.</h2>

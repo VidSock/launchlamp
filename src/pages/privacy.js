@@ -4,7 +4,7 @@ import Layout from '../components/Layout-noc'
 const Privacy = () => (
   <Layout>
     <section className="outer section section--gradient">
-      <div className="container" style={{padding: '0 2rem'}}>
+      <div className="container" style={{padding: '2rem 2rem'}}>
       <h1>Privacy</h1>
       <h2>
 	Web Site Terms and Conditions of Use<br />

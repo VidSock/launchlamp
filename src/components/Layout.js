@@ -35,6 +35,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
       </Helmet>
       
+      
       <Navbar />
       
 	  <div id="left"><span>ISO9001:2015 </span></div>

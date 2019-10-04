@@ -6,7 +6,84 @@ $primary: #DB2600;
 $red: #ff0000;
 
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 html{font-size: 100%;}
 body{margin: 0; padding:0;}
@@ -24,8 +101,8 @@ body{margin: 0; padding:0;}
     overflow: hidden;
 }
 
-#left span{font-size:200%; text-shadow: 4px 4px 4px 0 black; text-decoration: overline; color:white; font-weight: bold; position:absolute; right:2%; top:30%;}
-#right span{font-size:200%; color:white; text-shadow: 0 2px 2px 0 black; text-decoration: overline; font-weight: bold; position:absolute; left:1%; top:30%;}
+#left span{font-size:180%; text-shadow: 4px 4px 4px 0 black; text-decoration: overline; color:white; font-weight: bold; position:absolute; right:2%; top:30%;}
+#right span{font-size:180%; color:white; text-shadow: 0 2px 2px 0 black; text-decoration: overline; font-weight: bold; position:absolute; left:1%; top:30%;}
 
 @-webkit-keyframes slide {
     100% { width:0; }
@@ -99,11 +176,11 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
     .has-text-weight-bold{
 	color:#fff;
 	font-weight: normal;
-	font-size:280%;
+	font-size:250%;
 	text-shadow: 0px 2px 0px black;
 	word-wrap:break-word;
 	padding:1rem 0;
-	margin: 1rem 0 0 3rem,
+	margin: 1rem 0 0 1rem,
     }
     
      body.light .has-text-weight-bold{
@@ -311,7 +388,7 @@ input[type="submit"],
 .header ul li:first-child{border-top:1px solid; margin-top:10px; }
 .header ul li:last-child{margin-bottom:0;}
 
-.header ul li a{border-bottom:1px solid #444 !important; padding-top:20px; padding-bottom: 20px;}
+.header ul li a{ padding-top:20px; padding-bottom: 20px;}
 
 .header li a {
   display: block;
@@ -329,6 +406,8 @@ input[type="submit"],
   padding: 0 2rem 0 1.5rem;
   text-decoration: none;
   background:none;
+  width:200px !important;
+  max-width:inherit !important;
 }
 
 
@@ -693,5 +772,9 @@ text-shadow: 4px 3px 1px black;
 
 .back-to-top svg, .back-to-top svg:visited{color:#fff;}
 body.light .back-to-top svg, .back-to-top svg:hover{color:$primary;}
+
+
+
+
 
 

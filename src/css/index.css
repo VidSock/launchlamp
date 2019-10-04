@@ -1,3 +1,71 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
 html {
   font-size: 100%; }
 
@@ -18,7 +86,7 @@ body {
   overflow: hidden; }
 
 #left span {
-  font-size: 200%;
+  font-size: 180%;
   text-shadow: 4px 4px 4px 0 black;
   text-decoration: overline;
   color: white;
@@ -28,7 +96,7 @@ body {
   top: 30%; }
 
 #right span {
-  font-size: 200%;
+  font-size: 180%;
   color: white;
   text-shadow: 0 2px 2px 0 black;
   text-decoration: overline;
@@ -92,11 +160,11 @@ body {
 .has-text-weight-bold {
   color: #fff;
   font-weight: normal;
-  font-size: 280%;
+  font-size: 250%;
   text-shadow: 0px 2px 0px black;
   word-wrap: break-word;
   padding: 1rem 0;
-  margin: 1rem 0 0 3rem; }
+  margin: 1rem 0 0 1rem; }
 
 body.light .has-text-weight-bold {
   color: #ccc; }
@@ -288,7 +356,6 @@ input[type="submit"],
   margin-bottom: 0; }
 
 .header ul li a {
-  border-bottom: 1px solid #444 !important;
   padding-top: 20px;
   padding-bottom: 20px; }
 
@@ -305,7 +372,9 @@ input[type="submit"],
 .header .logo {
   padding: 0 2rem 0 1.5rem;
   text-decoration: none;
-  background: none; }
+  background: none;
+  width: 200px !important;
+  max-width: inherit !important; }
 
 /* menu */
 .header .menu {

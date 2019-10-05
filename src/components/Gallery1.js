@@ -47,10 +47,10 @@ const [currentImage, setCurrentImage] = useState(0);
 	  
 
     
-      
-        
+      <>
+        <h2 style={{textAlign: 'center', padding: '0', margin: '2rem 0 0 0',}}>Some of our work:</h2>
 
-  <div className="container" style={{margin: '2rem',}}>
+  <div className="container" style={{margin: '1rem 2rem 2rem 2rem',}}>
 
     <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
@@ -68,7 +68,7 @@ const [currentImage, setCurrentImage] = useState(0);
         ) : null}
       </ModalGateway>
     </div>
- 
+ </>
       
 
 

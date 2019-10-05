@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
-import Gallery1 from '../components/Gallery1'
+// import Gallery1 from '../components/Gallery1'
 import Navbar from '../components/Navbar'
 import Contact from '../components/Contact'
 import 'typeface-francois-one'
@@ -40,7 +40,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
   
       <main>{children}</main>
-      <Gallery1 />
+
       
      <Contact />
       

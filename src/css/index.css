@@ -356,8 +356,7 @@ input[type="submit"],
   background-color: #222;
   background-image: -webkit-linear-gradient(#393939 0%, #212121 100%);
   width: 100%;
-  height: 60px;
-  z-index: 3; }
+  height: 60px; }
 
 .header ul {
   margin: 0;
@@ -639,10 +638,12 @@ body.dark * {
   border-color: #3e3b3b !important; }
 
 .headroom {
+  z-index: 1 !important; }
+
+.headroom {
   will-change: transform;
   position: fixed;
-  transition: opacity 0.5s linear;
-  z-index: 3; }
+  transition: opacity 0.5s linear; }
 
 .headroom--pinned {
   transform: translateY(0%);

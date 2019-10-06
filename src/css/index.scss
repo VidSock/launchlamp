@@ -735,12 +735,12 @@ body.dark * {
 
 // Header
 
-.headroom{z-index: 2 !important;}
+.headroom{z-index: 1 !important;}
 .headroom {
   will-change: transform;
   position: fixed;
   transition: opacity .5s linear;
-//   z-index:3;
+
 }
 .headroom--pinned {
   transform: translateY(0%);
@@ -752,7 +752,7 @@ body.dark * {
 }
 .headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
 
-.themer { position:absolute; z-index:1; top:58px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 0 0 0 4px; color:#fff;
+.themer { position:absolute; z-index:0; top:58px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 0 0 0 4px; color:#fff;
 }
 .headroom--unfixed:before,
 .headroom--pinned:before{

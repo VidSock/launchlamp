@@ -588,7 +588,7 @@ input.special {max-width: 50%;}
 
 div.column{ padding:1rem 1.5rem;}
 
-.outer .container{padding:1rem; margin:1rem 13%;  border-radius: 10px; }
+.outer .container{padding:1rem; margin:1rem 12%;  border-radius: 10px; }
 
 .footer .outer .container{padding:0; margin:1rem; border:0px solid #f0eded;  border-radius: 10px; background:inherit;}
 .container {
@@ -624,10 +624,15 @@ footer {
 
 body.light{
 background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
+
+// body.light, body.dark{background-image: url('../img/graph-paper.svg'); background-attachment: fixed; background-size: 20%; animation: fadeIn 3s;}
+
+
+
  body.dark{
 background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
 
-body.dark:after, body.light:after{content: (''); background-image: url('../img/hytron-bg.svg'); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1;  }
+body.dark:after, body.light:after{content: (''); background-image: url('../img/hytron-bg.svg'); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 6s; }
 
 
 
@@ -738,7 +743,7 @@ body.dark * {
   border-color: #3e3b3b ; }
 // Theme switcher
 
-.react-images__positioner{z-index: 6 !important;}
+.react-images__positioner{z-index: 2 !important;}
 
 
 // Header

@@ -521,7 +521,7 @@ div.column {
     padding: 1rem 1.5rem; }
   .outer .container {
     padding: 1rem;
-    margin: 1rem 13%;
+    margin: 1rem 12%;
     border-radius: 10px; }
   .footer .outer .container {
     padding: 0;
@@ -546,7 +546,8 @@ div.column {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1; }
+    z-index: -1;
+    animation: fadeIn 6s; }
   .has-text-weight-bold {
     color: #fff;
     font-weight: normal;
@@ -649,7 +650,7 @@ body.dark * {
   border-color: #3e3b3b; }
 
 .react-images__positioner {
-  z-index: 6 !important; }
+  z-index: 2 !important; }
 
 .headroom {
   z-index: 2 !important; }

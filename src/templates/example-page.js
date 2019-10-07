@@ -87,8 +87,8 @@ export const ExamplePageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>
-                <div className="columns">
-                  <div className="column">
+                <div className="">
+                  <div className="columnz">
                     <h3>
                       {heading}
                     </h3>
@@ -96,7 +96,7 @@ export const ExamplePageTemplate = ({
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
-                <div className="columns">
+                <div className="column">
                   <div className="column centered">
                     <Link className="btn" to="/products">
                       See all products

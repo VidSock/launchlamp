@@ -4,7 +4,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const FeatureGrid = ({ gridItems }) => (
-  <ScrollAnimation animateIn="fadeIn"><div className="columns is-multiline">
+  <ScrollAnimation animateIn="fadeIn"><div className="column is-multiline">
     {gridItems.map(item => (
       <div key={item.text} className="column is-6">
         <section className="section">
@@ -14,7 +14,7 @@ const FeatureGrid = ({ gridItems }) => (
                 minWidth: '100%',
                 display: 'block',
                 border: '0px solid',              
-                marginRight: '2rem',
+                
               }}
             >
               <PreviewCompatibleImage imageInfo={item} />

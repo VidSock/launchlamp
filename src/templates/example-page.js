@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
+ import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
@@ -96,21 +96,21 @@ export const ExamplePageTemplate = ({
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
-                <div className="column">
-                  <div className="column centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
+                
                
+                 
+                 
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
+    <div className="container"><Gallery1 /></div>
   </div>
+  
+
 )
 
 ExamplePageTemplate.propTypes = {

@@ -13,7 +13,7 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
   return (
     <section className="outer intro section media">
     
-    <ScrollAnimation animateIn="moveRight" animateOnce={true}>
+    <ScrollAnimation animateIn="moveRight" animateOnce={true} delay={1400}>
       <div className="container">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}

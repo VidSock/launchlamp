@@ -568,7 +568,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 
 #menu{font-size:1rem;}
 
-p{line-height: 2rem; max-width:998px;}
+p{line-height: 1.5rem; max-width:998px;}
 // BASE TYPOGRAPHY
 
 textarea,
@@ -945,6 +945,8 @@ body.dark * {
 
 // Header
 
+.react-images__blanket{background-color:#222 !important; opacity: 1 !important; z-index: 2 !important;}
+
 .headroom{z-index: 2 !important;}
 .headroom {
   will-change: transform;
@@ -998,7 +1000,7 @@ body.dark * {
 // .headroom-wrapper{height:58px !important;}
 
 .back-to-top{display: block; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh); padding:0; height:70px; width:70px; 
-z-index:1;
+z-index:0;
 color: #fff !important;
 font-size:440%;
 font-weight: bold;

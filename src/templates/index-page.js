@@ -46,7 +46,7 @@ export const IndexPageTemplate = ({
         className="media"
       >
       
-        <ScrollAnimation animateIn="bounceInDown"  delay={1400}>
+        <ScrollAnimation animateIn="bounceInDown"  delay={1000}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -63,7 +63,7 @@ export const IndexPageTemplate = ({
         </h1>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="bounceInRight" delay={1400}>
+        <ScrollAnimation animateIn="bounceInRight" delay={1000}>
         <h3
           className="narrow txtshadow mobile-txt"
           style={{
@@ -80,7 +80,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         
-        <ScrollAnimation animateIn="bounceInUp" delay={1400}>
+        <ScrollAnimation animateIn="bounceInUp" delay={1000}>
         <h3
           className="black txtshadow mobile-txt"
           style={{
@@ -98,7 +98,7 @@ export const IndexPageTemplate = ({
         
         
         
-        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1400} animateOnce={true}>
+        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1000} animateOnce={true}>
         <a href="#contact">
         <button style={{
            position: 'absolute',

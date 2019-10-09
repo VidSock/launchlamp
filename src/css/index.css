@@ -474,7 +474,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, #menu, .header .menu-icon:before, input.spec
   font-size: 1rem; }
 
 p {
-  line-height: 2rem;
+  line-height: 1.5rem;
   max-width: 998px; }
 
 textarea,
@@ -790,6 +790,11 @@ body.dark * {
 .react-images__positioner {
   z-index: 2 !important; }
 
+.react-images__blanket {
+  background-color: #222 !important;
+  opacity: 1 !important;
+  z-index: 2 !important; }
+
 .headroom {
   z-index: 2 !important; }
 
@@ -867,7 +872,7 @@ body.dark * {
   padding: 0;
   height: 70px;
   width: 70px;
-  z-index: 1;
+  z-index: 0;
   color: #fff !important;
   font-size: 440%;
   font-weight: bold;

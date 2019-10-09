@@ -98,13 +98,13 @@ export const IndexPageTemplate = ({
         
         
         
-        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1400} animateOnce={false}>
+        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1400} animateOnce={true}>
         <a href="#contact">
         <button style={{
            position: 'absolute',
            margin: '0 auto',
-		   top: '60vh',
-           right: '3%',
+		   top: '50vh',
+           right: '12%',
            color: 'white',
            background: '#DB2600',
            padding: '.5rem 1rem .5rem 3rem',

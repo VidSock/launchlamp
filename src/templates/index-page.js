@@ -118,7 +118,7 @@ export const IndexPageTemplate = ({
         
         
   
-        <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} style={{position:'absolute', width: '100%', textAlign: 'center', bottom:'14%', fontSize: '80%', color: '#fff',}}>
+        <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{position:'absolute', width: '100%', textAlign: 'center', bottom:'14%', fontSize: '80%', color: '#fff',}}>
         <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
         
         

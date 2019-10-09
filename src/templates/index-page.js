@@ -98,23 +98,22 @@ export const IndexPageTemplate = ({
         
         
         
-        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1000} animateOnce={true}>
+        <ScrollAnimation animateIn="bounceInUp" duration={1} delay={1000} animateOnce={true} style={{
+           position: 'absolute',
+           margin: '10vh 0 0 0',
+		   bottom: '0 !important',
+           right: '16%',
+          }}>
         <a href="#contact">
         <button style={{
-           position: 'absolute',
-           margin: '0 auto',
-		   top: '50vh',
-           right: '12%',
-           color: 'white',
+	       color: 'white',
            background: '#DB2600',
            padding: '.5rem 1rem .5rem 3rem',
            borderRadius: '8px',
            fontSize: '170%',
-//            textTransform: 'uppercase',
            cursor: 'pointer',
-           animation: 'fadeIn 3s',
-          }}>
-          <IoIosHelpCircle style={{position:'absolute', left:'5%', top:'8px', fontSize: '110%',}} />Get a Quote</button></a>
+           }}>
+          <IoIosHelpCircle style={{position:'absolute', left:'5%', top:'10px', fontSize: '110%',}} />Get a Quote</button></a>
         </ScrollAnimation>
         
         

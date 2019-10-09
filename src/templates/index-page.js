@@ -84,7 +84,7 @@ export const IndexPageTemplate = ({
         <h3
           className="black txtshadow mobile-txt"
           style={{
-           fontSize:'2.5rem',
+           fontSize:'2.2rem',
            color: 'white',
            position: 'relative',
 		   paddingTop: '1rem',

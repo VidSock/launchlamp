@@ -15,7 +15,7 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
     
     <ScrollAnimation animateIn="moveRight" animateOnce={true} delay={1400}>
       <div className="container">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              <h2 className="h2">
                 {title}
               </h2>
               <PageContent className="content" content={content} />

@@ -671,21 +671,6 @@ div.column {
   .back-to-top {
     bottom: 25vh !important;
     right: 3% !important; }
-  body.light {
-    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
-  body.dark {
-    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
-  body.dark:after, body.light:after {
-    content: "";
-    background-image: url("../img/hytron-bg.svg");
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    animation: fadeIn 6s; }
   .has-text-weight-bold {
     color: #fff;
     font-weight: normal;
@@ -754,9 +739,27 @@ div.column {
 .themeSlide input[type=checkbox]:checked + label {
   left: 43px; }
 
+body.light {
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+
+body.dark {
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+
+body.dark:after, body.light:after {
+  content: "";
+  background-image: url("../img/hytron-bg.svg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: fadeIn 6s; }
+
 body.dark, body.dark .container {
   background-color: #333;
-  color: #fff;
+  color: #f9f9fa;
   box-shadow: inherit; }
 
 body.light .container {
@@ -766,11 +769,11 @@ body.dark .outer .innerpanel {
   background-color: #222; }
 
 body.light .outer .innerpanel {
-  background-color: #dedede; }
+  background-color: #f1f2f7; }
 
 body.light {
   background-color: #cfcfcf;
-  color: #222; }
+  color: #333; }
 
 body.dark a {
   color: #DB2600; }
@@ -870,16 +873,13 @@ body.dark * {
   right: 45%;
   transform: translateY(100vh);
   padding: 0;
-  height: 70px;
+  height: 65px;
   width: 70px;
   z-index: 0;
   color: #fff !important;
   font-size: 440%;
   font-weight: bold;
-  background-color: #222;
-  border-radius: 6px;
-  opacity: .7;
-  text-shadow: 4px 3px 1px black; }
+  opacity: .8; }
 
 .back-to-top svg, .back-to-top svg:visited {
   color: #fff; }

@@ -84,6 +84,7 @@ export const ExamplePageTemplate = ({
                     <h2 className="title">{mainpitch.title}</h2>
                   </div>
                   <div className="tile">
+                  <br />
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>

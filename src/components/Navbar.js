@@ -58,9 +58,9 @@ const Navbar = class extends React.Component {
               
               
               <li>
-              <Link className="navbar-item" to="/#contact">
+              <a className="navbar-item" href="#contact">
                 Get A Quote
-              </Link>
+              </a>
               </li>
               
               

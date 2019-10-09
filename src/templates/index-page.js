@@ -8,7 +8,6 @@ import Features from '../components/Features'
 
 
 
-
 export const IndexPageTemplate = ({
   image,
   title,

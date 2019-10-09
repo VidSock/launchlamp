@@ -11,7 +11,7 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
 
 
   return (
-    <section className="outer intro section">
+    <section className="outer intro section media">
     
     <ScrollAnimation animateIn="moveRight" animateOnce={true}>
       <div className="container">

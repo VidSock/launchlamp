@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
-import { IoIosAperture } from 'react-icons/io'
+import { IoIosHelpCircle, IoIosArrowDropdownCircle } from 'react-icons/io'
 
 export const IndexPageTemplate = ({
   image,
@@ -46,12 +46,12 @@ export const IndexPageTemplate = ({
         className="media"
       >
       
-        <ScrollAnimation animateIn="bounceInDown" delay={100}>
+        <ScrollAnimation animateIn="bounceInDown"  delay={1400}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-            fontSize: '5rem',
+            fontSize: '4.2rem',
            position: 'relative',
 //            top: '100px',
            right: '3%',
@@ -59,45 +59,46 @@ export const IndexPageTemplate = ({
             textAlign: 'right',  
           }}
         >
-          Follow me
+          Precision Parts
         </h1>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="bounceInRight">
+        <ScrollAnimation animateIn="bounceInRight" delay={1400}>
         <h3
           className="narrow txtshadow mobile-txt"
           style={{
            fontSize:'3rem',
            color: 'white',
            position: 'relative',
-        right: '5%',
+        right: '3.4%',
             textAlign: 'right', 
+            paddingTop: '1rem',
           }}
         >
-          into the
+          Quality Manufacturing
         </h3>
         </ScrollAnimation>
         
         
-        <ScrollAnimation animateIn="bounceInUp">
+        <ScrollAnimation animateIn="bounceInUp" delay={1400}>
         <h3
-          className="black txtshadow-3d mobile-txt"
+          className="black txtshadow mobile-txt"
           style={{
-           fontSize:'7rem',
+           fontSize:'2.5rem',
            color: 'white',
            position: 'relative',
-//            top: '230px',
-           right: '3%',
+		   paddingTop: '1rem',
+           right: '5%',
             textAlign: 'right', 
           }}
         >
-          Night
+          Done right AND on time
         </h3>
         </ScrollAnimation>
         
         
         
-        <ScrollAnimation animateIn="fadeIn" delay={1000} animateOnce={false}>
+        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1400} animateOnce={false}>
         <a href="#contact">
         <button style={{
            position: 'absolute',
@@ -105,7 +106,7 @@ export const IndexPageTemplate = ({
 		   top: '60vh',
            right: '3%',
            color: 'white',
-           background: '#1257a2',
+           background: '#DB2600',
            padding: '.5rem 1rem .5rem 3rem',
            borderRadius: '8px',
            fontSize: '170%',
@@ -113,12 +114,12 @@ export const IndexPageTemplate = ({
            cursor: 'pointer',
            animation: 'fadeIn 3s',
           }}>
-          <IoIosAperture style={{position:'absolute', left:'5%', top:'8px', fontSize: '110%',}} />Contact Todd</button></a>
+          <IoIosHelpCircle style={{position:'absolute', left:'5%', top:'8px', fontSize: '110%',}} />Get a Quote</button></a>
         </ScrollAnimation>
         
         
         
-        
+        <div className="scrolldown txtshadow-header" style={{position:'absolute', left:'40%', bottom:'8px', fontSize: '110%', color: '#ffffff',}}>[SCROLL <IoIosArrowDropdownCircle /> MORE]</div>
         
         </div>
       </div>

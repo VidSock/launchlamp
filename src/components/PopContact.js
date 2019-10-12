@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import { FaTimesCircle } from 'react-icons/fa';
 import Contact from '../components/Contact'
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
@@ -40,20 +41,21 @@ body { background: #ccc; }
   }
   
   .modal-close {
-    color: #444;
-    position: absolute;
-    right: 5px;
-    top: 5px;
+    color: #ddd;
+    position: relative;
+    left: 74vw;
+    top: 35px;
     padding-top: 0;
-    background: #fff;
-    font-size: 20px;
+//     background: #fff;
+	font-size:28px;
     width: 25px;
     height: 25px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    &:hover { color: #333;
-    }        
+    &:hover { color: #DB2600;
+    }
+    
   }
      
   .modal-content-btn {
@@ -94,12 +96,12 @@ body { background: #ccc; }
       opacity: 1;
       background-color: transparent;
       max-width: 900px;
-      width: 85%;
+      width: auto;
       height: auto;
       padding: 10px 20px;
       position: fixed !important;
       left: calc(10% - 10px);
-      top: 20px;
+      top: 0px;
       border-radius: 4px;
       z-index: 4;
       pointer-events: auto;
@@ -113,16 +115,26 @@ body { background: #ccc; }
 }
 
 @media (max-width: 600px){
+	.modal-container .modal-btn{text-align:left !important; padding-left:1.8rem;}
+	
 	#modal-toggle {
 	&.active ~ .modal-content,
     &:checked ~ .modal-content {
 	    left:0 !important;
 	    width: 100% !important;
 	    text-align: left !important;
-	   }
-	  }
 	    
-.modal-container .modal-btn{text-align:left !important; padding-left:1.8rem;}
+	    
+	    
+	.modal-close{
+	   left: 94%;
+	   font-size:28px;
+	  }
+	  
+	  
+	}
+	   
+
 	    
 }
 `
@@ -136,8 +148,8 @@ const PopupContact = () => (
   <label className="modal-btn" htmlFor="modal-toggle">Get A Quote</label> 
   <label className="modal-backdrop" htmlFor="modal-toggle"></label>
   
-  <div className="modal-content">
-    <label className="modal-close" htmlFor="modal-toggle">&#x2715;</label>
+  <div className="modal-content" style={{position: 'relative',}}>
+    <label className="modal-close" htmlFor="modal-toggle"><FaTimesCircle /></label>
     <Contact />
   </div>      
 </div>

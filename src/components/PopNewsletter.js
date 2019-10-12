@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
+import { FaTimesCircle } from 'react-icons/fa';
+
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 body { height: 100vh; background: #ccc; }
@@ -46,7 +48,7 @@ body { height: 100vh; background: #ccc; }
     right: 5px;
     top: 5px;
     padding-top: 0;
-    background: #fff;
+/*     background: #fff */;
     font-size: 20px;
     width: 25px;
     height: 25px;
@@ -132,12 +134,12 @@ const Popup = () => (
 <div className="news-container innerpanel">
 
   <input id="news-toggle" type="checkbox" />
-  <label className="news-btn" htmlFor="news-toggle">Follow Now</label> 
+  <label className="news-btn" htmlFor="news-toggle">Get Our Newsletter</label> 
   <label className="news-backdrop" htmlFor="news-toggle"></label>
   <div className="news-content innerpanel">
-    <label className="news-close" htmlFor="news-toggle">&#x2715;</label>
-    <h2>news title</h2><hr />
-    <p>Hello from inside the news!</p> 
+    <label className="news-close" htmlFor="news-toggle"><FaTimesCircle /></label>
+    <h2>Hytron Newsletter</h2><hr />
+    <p>You are now signed up!</p> 
     <label className="news-content-btn" htmlFor="news-toggle">OK</label>   
   </div>          
 </div>

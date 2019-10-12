@@ -54,6 +54,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {

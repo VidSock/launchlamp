@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
 import Navbar from '../components/Navbar'
-import Contact from '../components/Contact'
+// import Contact from '../components/Contact'
 import 'typeface-francois-one'
 import "../css/index.scss"
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children }) => {
       <main>{children}</main>
 
       
-     <Contact />
+
       
       <Footer />
       </>

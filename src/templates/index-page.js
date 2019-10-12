@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
+import PopNewsletter from '../components/PopNewsletter'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
-import { IoIosHelpCircle, IoIosArrowDropdownCircle } from 'react-icons/io'
+import { IoIosArrowDropdownCircle } from 'react-icons/io'
 
 export const IndexPageTemplate = ({
   image,
@@ -18,7 +19,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   
-  <div className="outer intro">
+  <div className="outer intro media">
   
   
   
@@ -42,6 +43,10 @@ export const IndexPageTemplate = ({
           lineHeight: '1',
           flexDirection: 'column',
           padding: '2rem 0',
+          position: 'relative',
+          width: '100%',
+          height: '100vh',
+          
         }}
         className="media"
       >
@@ -98,22 +103,8 @@ export const IndexPageTemplate = ({
         
         
         
-        <ScrollAnimation animateIn="bounceInUp" duration={1} delay={1000} animateOnce={true} style={{
-           position: 'absolute',
-           margin: '10vh 0 0 0',
-		   bottom: '0 !important',
-           right: '16%',
-          }}>
-        <a href="#contact">
-        <button style={{
-	       color: 'white',
-           background: '#DB2600',
-           padding: '.5rem 1rem .5rem 3rem',
-           borderRadius: '8px',
-           fontSize: '170%',
-           cursor: 'pointer',
-           }}>
-          <IoIosHelpCircle style={{position:'absolute', left:'5%', top:'10px', fontSize: '110%',}} />Get a Quote</button></a>
+        <ScrollAnimation animateIn="fadeIn" duration={3} delay={1000} animateOnce={false}>
+        <PopNewsletter />
         </ScrollAnimation>
         
         

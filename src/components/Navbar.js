@@ -4,7 +4,7 @@ import logo from '../img/hytron-logo.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
-
+import PopContact from '../components/PopContact'
 
 
 
@@ -20,7 +20,7 @@ const Navbar = class extends React.Component {
     <header className="header">
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
-    <img className="logo" src={logo} alt="Hytron Manufacturing Logo" style={{ width: '150px', position: 'absolute', }} />
+    <img className="logo" src={logo} alt="Hytron Manufacturing Logo" />
     </Link>
     
    
@@ -57,10 +57,9 @@ const Navbar = class extends React.Component {
               
               
               
+
               <li>
-              <a className="navbar-item" href="#contact">
-                Get A Quote
-              </a>
+             <PopContact />
               </li>
               
               

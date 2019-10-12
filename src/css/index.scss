@@ -13,7 +13,9 @@ $red: #ff0000;
   box-sizing: border-box;
 }
 
-.media{overflow-x: hidden;}
+
+body {overflow-x: hidden;}
+.full-width-image, .media{overflow: hidden;}
 
 /* Remove default padding */
 ul[class],
@@ -641,9 +643,10 @@ input[type="submit"],
   background-color: #222;
   background-image: -webkit-linear-gradient(#393939 0%, #212121 100%);
 //   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  width: 100%;
+  width: 100vw;
   height:60px;
 //   z-index: 2;
+padding:0 2rem;
  
 }
 
@@ -673,10 +676,10 @@ input[type="submit"],
 }
 
 .header .logo {
-  padding: 0 2rem 0 1.5rem;
+  padding: 3px 1rem 3px 0;
   text-decoration: none;
   background:none;
-  width:200px !important;
+  height: 100%;
   max-width:inherit !important;
 }
 
@@ -686,14 +689,13 @@ input[type="submit"],
 .header .menu {
   clear: both;
   max-height: 0;
-  margin-top:55px;
+//   margin-top:55px;
 }
 
 /* menu icon */
 
 .header .menu-icon {
   cursor: pointer;
-
   float: right;
   padding: 20px 20px;
   position: relative;
@@ -769,20 +771,20 @@ div.column{ padding:1rem 0rem;}
 
 [aria-current] {
   background-color: #666;
-  padding: .5rem; 
+//   padding: .5rem; 
   cursor: default; 
    }
   
  [aria-current].logolink {
   background-color: none;
-  padding: inherit; cursor: default; }
+  padding: 0; cursor: default; }
 
 
 
 
 
 
-
+header .logo{max-height: 60px; float:left;}
 
 
 /* 48em = 768px */
@@ -791,8 +793,8 @@ div.column{ padding:1rem 0rem;}
 	.header .menu {
   margin-top:0;
 }
-	.header {display: flex; justify-content: space-between;}
-	.header ul{display: flex; justify-content: space-around;}
+	.header {display: flex; justify-content: space-around;}
+	.header ul{display: flex; justify-content: space-around !important;}
    [aria-current].logolink {
    background:none;
   }
@@ -1027,7 +1029,7 @@ body.dark * {
 }
 .headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
 
-.themer { position:absolute; z-index:0; top:58px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 0 0 0 4px; color:#fff;
+.themer { position:absolute; z-index:0; top:60px; right:0; font-size: 60%; vertical-align:center; background-color:#222; padding:.2rem .3rem; border-radius: 0 0 0 4px; color:#fff;
 }
 .headroom--unfixed:before,
 .headroom--pinned:before{

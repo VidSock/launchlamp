@@ -5,7 +5,7 @@ import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
 import PopContact from '../components/PopContact'
-
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 
 const Navbar = class extends React.Component {
@@ -82,6 +82,7 @@ const Navbar = class extends React.Component {
           <label htmlFor="themeSlide"></label></div>
         )}
       </ThemeToggler></div>
+      
       
       <a href="#topofpage" title="Back To Top" className="back-to-top container"><GoArrowUp /></a>
 </Headroom>

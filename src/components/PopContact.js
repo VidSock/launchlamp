@@ -23,7 +23,6 @@ body { background: #ccc; }
     border: 0; 
     cursor: pointer;
     text-align: center;
-    box-shadow: 0 5px 5px -5px #333;  
     transition: background 0.3s ease-in;
     &:hover { background: #DB2600; cursor:pointer; 
     }
@@ -46,7 +45,6 @@ body { background: #ccc; }
     left: 74vw;
     top: 35px;
     padding-top: 0;
-//     background: #fff;
 	font-size:28px;
     width: 25px;
     height: 25px;
@@ -108,7 +106,7 @@ body { background: #ccc; }
       cursor: auto;
       visibility: visible; 
       overflow: scroll;
-      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);  
+ 
       @media (max-width: 400px) { left: 50px; }                   
     }  
   }

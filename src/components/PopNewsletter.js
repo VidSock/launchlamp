@@ -140,7 +140,7 @@ const Popup = () => (
     <label className="news-close" htmlFor="news-toggle"><FaTimesCircle /></label>
     <h2>Hytron Newsletter</h2><hr />
     <p>You are now signed up!</p> 
-    <label className="news-content-btn" htmlFor="news-toggle">OK</label>   
+    <label className="news-content-btn" htmlFor="news-toggle">Join</label>   
   </div>          
 </div>
 </CustomBox>

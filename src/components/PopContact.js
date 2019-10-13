@@ -43,9 +43,7 @@ body { background: #ccc; }
   
   .modal-close {
     color: #ddd;
-right: 5%;
-top: 2%;
-position: absolute;
+
     padding-top: 0;
 	font-size:28px;
     width: 25px;
@@ -127,7 +125,8 @@ height:100vw;
  
  
 @media (max-width: 600px){
-	.modal-container .modal-btn{text-align:left !important; padding-left:1.8rem;}
+.modal-container{text-align:left !important; padding-left:.8rem; justify-content:left !important; width:100%; display:block;}
+.modal-btn{text-align:left !important;}
 	
 	#modal-toggle {
 	&.active ~ .modal-content,
@@ -139,10 +138,12 @@ height:100vw;
 	    
 	    #popcontact-form{padding-left:1rem;}
 	    
+/*
 	.modal-close{
 	   left: 94%;
 	   font-size:28px;
 	  }
+*/
 	  
 	  
 	}
@@ -155,19 +156,19 @@ height:100vw;
 
 const PopupContact = () => (
 
-<CustomBox style={{ alignItems: 'center', justifyContent: 'center',}}>
+<CustomBox style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
 
 
-<div className="modal-container">
+<div className="modal-container"  style={{position: 'relative',}}>
 
-  <input id="modal-toggle" type="checkbox" />
+  <input id="modal-toggle" type="checkbox"  />
   
   <label className="modal-btn" htmlFor="modal-toggle">Get A Quote</label> 
   
   <label className="modal-backdrop" htmlFor="modal-toggle"></label>
   
-  <div className="modal-content" style={{position: 'relative',}}>
-    <label className="modal-close" htmlFor="modal-toggle"><FaTimesCircle /></label>
+  <div className="modal-content" style={{position: 'absolute', zIndex: '4',}}>
+    <label className="modal-close" htmlFor="modal-toggle" style={{position: 'absolute', top: '30px', right: '14%', zIndex: '5',}}><FaTimesCircle /></label>
     <Contact />
   </div>
   

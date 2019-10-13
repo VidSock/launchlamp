@@ -9,9 +9,7 @@ const CustomBox = styled.div`
 
 
 .news-container {
-/*   margin: 60px auto; */
   padding-top: 0px;
-  position: relative;
   width: 100%;
   height:100vh;
       
@@ -49,17 +47,16 @@ const CustomBox = styled.div`
   .news-close {
     color: #444;
     position: absolute;
-    right: 5px;
-    top: 5px;
-    padding-top: 0;
-/*     background: #fff */;
+    right: 13%;
+    top: 65px;
+    z-index:5;
     font-size: 20px;
     width: 25px;
     height: 25px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    &:hover { color: #333; }        
+    &:hover { color: #ff0000; }        
   }      
   .news-content-btn {
     position: absolute;
@@ -99,22 +96,14 @@ const CustomBox = styled.div`
     &:checked ~ .news-content {
 	  
       opacity: 1;
-  
-//       max-width: 900px;
-//       width: 65%;
       height: auto;
-//       padding: 10px 20px;
-//       position: fixed !important;
-//       left: calc(20% - 10px);
-//       top: 200px;
-		margin-top:10%;
+	  margin-top:10%;
       border-radius: 4px;
       z-index: 4;
       pointer-events: auto;
       cursor: auto;
       visibility: visible; 
       overflow: scroll;
-
 left:0;
 top:0;
 width:100vw;
@@ -136,6 +125,8 @@ height:100vw;
   
 @media (max-width: 600px){
 	
+.news-close{top:50px !important; right: 3% !important; color: #333 !important;}
+	
 	&.active ~ .news-content,
     &:checked ~ .news-content {
 	    left:0 !important;
@@ -156,12 +147,12 @@ const Popup = () => (
 
 <CustomBox style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
 <div className="news-container" style={{position: 'relative',}}>
-  <input id="news-toggle" type="checkbox" />
+  <input id="news-toggle" type="checkbox" style={{position: 'relative',}} />
   <label className="news-btn" htmlFor="news-toggle">Get Our Newsletter</label> 
   <label className="news-backdrop" htmlFor="news-toggle"></label> 
   
-  <div className="news-content" style={{position: 'absolute', zIndex: '5',}}>
-  <label className="news-close" htmlFor="news-toggle" style={{top: '30px', right: '10px',}}><FaTimesCircle /></label>
+  <div className="news-content" style={{position: 'relative', zIndex: '4',}}>
+  <label className="news-close" htmlFor="news-toggle"><FaTimesCircle /></label>
     
     <Newsletter />
       

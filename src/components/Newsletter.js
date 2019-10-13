@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-
+import ScrollAnimation from 'react-animate-on-scroll'
 
 // const Contact = class extends React.Component {
 //   render() {
@@ -53,8 +53,11 @@ export default class Newsletter extends React.Component {
   render() {
     return (
       
+      <ScrollAnimation animateIn="bounceInUp" duration={3}  animatePreScroll={false} initiallyVisible={true}>
         <section className="outer section">
-          <div className="container" style={{padding: '0',}}>
+        
+          <div className="container" style={{padding: '5px 0 10px 0', textAlign: 'center',}}>
+          
             <div className="content" style={{padding: '0 40px 0 20px'}}>
 
               
@@ -102,7 +105,7 @@ export default class Newsletter extends React.Component {
             </div>
           </div>
         </section>      
-      
+      </ScrollAnimation>
     )
   }
 }

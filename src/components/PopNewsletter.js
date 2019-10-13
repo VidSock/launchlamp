@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 import { FaTimesCircle } from 'react-icons/fa';
 import Newsletter from '../components/Newsletter'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
@@ -39,7 +40,7 @@ const CustomBox = styled.div`
   .news-backdrop {
     height: 0; 
     width: 0; 
-    opacity: 1;    
+    opacity: 0;    
     visibility: hidden;
     overflow: hidden; 
     cursor: default;
@@ -141,6 +142,7 @@ height:100vw;
 	    width: 100% !important;
 	    text-align: left !important;
 	    max-width:100% !important;
+	    z-index:4 !important;
 	    }
 	    
 
@@ -152,19 +154,22 @@ height:100vw;
 const Popup = () => (
   
 
-<CustomBox style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
+<CustomBox style={{display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '2',}}>
 <div className="news-container ">
-
   <input id="news-toggle" type="checkbox" />
   <label className="news-btn" htmlFor="news-toggle">Get Our Newsletter</label> 
-  <label className="news-backdrop" htmlFor="news-toggle"></label>
+  <label className="news-backdrop" htmlFor="news-toggle"></label> 
+  
   <div className="news-content ">
     <label className="news-close" htmlFor="news-toggle"><FaTimesCircle /></label>
+    
 
     <Newsletter />
       
-  </div>          
+  </div>
+        
 </div>
+
 </CustomBox>
   
 )

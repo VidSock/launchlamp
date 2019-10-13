@@ -155,13 +155,13 @@ const Popup = () => (
   
 
 <CustomBox style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
-<div className="news-container ">
+<div className="news-container" style={{position: 'relative',}}>
   <input id="news-toggle" type="checkbox" />
   <label className="news-btn" htmlFor="news-toggle">Get Our Newsletter</label> 
   <label className="news-backdrop" htmlFor="news-toggle"></label> 
   
-  <div className="news-content " style={{position: 'absolute', zIndex: '5',}}>
-    <label className="news-close" htmlFor="news-toggle"><FaTimesCircle /></label>
+  <div className="news-content" style={{position: 'absolute', zIndex: '5',}}>
+  <label className="news-close" htmlFor="news-toggle" style={{top: '30px', right: '10px',}}><FaTimesCircle /></label>
     
     <Newsletter />
       

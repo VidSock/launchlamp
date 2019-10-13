@@ -112,7 +112,7 @@ position: absolute;
       overflow: scroll;
       
 left:0;
-top:0;
+// top:0;
 width:100vw;
 height:100vw;
 
@@ -133,6 +133,7 @@ height:100vw;
 	&.active ~ .modal-content,
     &:checked ~ .modal-content {
 	    left:0 !important;
+	    top:100px !important;
 	    width: 100% !important;
 	    text-align: left !important;
 	    

@@ -85,7 +85,7 @@ export default class Newsletter extends React.Component {
 
                 <div className="form" style={{lineHeight: '1rem', height: 'auto', alignItems: 'center', display: 'flex', paddingTop: '0',}}>
                 
-                <label htmlFor="email" style={{padding: '0', margin: '0 1rem 0 0', width: '33%', }}>Your e-mail:</label>
+                <label htmlFor="email" style={{padding: '0', margin: '0 1rem 0 0', width: '40%', fontSize: '90%', }}>Your e-mail:</label>
                     <input
                       className="input"
                       type={'email'}

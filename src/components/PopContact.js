@@ -129,9 +129,12 @@ height:100vw;
 
  
 @media (max-width: 600px){
-.modal-container{text-align:left !important; padding-left:.8rem; justify-content:left !important; width:100%; display:block;}
-.modal-btn{text-align:left !important;}
-.modal-close{top:10px !important; left: 10px !important; color: #999 !important;}
+	
+.modal-container{text-align:left !important; justify-content:left !important; width:100%;}
+
+.modal-btn{text-align:left !important; padding-left:1.8rem !important;}
+
+
 	
 	#modal-toggle {
 	&.active ~ .modal-content,
@@ -143,6 +146,7 @@ height:100vw;
 	    
 	    #popcontact-form{padding-left:1rem;}
 	    
+	    .modal-close{top:10px !important; left: 10px !important; color: #999 !important;}
 
 	  
 	  

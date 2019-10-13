@@ -1063,7 +1063,7 @@ body.dark * {
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto;}
 // .headroom-wrapper{height:58px !important;}
 
-.back-to-top{display: block; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh); padding:0; height:65px; width:70px; 
+.back-to-top{display: block; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh); padding:10px 0 0 0; width:70px; 
 z-index:0;
 color: #fff !important;
 font-size:440%;

@@ -88,7 +88,7 @@ const CustomBox = styled.div`
       top: 0;
       z-index: 0;
       visibility: visible;
-      opacity: 0;      
+      opacity: .8;      
       transition: opacity 0.2s ease-in; 
     }
     

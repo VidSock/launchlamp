@@ -576,7 +576,7 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
  .form label{font-size: 70%; text-align: left;}
  .form input, .form textarea {
     border:0; outline:0;
-    padding: 1em;
+    padding: .5em !important;
     border-radius:(4px);
     background: #d0d2da;
     margin-bottom: 1.3em;

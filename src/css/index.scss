@@ -13,7 +13,7 @@ $red: #ff0000;
   box-sizing: border-box;
 }
 
-
+.hidden{display: none;}
 body {overflow-x: hidden;}
 .full-width-image, .media{overflow: hidden;}
 
@@ -580,7 +580,7 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
     padding: 1em;
     border-radius:(4px);
     background: #d0d2da;
-    margin-top: 1.3em;
+    margin-bottom: 1.3em;
     box-shadow: 0px 0px 1px 1px #999;
     color:#333;
     width: 100%;
@@ -615,7 +615,7 @@ input.special {
 
 .left {
     width:50%;
-  margin-right:2rem;
+  margin-right:1rem;
 }
 
 

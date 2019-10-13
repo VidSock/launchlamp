@@ -57,7 +57,7 @@ export default class Contact extends React.Component {
     return (
       
         <section className="outer section">
-          <div className="container innerpanel">
+          <div className="container innerpanel" style={{padding: '0',}}>
             <div className="content" style={{padding: '0 0 5px 0'}}>
 
               
@@ -67,12 +67,13 @@ export default class Contact extends React.Component {
               <form
                 name="file-upload"
                 method="post"
-                action="/contact/thanks/"
+//                 action="/contact/thanks/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
+                id="popcontact-form"
               >
-                <h3 id="contact" name="contact" style={{padding: '2rem 0 0 10%'}}>Contact Us</h3>
+                <h3 id="contact" name="contact" style={{padding: '1rem 0 0 0', textAlign: 'center', fontSize: '150%',}}>Contact Us<br /><span style={{fontSize: '80%',}}>Please fill out the form below:</span></h3>
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 
                 <div hidden>
@@ -85,6 +86,7 @@ export default class Contact extends React.Component {
 
                 <div className="form">
                 <div className="field half left">
+                <label htmlFor="name" style={{padding: '0', margin: '0',}}>Your name:</label>
                     <input
                       className="input"
                       type={'text'}
@@ -94,7 +96,7 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Name"
                     />
-                <label htmlFor="name">Your name:</label>
+                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Your e-mail:</label>
                     <input
                       className="input"
                       type={'email'}
@@ -104,19 +106,25 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Email"
                     />
-                    <label htmlFor="email">Your e-mail:</label>
-                    <label htmlFor="attachment"><input
-                        className="file-input"
+                    
+                    <label htmlFor="attachment" style={{padding: '0', margin: '0', float: 'left',}}>
+                    Upload File:<br /> PDF file preferred
+                    <input
+                        className="file-input hidden"
                         type="file"
                         id="attachment"
                         name="attachment"
                         onChange={this.handleAttachment}
                       />
-                      Attach file: PDF preferred</label>
+                      </label>
+                      
+<label className="upload" htmlFor="attachment" style={{background: '#666', color: '#fff', padding: '5px 25px', textAlign: 'center', borderRadius:'4px', marginLeft: '1rem',}}  >Select File</label>
                 </div>
 
                 <div className="field half right">
-
+<label className="label" htmlFor={'message'} style={{padding: '0', margin: '0',}}>
+                    Your Message
+                  </label>
                     <textarea
                       className="textarea"
                       name={'message'}
@@ -125,9 +133,7 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Message"
                     />
-                    <label className="label" htmlFor={'message'}>
-                    Your Message
-                  </label>
+                    
 
                       
                   </div>

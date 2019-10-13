@@ -10,6 +10,7 @@ body { background: #ccc; }
   padding-top: 0px;
   position: relative;
   width: auto;
+
       
   .modal-btn {
     display: block;      
@@ -41,9 +42,9 @@ body { background: #ccc; }
   
   .modal-close {
     color: #ddd;
-    position: relative;
-    left: 74vw;
-    top: 35px;
+right: 5%;
+top: 2%;
+position: absolute;
     padding-top: 0;
 	font-size:28px;
     width: 25px;
@@ -93,10 +94,10 @@ body { background: #ccc; }
     &:checked ~ .modal-content {
       opacity: 1;
       background-color: transparent;
-      max-width: 900px;
+
       width: auto;
       height: auto;
-      padding: 10px 20px;
+      padding: 0;
       position: fixed !important;
       left: calc(10% - 10px);
       top: 0px;
@@ -106,12 +107,22 @@ body { background: #ccc; }
       cursor: auto;
       visibility: visible; 
       overflow: scroll;
- 
-      @media (max-width: 400px) { left: 50px; }                   
+      
+left:0;
+top:0;
+width:100vw;
+height:100vw;
+
+                 
     }  
   }
 }
 
+
+.upload:hover{background-color: #222 !important; cursor:pointer;}
+.modal-container #modal-toggle:checked ~ body{overflow:hidden;}
+ 
+ 
 @media (max-width: 600px){
 	.modal-container .modal-btn{text-align:left !important; padding-left:1.8rem;}
 	
@@ -122,7 +133,7 @@ body { background: #ccc; }
 	    width: 100% !important;
 	    text-align: left !important;
 	    
-	    
+	    #popcontact-form{padding-left:1rem;}
 	    
 	.modal-close{
 	   left: 94%;
@@ -140,16 +151,21 @@ body { background: #ccc; }
 
 const PopupContact = () => (
 
-<CustomBox>
+<CustomBox style={{ alignItems: 'center', justifyContent: 'center',}}>
+
 <div className="modal-container">
+
   <input id="modal-toggle" type="checkbox" />
+  
   <label className="modal-btn" htmlFor="modal-toggle">Get A Quote</label> 
+  
   <label className="modal-backdrop" htmlFor="modal-toggle"></label>
   
   <div className="modal-content" style={{position: 'relative',}}>
     <label className="modal-close" htmlFor="modal-toggle"><FaTimesCircle /></label>
     <Contact />
-  </div>      
+  </div>
+  
 </div>
 </CustomBox>    
 

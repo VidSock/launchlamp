@@ -124,7 +124,7 @@ height:100vw;
 }
 
 
-.upload:hover{background-color: #222 !important; cursor:pointer;}
+.upload:hover{background-color: #888 !important; cursor:pointer;}
 .modal-container #modal-toggle:checked ~ body{overflow:hidden;}
 
  
@@ -143,6 +143,7 @@ height:100vw;
 	    top:100px !important;
 	    width: 100% !important;
 	    text-align: left !important;
+	    height:50vh !important;
 	    
 	    #popcontact-form{padding-left:1rem;}
 	    

@@ -111,7 +111,7 @@ height:100vw;
 
 
  
-      @media (max-width: 400px) { left: 50px; }                   
+      @media (max-width: 400px) { left: 0; }                   
     }  
   }
 }
@@ -125,7 +125,7 @@ height:100vw;
   
 @media (max-width: 600px){
 	
-.news-close{top:50px !important; right: 3% !important; color: #999 !important;}
+.news-close{top:25px !important; right: 3% !important; color: #999 !important;}
 	
 	&.active ~ .news-content,
     &:checked ~ .news-content {

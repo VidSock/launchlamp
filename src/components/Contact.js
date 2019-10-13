@@ -58,7 +58,7 @@ export default class Contact extends React.Component {
       
         <section className="outer section">
           <div className="container innerpanel" style={{padding: '0',}}>
-            <div className="content" style={{padding: '0 0 5px 0'}}>
+            <div className="content" style={{padding: '0 0 15px 0'}}>
 
               
 
@@ -73,7 +73,7 @@ export default class Contact extends React.Component {
                 onSubmit={this.handleSubmit}
                 id="popcontact-form"
               >
-                <h3 id="contact" name="contact" style={{padding: '1rem 0 0 0', textAlign: 'center', fontSize: '150%',}}>Contact Us<br /><span style={{fontSize: '80%',}}>Please fill out the form below:</span></h3>
+                <h3 id="contact" name="contact" style={{padding: '1rem 0 0 0', textAlign: 'center', fontSize: '150%',}}>Get a Quote<br /><span style={{fontSize: '80%',}}>Please fill out the form below:</span></h3>
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 
                 <div hidden>

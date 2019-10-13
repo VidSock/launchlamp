@@ -53,12 +53,11 @@ export default class Newsletter extends React.Component {
   render() {
     return (
       
-      <ScrollAnimation animateIn="bounceInUp" duration={3}  animatePreScroll={false} initiallyVisible={true}>
+      <ScrollAnimation animateIn="fadeIn" duration={2}  animatePreScroll={false} initiallyVisible={true}>
         <section className="outer section">
-        <h2 style={{textAlign: 'center',}}>Get the Hytron newsletter:</h2>
           <div className="container" style={{padding: '5px 0 10px 0', textAlign: 'center',}}>
           
-            <div className="content" style={{padding: '0 40px 0 20px'}}>
+            <div className="content" style={{padding: '0 40px 0 20px', textAlign: 'left',}}>
 
               
 
@@ -83,9 +82,14 @@ export default class Newsletter extends React.Component {
                   </label>
                 </div>
 
-                <div className="form" style={{lineHeight: '1rem', height: 'auto', alignItems: 'center', display: 'flex', paddingTop: '0',}}>
+<h2 style={{textAlign: 'center', padding: '.3rem 0 .5rem 0',}}>Get the Hytron newsletter:</h2>
+
+<label htmlFor="email" style={{padding: '.6rem', margin: '1rem 0', textAlign: 'left', fontSize: '90%', }}>Your e-mail:</label>
+
+                <div className="form" style={{lineHeight: '1rem', height: 'auto', alignItems: '', display: 'flex', flexShrink: '1', paddingTop: '.2rem',}}>
                 
-                <label htmlFor="email" style={{padding: '0', margin: '0 1rem 0 0', width: '40%', fontSize: '90%', }}>Your e-mail:</label>
+                
+                
                     <input
                       className="input"
                       type={'email'}
@@ -94,7 +98,7 @@ export default class Newsletter extends React.Component {
                       id={'email'}
                       required={true}
                       placeholder="Email"
-                      style={{margin: '0 1rem 0 0',}}
+                      style={{margin: '0 1rem 0 0', width: '75%',}}
                     />
 
                 <input type="submit" value="Sign Up" className="special" style={{width: '50%', height: '100%', margin: '5px', padding: '1rem 0', verticalAlign: 'center',}} />

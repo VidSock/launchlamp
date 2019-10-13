@@ -42,8 +42,12 @@ body { background: #ccc; }
 
   
   .modal-close {
+	  position:absolute;
+	  top:30px;
+	  left:14%;
+	  z-index:5;
+	  
     color: #999;
-
     padding-top: 0;
 	font-size:28px;
     width: 25px;
@@ -122,11 +126,12 @@ height:100vw;
 
 .upload:hover{background-color: #222 !important; cursor:pointer;}
 .modal-container #modal-toggle:checked ~ body{overflow:hidden;}
- 
+
  
 @media (max-width: 600px){
 .modal-container{text-align:left !important; padding-left:.8rem; justify-content:left !important; width:100%; display:block;}
 .modal-btn{text-align:left !important;}
+.modal-close{top:10px !important; left: 10px !important; color: #999 !important;}
 	
 	#modal-toggle {
 	&.active ~ .modal-content,
@@ -138,12 +143,7 @@ height:100vw;
 	    
 	    #popcontact-form{padding-left:1rem;}
 	    
-/*
-	.modal-close{
-	   left: 94%;
-	   font-size:28px;
-	  }
-*/
+
 	  
 	  
 	}
@@ -168,7 +168,7 @@ const PopupContact = () => (
   <label className="modal-backdrop" htmlFor="modal-toggle"></label>
   
   <div className="modal-content" style={{position: 'absolute', zIndex: '4',}}>
-    <label className="modal-close" htmlFor="modal-toggle" style={{position: 'absolute', top: '30px', right: '14%', zIndex: '5',}}><FaTimesCircle /></label>
+    <label className="modal-close" htmlFor="modal-toggle"><FaTimesCircle /></label>
     <Contact />
   </div>
   

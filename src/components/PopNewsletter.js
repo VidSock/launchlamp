@@ -163,7 +163,6 @@ const Popup = () => (
   <div className="news-content " style={{position: 'absolute', zIndex: '5',}}>
     <label className="news-close" htmlFor="news-toggle"><FaTimesCircle /></label>
     
-
     <Newsletter />
       
   </div>

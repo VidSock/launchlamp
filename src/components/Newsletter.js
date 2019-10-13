@@ -55,7 +55,7 @@ export default class Newsletter extends React.Component {
       
       <ScrollAnimation animateIn="bounceInUp" duration={3}  animatePreScroll={false} initiallyVisible={true}>
         <section className="outer section">
-        
+        <h2 style={{textAlign: 'center',}}>Get the Hytron newsletter:</h2>
           <div className="container" style={{padding: '5px 0 10px 0', textAlign: 'center',}}>
           
             <div className="content" style={{padding: '0 40px 0 20px'}}>

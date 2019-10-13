@@ -39,6 +39,7 @@ body { background: #ccc; }
     cursor: default;
     transition: opacity 0.2s ease-in; 
   }
+
   
   .modal-close {
     color: #ddd;
@@ -75,6 +76,9 @@ position: absolute;
     }
   }
   
+   .modal-backdrop{z-index:3;}
+    
+    
   #modal-toggle {
     display: none;  
     &.active ~ .modal-backdrop,
@@ -99,8 +103,7 @@ position: absolute;
       height: auto;
       padding: 0;
       position: fixed !important;
-      left: calc(10% - 10px);
-      top: 0px;
+
       border-radius: 4px;
       z-index: 4;
       pointer-events: auto;
@@ -152,6 +155,7 @@ height:100vw;
 const PopupContact = () => (
 
 <CustomBox style={{ alignItems: 'center', justifyContent: 'center',}}>
+
 
 <div className="modal-container">
 

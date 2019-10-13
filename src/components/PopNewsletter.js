@@ -1,23 +1,26 @@
 import React from 'react'
 import styled from "styled-components";
 import { FaTimesCircle } from 'react-icons/fa';
+import Newsletter from '../components/Newsletter'
 
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
-body { height: 100vh; background: #ccc; }
+
 
 .news-container {
 /*   margin: 60px auto; */
   padding-top: 0px;
   position: relative;
-  width: auto;
+  width: 100%;
+  height:100vh;
       
   .news-btn {
     display: block;
     margin: 0 auto;      
     color: #fff;  
-    width: auto;
+    width: 210px;
     position:absolute;
+    top:0;
     right:10%;
     height: auto; 
     margin:4rem 0 0 0;
@@ -28,7 +31,7 @@ body { height: 100vh; background: #ccc; }
     border-radius: 3px;  
     cursor: pointer;
     text-align: center;
-    box-shadow: 0 5px 5px -5px #333;  
+//     box-shadow: 0 5px 5px -5px #333;  
     transition: background 0.3s ease-in;
     &:hover { background: #DB2600; cursor:pointer; }
   }
@@ -36,7 +39,7 @@ body { height: 100vh; background: #ccc; }
   .news-backdrop {
     height: 0; 
     width: 0; 
-    opacity: 0;    
+    opacity: 1;    
     visibility: hidden;
     overflow: hidden; 
     cursor: default;
@@ -77,41 +80,59 @@ body { height: 100vh; background: #ccc; }
     display: none;  
     &.active ~ .news-backdrop,
     &:checked ~ .news-backdrop {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color:#000;
       width: 100vw;
-      height: 100vh;
+      height: 100%;
       position: fixed;
       left: 0;
       top: 0;
-      z-index: 3;
+      z-index: 0;
       visibility: visible;
-      opacity: 1;      
+      opacity: 0;      
       transition: opacity 0.2s ease-in; 
     }
+    
+    
+    
     &.active ~ .news-content,
     &:checked ~ .news-content {
 	  
       opacity: 1;
   
-      max-width: 900px;
-      width: 65%;
+//       max-width: 900px;
+//       width: 65%;
       height: auto;
-      padding: 10px 20px;
-      position: fixed !important;
-      left: calc(20% - 10px);
-      top: 200px;
+//       padding: 10px 20px;
+//       position: fixed !important;
+//       left: calc(20% - 10px);
+//       top: 200px;
+		margin-top:10%;
       border-radius: 4px;
       z-index: 4;
       pointer-events: auto;
       cursor: auto;
       visibility: visible; 
       overflow: scroll;
-      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);  
+
+left:0;
+top:0;
+width:100vw;
+height:100vw;
+
+
+ 
       @media (max-width: 400px) { left: 50px; }                   
     }  
   }
 }
-
+#news-toggle {
+	&.active ~ .news-btn,
+    &:checked ~ .news-btn {
+	display:none;
+	}
+}
+  
+  
 @media (max-width: 600px){
 	
 	&.active ~ .news-content,
@@ -119,9 +140,10 @@ body { height: 100vh; background: #ccc; }
 	    left:0 !important;
 	    width: 100% !important;
 	    text-align: left !important;
+	    max-width:100% !important;
 	    }
 	    
-	    .news-container .modal-btn{text-align:left !important; padding-left:1.8rem;}
+
 	    
 }
 `
@@ -130,17 +152,17 @@ body { height: 100vh; background: #ccc; }
 const Popup = () => (
   
 
-<CustomBox>
-<div className="news-container innerpanel">
+<CustomBox style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
+<div className="news-container ">
 
   <input id="news-toggle" type="checkbox" />
   <label className="news-btn" htmlFor="news-toggle">Get Our Newsletter</label> 
   <label className="news-backdrop" htmlFor="news-toggle"></label>
-  <div className="news-content innerpanel">
+  <div className="news-content ">
     <label className="news-close" htmlFor="news-toggle"><FaTimesCircle /></label>
-    <h2>Hytron Newsletter</h2><hr />
-    <p>You are now signed up!</p> 
-    <label className="news-content-btn" htmlFor="news-toggle">Join</label>   
+
+    <Newsletter />
+      
   </div>          
 </div>
 </CustomBox>

@@ -56,12 +56,12 @@ export const IndexPageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-            fontSize: '4.2rem',
+            fontSize: '4rem',
            position: 'relative',
 //            top: '100px',
            right: '3%',
 //            backgroundColor: '#ff0000',
-            textAlign: 'right',  
+            textAlign: 'right', 
           }}
         >
           Precision Parts
@@ -72,7 +72,7 @@ export const IndexPageTemplate = ({
         <h3
           className="narrow txtshadow mobile-txt"
           style={{
-           fontSize:'3rem',
+           fontSize:'2.7rem',
            color: 'white',
            position: 'relative',
         right: '3.4%',

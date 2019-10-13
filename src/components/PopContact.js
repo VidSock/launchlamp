@@ -143,7 +143,7 @@ height:100vw;
 	    top:100px !important;
 	    width: 100% !important;
 	    text-align: left !important;
-	    height:50vh !important;
+	    height:80vh !important;
 	    
 	    #popcontact-form{padding-left:1rem;}
 	    

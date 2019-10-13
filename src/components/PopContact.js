@@ -42,7 +42,7 @@ body { background: #ccc; }
 
   
   .modal-close {
-    color: #ddd;
+    color: #999;
 
     padding-top: 0;
 	font-size:28px;
@@ -74,7 +74,7 @@ body { background: #ccc; }
     }
   }
   
-   .modal-backdrop{z-index:3;}
+   .modal-backdrop{z-index:4;}
     
     
   #modal-toggle {
@@ -87,7 +87,7 @@ body { background: #ccc; }
       position: fixed;
       left: 0;
       top: 0;
-      z-index: 3;
+      z-index: 4;
       visibility: visible;
       opacity: 1;      
       transition: opacity 0.2s ease-in; 

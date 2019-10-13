@@ -45,11 +45,11 @@ const CustomBox = styled.div`
     transition: opacity 0.2s ease-in; 
   }
   .news-close {
-    color: #444;
+    color: #999;
     position: absolute;
     right: 13%;
     top: 65px;
-    z-index:5;
+    z-index:2;
     font-size: 20px;
     width: 25px;
     height: 25px;
@@ -125,7 +125,7 @@ height:100vw;
   
 @media (max-width: 600px){
 	
-.news-close{top:50px !important; right: 3% !important; color: #333 !important;}
+.news-close{top:50px !important; right: 3% !important; color: #999 !important;}
 	
 	&.active ~ .news-content,
     &:checked ~ .news-content {

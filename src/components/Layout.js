@@ -34,6 +34,14 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="../img/hytron-splash.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+<link href="../img/hytron-splash.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+<link href="../img/hytron-splash.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+<link href="../img/hytron-splash.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+<link href="../img/hytron-splash.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+<link href="../img/hytron-splash.png" sizes="750x1334" rel="apple-touch-startup-image" />
+<link href="../img/hytron-splash.png" sizes="640x1136" rel="apple-touch-startup-image" />
       </Helmet>
       
       

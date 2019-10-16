@@ -44,7 +44,7 @@ body { background: #ccc; }
   .modal-close {
 	  position:absolute;
 	  top:30px;
-	  left:14%;
+	  right:14%;
 	  z-index:5;
 	  
     color: #999;
@@ -147,7 +147,7 @@ height:100vw;
 	    
 	    #popcontact-form{padding-left:1rem;}
 	    
-	    .modal-close{top:10px !important; left: 10px !important; color: #999 !important;}
+	    .modal-close{top:10px !important; right: 20px !important; color: #999 !important;}
 
 	  
 	  

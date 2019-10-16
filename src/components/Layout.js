@@ -6,6 +6,11 @@ import Navbar from '../components/Navbar'
 // import Contact from '../components/Contact'
 import 'typeface-francois-one'
 import "../css/index.scss"
+
+// import splash from '../img/hytron-splash.png'
+
+
+
 // import ScrollAnimation from 'react-animate-on-scroll'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
@@ -35,13 +40,13 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-<link href="../img/hytron-splash.png" sizes="2048x2732" rel="apple-touch-startup-image" />
-<link href="../img/hytron-splash.png" sizes="1668x2224" rel="apple-touch-startup-image" />
-<link href="../img/hytron-splash.png" sizes="1536x2048" rel="apple-touch-startup-image" />
-<link href="../img/hytron-splash.png" sizes="1125x2436" rel="apple-touch-startup-image" />
-<link href="../img/hytron-splash.png" sizes="1242x2208" rel="apple-touch-startup-image" />
-<link href="../img/hytron-splash.png" sizes="750x1334" rel="apple-touch-startup-image" />
-<link href="../img/hytron-splash.png" sizes="640x1136" rel="apple-touch-startup-image" />
+<link href="{splash}" sizes="2048x2732" rel="apple-touch-startup-image" />
+<link href="{splash}" sizes="1668x2224" rel="apple-touch-startup-image" />
+<link href="{splash}" sizes="1536x2048" rel="apple-touch-startup-image" />
+<link href="{splash}" sizes="1125x2436" rel="apple-touch-startup-image" />
+<link href="{splash}" sizes="1242x2208" rel="apple-touch-startup-image" />
+<link href="{splash}" sizes="750x1334" rel="apple-touch-startup-image" />
+<link href="{splash}" sizes="640x1136" rel="apple-touch-startup-image" />
       </Helmet>
       
       

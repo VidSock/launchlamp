@@ -19,7 +19,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   
-  <div className="outer intro media">
+  <div className="outer intro">
   
   
   
@@ -34,34 +34,39 @@ export const IndexPageTemplate = ({
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
-        
+        paddingTop: '160px',
       }}
     >
     
     <div style={{
-          display: 'block',
+          display: 'flex',
           lineHeight: '1',
           flexDirection: 'column',
-          padding: '2rem 0',
+          padding: '0',
           position: 'relative',
           width: '100%',
           height: '100vh',
-          
+          justifyContent: 'center',
+         
+
         }}
         className="media"
       >
       
-        <ScrollAnimation animateIn="bounceInDown"  delay={1000}>
+        <ScrollAnimation animateIn="bounceInLeft"  delay={1000}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-            fontSize: '4rem',
+//             fontSize: '4rem',
            position: 'relative',
 //            top: '100px',
-           right: '3%',
+        left: '5%',
 //            backgroundColor: '#ff0000',
-            textAlign: 'right', 
+            textAlign: 'left',
+            border: '0px solid red',
+            float: 'none',
+            
           }}
         >
           Precision Parts
@@ -72,12 +77,13 @@ export const IndexPageTemplate = ({
         <h3
           className="narrow txtshadow mobile-txt"
           style={{
-           fontSize:'2.7rem',
+//            fontSize:'2.7rem',
            color: 'white',
            position: 'relative',
-        right: '3.4%',
-            textAlign: 'right', 
+        left: '5%',
+            textAlign: 'left', 
             paddingTop: '1rem',
+            border: '0px solid red',
           }}
         >
           Quality Manufacturing
@@ -89,12 +95,13 @@ export const IndexPageTemplate = ({
         <h3
           className="black txtshadow mobile-txt"
           style={{
-           fontSize:'2.2rem',
+//            fontSize:'2.2rem',
            color: 'white',
            position: 'relative',
 		   paddingTop: '1rem',
-           right: '5%',
-            textAlign: 'right', 
+        left: '5%',
+            textAlign: 'left', 
+           border: '0px solid red',
           }}
         >
           Done right AND on time
@@ -103,8 +110,8 @@ export const IndexPageTemplate = ({
         
         
         
-        <ScrollAnimation animateIn="fadeIn" duration={3} delay={1000} animateOnce={false}>
-        <PopNewsletter />
+        <ScrollAnimation animateIn="fadeIn" duration={2} delay={1000} animateOnce={false} className="mediacta">
+		<PopNewsletter />
         </ScrollAnimation>
         
         

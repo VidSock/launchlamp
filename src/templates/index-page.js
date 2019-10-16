@@ -113,7 +113,7 @@ export const IndexPageTemplate = ({
         
         
         
-        <ScrollAnimation animateIn="fadeIn" duration={2} delay={1000} animateOnce={false} className="mediacta">
+        <ScrollAnimation animateIn="fadeIn" duration={2} delay={1000} animateOnce={false} className="mediacta" style={{position: 'absolute', right: '0',}}>
         <br /><br />
 		<PopNewsletter />
         </ScrollAnimation>

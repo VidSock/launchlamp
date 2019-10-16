@@ -82,7 +82,7 @@ export default class Newsletter extends React.Component {
                   </label>
                 </div>
 
-<h2 style={{textAlign: 'center', padding: '.3rem 0 .5rem 0',}}>Get the Hytron newsletter:</h2>
+<h3 style={{textAlign: 'center', fontSize: '1.5rem', padding: '.3rem 0 .5rem 0',}}>Get the Hytron newsletter:</h3>
 
 <label htmlFor="email" style={{padding: '.6rem', margin: '1rem 0', textAlign: 'left', fontSize: '90%', }}>Your e-mail:</label>
 

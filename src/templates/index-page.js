@@ -34,19 +34,22 @@ export const IndexPageTemplate = ({
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
-        paddingTop: '160px',
+        paddingTop: '80px',
       }}
     >
     
     <div style={{
-          display: 'flex',
           lineHeight: '1',
+/*
+          display: 'flex',
           flexDirection: 'column',
+          justifyContent: 'center',
+*/
           padding: '0',
           position: 'relative',
           width: '100%',
           height: '100vh',
-          justifyContent: 'center',
+          
          
 
         }}
@@ -111,6 +114,7 @@ export const IndexPageTemplate = ({
         
         
         <ScrollAnimation animateIn="fadeIn" duration={2} delay={1000} animateOnce={false} className="mediacta">
+        <br /><br />
 		<PopNewsletter />
         </ScrollAnimation>
         

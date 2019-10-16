@@ -18,11 +18,8 @@ const CustomBox = styled.div`
     margin: 0 auto;      
     color: #fff;  
     width: 210px;
-    position:absolute;
-    top:0;
-    right:10%;
     height: auto; 
-    margin:4rem 0 0 0;
+    margin:0 50px;
     padding:.5rem 2rem;   
     line-height: 20px;    
     background: #DB2600;
@@ -97,17 +94,17 @@ const CustomBox = styled.div`
 	  
       opacity: 1;
       height: auto;
-	  margin-top:10%;
+	  margin-top:0;
       border-radius: 4px;
       z-index: 4;
       pointer-events: auto;
       cursor: auto;
       visibility: visible; 
       overflow: scroll;
-left:0;
-top:0;
+// left:0;
+bottom:20%;
 width:100vw;
-// height:100vh;
+height:100vh;
 
 
  

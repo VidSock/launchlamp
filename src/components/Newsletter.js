@@ -104,6 +104,7 @@ export default class Newsletter extends React.Component {
                 <input type="submit" value="Sign Up" className="special" style={{width: '50%', height: '100%', margin: '5px', padding: '1rem 0', verticalAlign: 'center',}} />
                 
                 </div>
+                <div style={{fontSize: '80%', padding: '5px 3%', textAlign: 'center',}}> <input type="checkbox" name={'consent'} required={true} /> Yes, I would like to receive communications by email. <br /><span style={{textAlign: 'center',}}><a href="google.com">View our privacy policy </a></span></div>
               </form>
               
             </div>

@@ -634,7 +634,7 @@ input.special {
 
 
 
-h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown{font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-style: italic;}
+h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font{font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-style: italic;}
 
 #menu{font-size:1rem;}
 
@@ -953,7 +953,7 @@ body.dark:after, body.light:after{content: (''); background-image: url('../img/h
 
 .themeSlide:after {
   content: 'Light';
-  color: $primary;
+  color: #fff;
   position: absolute;
   right: 8px;
   z-index: 0;
@@ -962,7 +962,7 @@ body.dark:after, body.light:after{content: (''); background-image: url('../img/h
 
 .themeSlide:before {
   content: 'Dark';
-  color: $primary;
+  color: #fff;
   position: absolute;
   left: 10px;
   z-index: 0;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import ScrollAnimation from 'react-animate-on-scroll'
-
+import { FaEnvelope } from 'react-icons/fa';
 // const Contact = class extends React.Component {
 //   render() {
 //     return (
@@ -91,7 +91,7 @@ export default class Newsletter extends React.Component {
                 
                 
                     <input
-                      className="input"
+                      className="input font"
                       type={'email'}
                       name={'email'}
                       onChange={this.handleChange}
@@ -101,10 +101,10 @@ export default class Newsletter extends React.Component {
                       style={{margin: '0 1rem 0 0', width: '75%',}}
                     />
 
-                <input type="submit" value="Sign Up" className="special" style={{width: '50%', height: '100%', margin: '5px', padding: '1rem 0', verticalAlign: 'center',}} />
+                <input type="submit" value="Sign Up" className="special" style={{width: '50%', height: '100%', margin: '5px', padding: '1rem 0', verticalAlign: 'center',}} /> <FaEnvelope style={{position: 'relative', top: '10px', left: '-30px', color: '#fff', fontSize: '150%',}} />
                 
                 </div>
-                <div style={{fontSize: '80%', padding: '5px 3%', textAlign: 'center',}}> <input type="checkbox" name={'consent'} required={true} /> Yes, I would like to receive communications by email. <br /><span style={{textAlign: 'center',}}><a href="google.com">View our privacy policy </a></span></div>
+                <div className="font" style={{fontSize: '80%', padding: '5px 3%', textAlign: 'center',}}> <input type="checkbox" name={'consent'} required={true} /> Yes, I would like to receive communications by email. <br /><span style={{textAlign: 'center',}}><a href="google.com">View our privacy policy </a></span></div>
               </form>
               
             </div>

@@ -139,7 +139,7 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div style={{fontSize: '80%', padding: '5px 3%', textAlign: 'center',}}> <input type="checkbox"  name={'consent'} required={true} /> Yes, I would like to receive communications by email. <br /><a style={{textAlign: 'center', paddingTop: '5px', paddingBottom: '0', textDecoration: 'underline',}} href="google.com">View our privacy policy </a></div>
+                <div style={{fontSize: '80%', padding: '5px 3%', textAlign: 'center',}}> <input type="checkbox"  name={'consent'} required={true} /> Yes, I would like to receive communications by email. <br /><a style={{textAlign: 'center', paddingTop: '5px', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">View our privacy policy </a></div>
                 
                 <div className="actionable"><input type="submit" value="Send Message" className="special" /><FaEnvelope style={{position: 'relative', top: '3px', left: '-30px', color: '#fff', fontSize: '120%',}} /></div>
                 

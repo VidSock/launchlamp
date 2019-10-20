@@ -58,7 +58,7 @@ module.exports = {
     {
     resolve: 'gatsby-plugin-iubenda-cookie-footer',
     options: {
-      iubendaOptions:{"enableCMP":true,"lang":"en","siteId":1703143,"preferenceCookie":{"expireAfter":7},"cookiePolicyId":16197532,"cookiePolicyUrl":"/privacy", "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"acceptButtonColor":"#DB2600","acceptButtonCaptionColor":"white","customizeButtonColor":"#212121","customizeButtonCaptionColor":"white","position":"float-bottom-center","textColor":"white","backgroundColor":"#222" }},
+      iubendaOptions:{"enableCMP":true,"lang":"en","siteId":1703143,"preferenceCookie":{"expireAfter":7},"cookiePolicyId":16197532, "banner":{ "position":"float-bottom-center","textColor":"white","backgroundColor":"#222","acceptButtonDisplay":true,"acceptButtonColor":"#0073CE","acceptButtonCaptionColor":"white","customizeButtonDisplay":true,"customizeButtonColor":"#212121","customizeButtonCaptionColor":"white" }},
     }
   },
     {

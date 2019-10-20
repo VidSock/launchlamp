@@ -124,12 +124,15 @@ html::-webkit-scrollbar-thumb {
 */
 
 
+@media (hover: hover) {
 .gatsby-image-wrapper img:active{
     box-shadow: -2px 5px 8px 2px rgba(0, 0, 0, 0.3);
       transform: scale(1.45);
 	}
 	
 	.gatsby-image-wrapper:after{content: ('+ click to zoom'); position:absolute; bottom:10px; right:10px; color:#fff;}
+}
+
 	
 
 

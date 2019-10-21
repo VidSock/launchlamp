@@ -73,7 +73,7 @@ export default class Contact extends React.Component {
                 onSubmit={this.handleSubmit}
                 id="popcontact-form"
               >
-                <h3 id="contact" name="contact" style={{padding: '1rem 0 0 0', textAlign: 'center', fontSize: '150%',}}>Get A Quote (RFQ)<br /><span style={{fontSize: '80%', display: 'none',}}>Please fill out the form below:</span></h3>
+                <h3 id="contact" name="contact" style={{padding: '.5rem 0', textAlign: 'center', fontSize: '150%',}}>Request Quote (RFQ)<br /><span style={{fontSize: '80%', display: 'none',}}>Please fill out the form below:</span></h3>
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 
                 <div hidden>
@@ -106,9 +106,10 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Email"
                     />
-                    
-                    <label htmlFor="attachment" style={{padding: '0', margin: '0', float: 'left',}}>
-                    Upload File:<br /> PDF file preferred
+                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload File:</label>
+                    <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}>
+                    <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%',}}>
+                    PDF files preferred
                     <input
                         className="file-input hidden"
                         type="file"
@@ -118,7 +119,7 @@ export default class Contact extends React.Component {
                       />
                       </label>
                       
-<label className="upload" htmlFor="attachment" style={{background: '#666', color: '#fff', padding: '5px 25px', textAlign: 'center', borderRadius:'4px', marginLeft: '1rem',}}  >Select File</label>
+<label className="upload" htmlFor="attachment" style={{background: '#999', width: '48%', justifyContent: 'center', color: '#fff', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select File</label></div>
                 </div>
 
                 <div className="field half right">
@@ -139,9 +140,14 @@ export default class Contact extends React.Component {
                   </div>
                   </div>
                 
-                <div style={{fontSize: '80%', padding: '5px 3%', textAlign: 'center',}}> <input type="checkbox"  name={'consent'} required={true} /> Yes, I would like to receive communications by email. <br /><a style={{textAlign: 'center', paddingTop: '5px', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">View our privacy policy </a></div>
+                <div style={{fontSize: '80%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <input type="checkbox"  name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0', padding: '0',}} />  I want to communicate by email.</div>
+               
+                <div className="actionable" style={{ marginBottom: '2rem',}}><input type="submit" value="Send Message" className="special" /><FaEnvelope style={{position: 'relative', top: '3px', left: '-30px', color: '#fff', fontSize: '120%',}} /></div>
                 
-                <div className="actionable"><input type="submit" value="Send Message" className="special" /><FaEnvelope style={{position: 'relative', top: '3px', left: '-30px', color: '#fff', fontSize: '120%',}} /></div>
+                <div style={{fontSize: '70%', padding: '0px 3%', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0px', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">Privacy policy </a>
+                </div>
+                
+                
                 
                 
               </form>

@@ -55,9 +55,9 @@ export default class Newsletter extends React.Component {
       
       <ScrollAnimation animateIn="fadeIn" duration={2}  animatePreScroll={false} initiallyVisible={true}>
         <section className="outer section">
-          <div className="container" style={{padding: '5px 0 10px 0', textAlign: 'center',}}>
+          <div className="container" style={{padding: '5px 0 10px 0', textAlign: 'center', maxWidth: '600px', margin: '0 auto',}}>
           
-            <div className="content" style={{padding: '0 40px 0 20px', textAlign: 'left',}}>
+            <div className="content innerpanel" style={{padding: '0 0 0 20px', textAlign: 'left',}}>
 
               
 
@@ -82,7 +82,7 @@ export default class Newsletter extends React.Component {
                   </label>
                 </div>
 
-<h3 style={{textAlign: 'center', fontSize: '1.5rem', padding: '.3rem 0 .5rem 0',}}>Get the Hytron newsletter:</h3>
+<h3 style={{textAlign: 'center', fontSize: '1.5rem', padding: '.3rem 0 .5rem 0',}}>Join the Newsletter</h3>
 
 <label htmlFor="email" style={{padding: '.6rem', margin: '1rem 0 1rem 1rem', textAlign: 'left', fontSize: '90%', }}>Your e-mail:</label>
 
@@ -98,13 +98,16 @@ export default class Newsletter extends React.Component {
                       id={'email'}
                       required={true}
                       placeholder="Email"
-                      style={{margin: '0 1rem 0 0', width: '75%',}}
+                      style={{margin: '0 1rem 0 0', width: '100%',}}
                     />
 
-                <input type="submit" value="Sign Up" className="special" style={{width: '50%', height: '100%', margin: '5px', padding: '1rem 0', verticalAlign: 'center',}} /> <FaEnvelope style={{position: 'relative', top: '10px', left: '-30px', color: '#fff', fontSize: '150%',}} />
+                <input type="submit" value="Sign Up" className="special" style={{width: '70%', margin: '0', padding: '2rem 0', verticalAlign: 'center',}} /> <FaEnvelope style={{position: 'relative', top: '10px', left: '-30px', color: '#fff', fontSize: '150%',}} />
                 
                 </div>
-                <div className="font" style={{fontSize: '80%', padding: '5px 3%', textAlign: 'center',}}> <input type="checkbox" name={'consent'} required={true} /> Yes, I would like to receive communications by email. <br /><span style={{textAlign: 'center',}}><a href="/privacy">View our privacy policy </a></span></div>
+                <div className="font" style={{fontSize: '100%', padding: '20px 3%', textAlign: 'center',}}> <input type="checkbox" name={'consent'} required={true} /> I want to communicate by email.</div>
+                
+<div style={{fontSize: '80%', padding: '0px 3%', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0px', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">Privacy policy </a>
+                </div>
               </form>
               
             </div>

@@ -17,19 +17,20 @@ const CustomBox = styled.div`
     display: block;
     margin: 0 auto;      
     color: #fff;  
-    width: 210px;
+    width: auto;
     height: auto; 
     margin:0 50px;
-    padding:.5rem 2rem;   
+    padding:.8rem 2rem;   
     line-height: 20px;    
     background: #DB2600;
+    font-weight:bold;
     border: 0;
     border-radius: 3px;  
     cursor: pointer;
     text-align: center;
 //     box-shadow: 0 5px 5px -5px #333;  
     transition: background 0.3s ease-in;
-    &:hover { background: #DB2600; cursor:pointer; }
+    &:hover { background: #FF0000; cursor:pointer; }
   }
   .news-content, 
   .news-backdrop {
@@ -43,9 +44,9 @@ const CustomBox = styled.div`
   }
   .news-close {
     color: #999;
-    position: absolute;
-    right: 13%;
-    top: 65px;
+    position: relative;
+    right: 14vw;
+    top: 15px;
     z-index:2;
     font-size: 20px;
     width: 25px;
@@ -53,7 +54,7 @@ const CustomBox = styled.div`
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    &:hover { color: #ff0000; }        
+    &:hover { color: #1257c6; }        
   }      
   .news-content-btn {
     position: absolute;
@@ -145,12 +146,12 @@ const Popup = () => (
 <CustomBox style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
 <div className="news-container" style={{position: 'relative',}}>
   <input id="news-toggle" type="checkbox" style={{position: 'relative',}} />
-  <label className="news-btn txtshadow shadow" htmlFor="news-toggle">Get Our Newsletter</label> 
+  <label className="news-btn txtshadow shadow" htmlFor="news-toggle">Join Hytron Newsletter</label> 
   <label className="news-backdrop" htmlFor="news-toggle"></label> 
   
-  <div className="news-content" style={{position: 'relative', zIndex: '4',}}>
-  <label className="news-close" htmlFor="news-toggle"><FaTimesCircle /></label>
-    
+  <div className="news-content " style={{position: 'relative', zIndex: '4',}}>
+  
+    <label className="news-close" htmlFor="news-toggle" style={{position: 'absolute', }}><FaTimesCircle /></label>
     <Newsletter />
       
   </div>

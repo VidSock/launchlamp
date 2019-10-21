@@ -610,13 +610,13 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
 input.special {
     color: white; 
     font-weight: bold;
-    font-size:120%;
-    background: #DB2600;
+    font-size:130%;
+    background: $primary;
     cursor: pointer;
     border:0; outline:0;
-    padding: .2em 1rem;
+    padding: .4em 2rem .4rem 1rem;
     border-radius:(4px);
-    width:90%;
+    width:auto;
      box-shadow: 1px 2px 3px 0px #554f4f;
      text-shadow: 0px 1px 0px black;
      position:relative;
@@ -932,6 +932,7 @@ body.dark:after, body.light:after{content: (''); background-image: url('../img/h
 
 
 .has-text-weight-bold{
+	position:relative;
 	color:#fff;
 	font-weight: normal;
 	font-size:400%;
@@ -1046,7 +1047,7 @@ body.light a {
 body.light .header li a, body.dark .header li a, body.light footer, body.light footer a, body.dark footer a, body.dark .outer a, body.light .outer a  {
   color: #fff !important; }
   
-    body.light .header ul li .content a, body.light .content a{color:#222 !important;}
+    body.light .header ul li .content a, body.light .content a{color:#fff !important;}
 
 body.light * {
   border-color: #f0eaea ; }
@@ -1114,12 +1115,17 @@ body.dark * {
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto;}
 .headroom-wrapper{height:58px !important;}
 
-.back-to-top{display: block; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh); padding:10px 0 0 0; width:70px; 
-z-index:0;
+.back-to-top{display: block; position:fixed; bottom:25vh; right:45%; transform: translateY(100vh); padding:0; height:70px; width:70px; 
+z-index:1;
 color: #fff !important;
 font-size:440%;
 font-weight: bold;
-opacity: .8;
+background-color:#222;
+border-radius: 6px;
+opacity: .7;
+text-shadow: 4px 3px 1px black;
+
+// border-radius: 8px 0 0 8px;
 }
 // Header
 

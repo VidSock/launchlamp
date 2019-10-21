@@ -54,7 +54,7 @@ const CustomBox = styled.div`
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    &:hover { color: #1257c6; }        
+    &:hover { color: #FF0000; }        
   }      
   .news-content-btn {
     position: absolute;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+// import Footer from '../components/Footer'
+// import Navbar from '../components/Navbar'
 // import Contact from '../components/Contact'
 import 'typeface-francois-one';
 import "../css/index.scss";
@@ -30,13 +30,13 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
       </Helmet>
       
-      <Navbar />
+      
      
       <main>{children}</main>
       
 
       <ScrollAnimation animateIn="fadeIn">
-      <Footer />
+      
       </ScrollAnimation>
     </div>
   )

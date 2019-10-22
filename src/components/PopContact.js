@@ -1,6 +1,8 @@
 import React from 'react'
-import styled from "styled-components";
+import styled from "styled-components"
 import Contact from '../components/Contact'
+import { FaTimesCircle } from 'react-icons/fa'
+
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 body { height: 100vh; background: #ccc; }
@@ -43,7 +45,7 @@ body { height: 100vh; background: #ccc; }
   .modal-close {
 	  position:absolute;
 	  top:25px;
-	  right:5%;
+	  right:105px;
 	  z-index:5;
 	  
     color: #999;
@@ -64,7 +66,7 @@ body { height: 100vh; background: #ccc; }
     cursor: pointer;
     bottom: 20px;
     right: 30px;
-    background: #446CB3;
+    background: #DB2600;
     color: #fff;
     width: 50px;
     border-radius: 2px;
@@ -72,7 +74,7 @@ body { height: 100vh; background: #ccc; }
     height: 32px;
     padding-top: 9px;
     font-weight: normal;
-    &:hover { color: #fff; background: #365690;
+    &:hover { color: #fff; background: #FF0000;
     }
   }
   
@@ -95,7 +97,7 @@ body { height: 100vh; background: #ccc; }
     &:checked ~ .modal-content {
       opacity: 1;
       background-color: transparent;
-//     max-width: 700px;
+    max-width: 700px;
     width: 100vw;
       height: auto;
       padding: 0;
@@ -105,8 +107,8 @@ body { height: 100vh; background: #ccc; }
     justify-content:center;
 	margin:0 auto;
       top: 20px;
-      left:0%;
-      right:8%;
+      left:7%;
+      right:7%;
    
       border-radius: 4px;
       z-index: 4;
@@ -114,7 +116,7 @@ body { height: 100vh; background: #ccc; }
       cursor: auto;
       visibility: visible; 
       overflow: scroll;
-
+  
       @media (max-width: 400px) { left: 50px; }                   
     }  
   }
@@ -148,7 +150,7 @@ const PopupContact = () => (
   <label className="modal-btn" htmlFor="modal-toggle">Request Quote</label> 
   <label className="modal-backdrop" htmlFor="modal-toggle"></label>
   <div className="modal-content">
-    <label className="modal-close" htmlFor="modal-toggle">&#x2715;</label>
+    <label className="modal-close" htmlFor="modal-toggle"><FaTimesCircle /></label>
     <Contact />
     
  

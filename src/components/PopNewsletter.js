@@ -30,7 +30,7 @@ const CustomBox = styled.div`
     text-align: center;
 //     box-shadow: 0 5px 5px -5px #333;  
     transition: background 0.3s ease-in;
-    &:hover { background: #FF0000; cursor:pointer; }
+    &:hover { background: #ff0000; cursor:pointer; }
   }
   .news-content, 
   .news-backdrop {
@@ -43,19 +43,22 @@ const CustomBox = styled.div`
     transition: opacity 0.2s ease-in; 
   }
   .news-close {
+	  position:absolute;
+	  top:15px;
+	  right:65px;
+	  z-index:5;
+	  
     color: #999;
-    position: relative;
-    right: 14vw;
-    top: 15px;
-    z-index:2;
-    font-size: 20px;
+    padding-top: 0;
+	font-size:28px;
     width: 25px;
     height: 25px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    &:hover { color: #FF0000; }        
-  }      
+    &:hover { color: #666;
+    }       
+  }     
   .news-content-btn {
     position: absolute;
     text-align: center;
@@ -93,20 +96,27 @@ const CustomBox = styled.div`
     &.active ~ .news-content,
     &:checked ~ .news-content {
 	  
-      opacity: 1;
+ opacity: 1;
+      background-color: transparent;
+    max-width: 700px;
+    width: 100vw;
       height: auto;
-	  margin-top:0;
+      padding: 0;
+      position: fixed !important;
+    display:flex;
+    align-content:center;
+    justify-content:center;
+	margin:0 auto;
+      top: 100px;
+      left:7%;
+      right:7%;
+   
       border-radius: 4px;
       z-index: 4;
       pointer-events: auto;
       cursor: auto;
       visibility: visible; 
       overflow: scroll;
-// left:0;
-bottom:20%;
-width:100vw;
-height:100vh;
-
 
  
       @media (max-width: 400px) { left: 0; }                   
@@ -123,7 +133,7 @@ height:100vh;
   
 @media (max-width: 600px){
 	
-.news-close{top:25px !important; right: 3% !important; color: #999 !important;}
+.news-close{top:15px !important; right: 20px !important; color: #999 !important;}
 	
 	&.active ~ .news-content,
     &:checked ~ .news-content {
@@ -132,7 +142,11 @@ height:100vh;
 	    text-align: left !important;
 	    max-width:100% !important;
 	    z-index:4 !important;
+	    
+	    width:100% !important; padding:0 0 0 30px !important;
 	    }
+	    
+	    
 	    
 
 	    
@@ -146,7 +160,7 @@ const Popup = () => (
 <CustomBox style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
 <div className="news-container" style={{position: 'relative',}}>
   <input id="news-toggle" type="checkbox" style={{position: 'relative',}} />
-  <label className="news-btn txtshadow shadow" htmlFor="news-toggle">Join Hytron Newsletter</label> 
+  <label className="news-btn txtshadow shadow" htmlFor="news-toggle">Join Our Newsletter</label> 
   <label className="news-backdrop" htmlFor="news-toggle"></label> 
   
   <div className="news-content " style={{position: 'relative', zIndex: '4',}}>

@@ -13,6 +13,8 @@ const ExamplePagePreview = ({ entry, getAsset }) => {
         heading={data.heading}
         subheading={data.subheading}
         image2={data.image2}
+        i2Heading={data.i2Heading}
+        i2Subheading={data.i2Subheading}
       />
     )
   } else {

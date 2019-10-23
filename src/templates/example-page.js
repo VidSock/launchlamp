@@ -15,6 +15,8 @@ export const ExamplePageTemplate = ({
   heading,
   subheading,
   image2,
+  i2Heading,
+  i2Subheading,
 }) => (
 	
   <div className="outer intro">
@@ -103,8 +105,52 @@ export const ExamplePageTemplate = ({
       }}
     >
     
-    <ScrollAnimation animateIn="fadeIn" style={{position: 'absolute', left:'0', padding: '0 8%', top: '120px', color: '#fff', fontSize: '150%',}}><h3 className="txtshadow">Major Obvious has checked in here from time to time and place to place</h3>
-</ScrollAnimation>
+
+     <ScrollAnimation animateIn="bounceInDown"  delay={1000}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+//             fontSize: '4rem',
+           position: 'relative',
+//            top: '100px',
+        left: '5%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+            float: 'none',
+            
+          }}
+        >
+          {i2Heading}
+        </h2>
+        </ScrollAnimation>
+        
+        
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft"  delay={1000}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+//             fontSize: '4rem',
+           position: 'relative',
+//            top: '100px',
+        left: '5%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+            float: 'none',
+            
+          }}
+        >
+          {i2Subheading}
+        </h2>
+        </ScrollAnimation>
+        
+        
+
 
     </div>
        
@@ -120,6 +166,8 @@ ExamplePageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  i2Heading: PropTypes.string,
+  i2Subheading: PropTypes.string,
 }
 
 
@@ -138,6 +186,8 @@ const ExamplePage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         image2={frontmatter.image2}
+        i2Heading={frontmatter.i2Heading}
+        i2Subheading={frontmatter.i2Subheading}
       />
     </Layout>
   )
@@ -174,7 +224,8 @@ export const pageQuery = graphql`
             }
           }
         }
-
+		i2Heading
+		i2Subheading
       }
     }
   }

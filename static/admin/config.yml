@@ -44,9 +44,12 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "example-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
+          - {label: Heading-(h1), name: heading, widget: string}
+          - {label: Subheading-(h2), name: subheading, widget: string}
           - {label: Image2, name: image2, widget: image}
+          - {label: Heading-(h3), name: i2Heading, widget: string}
+          - {label: SubHeading-(h3), name: i2Subheading, widget: string} 
+          - {label: "Content", name: "i2Content", widget: "markdown"}        
                       
       - file: "src/pages/about/index.md"
         label: "About"

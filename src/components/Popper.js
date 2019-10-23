@@ -34,15 +34,50 @@ const CustomBox = styled.div`
     transition: opacity 0.2s ease-in; 
 	}      
   }     
+  
+    .modal-content, 
+  .modal-backdrop {
+    height: 0; 
+    width: 0; 
+    opacity: 0;    
+    visibility: hidden;
+    overflow: hidden; 
+    cursor: default;
+    transition: opacity 0.2s ease-in; 
+  }
+  
+    .modal-close {
+	  position:absolute;
+	  top:25px;
+	  right:105px;
+	  z-index:5;
+	  
+    color: #999;
+    padding-top: 0;
+	font-size:28px;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    &:hover { color: #666;
+    }       
+  }
 
   #toggle {
     display: block;
     visibility: hidden;
-    &.active ~ .backdrop,
-    &:checked ~ .backdrop {
-      z-index: 0;
+    &.active ~ .modal-backdrop,
+    &:checked ~ .modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: -1;
       visibility: visible;
-      opacity: .8;      
+      opacity: 1;      
       transition: opacity 0.2s ease-in; 
     }
 
@@ -78,12 +113,15 @@ const Popup = () => (
 <CustomBox style={{}}>
 <ScrollAnimation animateIn="bounceInDown">
 
-<div className="popcontainer" style={{}}>
+<div className="popcontainer" style={{width: '100vw', position:'relative', left: '', padding: '0 20%', height:'100%', minHeight:'200px', color:'#fff',}}>
   <input id="toggle" type="checkbox" style={{position: 'relative',}} />
-  <label className="btn txtshadow shadow" htmlFor="toggle">Join Our Newsletter</label> 
+  <label className="btn txtshadow shadow" htmlFor="toggle">Learn More</label> 
+  <label className="modal-backdrop" htmlFor="modal-toggle" style={{height:'100%',}}></label>
+  
+  
   
   <div className="content">  
-<label className="close" htmlFor="toggle" style={{position: 'absolute', }}><FaTimesCircle /></label>
+<label className="close" htmlFor="toggle" style={{position: 'absolute', right:'5%', top: '15px', fontSize:'24px', cursor:'pointer',}}><FaTimesCircle /></label>
     
     Need some stuff
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 

@@ -161,7 +161,7 @@ export const ExamplePageTemplate = ({
         
         
         
-        <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', top: '40%', left: '8%',}}>
+        <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', top: '30%', left: '0',}}>
 <Popper />
 </ScrollAnimation>
 

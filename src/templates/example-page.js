@@ -97,7 +97,7 @@ export const ExamplePageTemplate = ({
         backgroundImage: `url(${
           !!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2
         })`,
-        backgroundPosition: `bottom left`,
+        backgroundPosition: `bottom center`,
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
@@ -114,12 +114,16 @@ export const ExamplePageTemplate = ({
             color: '#fff',
             fontSize: '3rem',
            position: 'relative',
-//            top: '100px',
-        left: '5%',
-//            backgroundColor: '#ff0000',
-            textAlign: 'left',
+           top: '20%',
+//         right: '5%',
+//         left: '5%',
+        margin: '0 auto',
+        padding: '0 1rem',
+           backgroundColor: '#ff0000',
             border: '0px solid red',
             float: 'none',
+            width: '90vw',
+            textAlign: 'right',
             
           }}
         >
@@ -127,6 +131,9 @@ export const ExamplePageTemplate = ({
         </h2>
         </ScrollAnimation>
         
+        <ScrollAnimation animateIn="fadeIn">
+        <div style={{position: 'absolute', top: '-25px', right: '-25px', width: '50px', height: '50px', display:'block', backgroundColor: '#ff0000', transform:'rotate(40deg)',}}></div>
+        </ScrollAnimation>
         
         
         
@@ -137,22 +144,24 @@ export const ExamplePageTemplate = ({
             color: '#fff',
             fontSize: '1.6rem',
            position: 'relative',
-//            top: '100px',
-        left: '5%',
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        margin: '2rem auto',
 //            backgroundColor: '#ff0000',
-            textAlign: 'left',
+            textAlign: 'center',
             border: '0px solid red',
-            float: 'none',
+            width: '100vw',
             
           }}
         >
-        
-     
           {i2Subheading}
         </h2>
         </ScrollAnimation>
         
-        <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', bottom: '-10%', left: '8%',}}>
+        
+        
+        <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', top: '40%', left: '8%',}}>
 <Popper />
 </ScrollAnimation>
 

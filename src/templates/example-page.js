@@ -106,7 +106,7 @@ export const ExamplePageTemplate = ({
       }}
     >
     
-    <ScrollAnimation animateIn="fadeIn"  delay={1000} style={{position: 'absolute', left:'0', padding: '0 8%', top: '120px', color: '#fff', fontSize: '150%',}}><h3 className="txtshadow">Major Obvious has checked in here from time to time and place to place</h3>
+    <ScrollAnimation animateIn="fadeIn" style={{position: 'absolute', left:'0', padding: '0 8%', top: '120px', color: '#fff', fontSize: '150%',}}><h3 className="txtshadow">Major Obvious has checked in here from time to time and place to place</h3>
 </ScrollAnimation>
 
     </div>

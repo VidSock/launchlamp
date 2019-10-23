@@ -15,9 +15,6 @@ export const ExamplePageTemplate = ({
   heading,
   subheading,
   image2,
-//   mainpitch,
-//   description,
-//   intro,
 }) => (
 	
   <div className="outer intro">

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
- import Gallery1 from '../components/Gallery1'
+//  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
-
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 
@@ -19,83 +19,99 @@ export const ExamplePageTemplate = ({
 //   description,
 //   intro,
 }) => (
+	
   <div className="outer intro">
     <div
-      className="partial-width-image"
+      className="full-width-image"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top center`,
+        backgroundPosition: `center center`,
+        width: '100%',
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height: '70vh',
+        height: '100vh',
+        paddingTop: '55px',
+        position: 'relative',
       }}
     >
-      <div
-        style={{
-          display: 'flex',
-          height: '350px',
-          lineHeight: '1',
-//           justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
+    
+    
+    
+
+    
+    
+    
+ <ScrollAnimation animateIn="bounceInDown"  delay={1000}>
         <h1
-          className="has-mobile"
+          className="normal txtshadow-header mobile-txt"
           style={{
-/*
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-*/
-//             backgroundColor: 'rgb(255, 68, 0)',
-			textShadow: '0px 1px 4px black',
-            color: 'white',
-            lineHeight: '1',
-            padding: '2rem 0 0 3rem',
-            fontSize: '300%',
+            color: '#fff',
+//             fontSize: '4rem',
+           position: 'relative',
+//            top: '100px',
+        left: '5%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+            float: 'none',
+            
           }}
         >
           {heading}
         </h1>
-        <h3
-          className="has-mobile"
+        </ScrollAnimation>
+        
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft"  delay={1000}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
           style={{
-/*
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-*/
-//             backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '.25rem 2rem',
-            position: 'absolute',
-            top: '30%',
-            left: '2%',
+            color: '#fff',
+//             fontSize: '4rem',
+           position: 'relative',
+//            top: '100px',
+        left: '5%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+            float: 'none',
+            
           }}
         >
           {subheading}
-        </h3>
-      </div>
+        </h2>
+        </ScrollAnimation>
+        
+        
     </div>
     
     
-    <div
-      className="partial-width-image"
-      style={{
+
+    
+    
+        <div
+      className="full-width-image margin-top-0"
+      style={{display: 'block',
+	      position: 'relative',
         backgroundImage: `url(${
           !!image2.childImageSharp ? image2.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top center`,
+        backgroundPosition: `bottom left`,
+        width: '100%',
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height: '70vh',
+        height: '100vh',
+        paddingTop: '55px',
       }}
-    >Booya
+    >
+    
+    <ScrollAnimation animateIn="fadeIn"  delay={1000} style={{position: 'absolute', left:'0', padding: '0 8%', top: '120px', color: '#fff', fontSize: '150%',}}><h3 className="txtshadow">Major Obvious has checked in here from time to time and place to place</h3>
+</ScrollAnimation>
+
     </div>
        
-    <div className="container"><Gallery1 /></div>
+    <div className="container"></div>
   </div>
   
 

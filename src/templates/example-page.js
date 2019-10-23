@@ -106,7 +106,7 @@ export const ExamplePageTemplate = ({
     >
     
 
-     <ScrollAnimation animateIn="bounceInDown"  delay={1000}>
+     <ScrollAnimation animateIn="bounceInDown">
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -129,7 +129,7 @@ export const ExamplePageTemplate = ({
         
         
         
-         <ScrollAnimation animateIn="bounceInLeft"  delay={1000}>
+         <ScrollAnimation animateIn="bounceInLeft">
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{

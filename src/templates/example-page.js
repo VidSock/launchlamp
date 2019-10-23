@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
-
+import Popper from '../components/Popper'
 
 
 export const ExamplePageTemplate = ({
@@ -102,6 +102,7 @@ export const ExamplePageTemplate = ({
         backgroundSize: 'cover',
         height: '100vh',
         paddingTop: '55px',
+        overflow: 'scroll',
       }}
     >
     
@@ -111,7 +112,7 @@ export const ExamplePageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-//             fontSize: '4rem',
+            fontSize: '4rem',
            position: 'relative',
 //            top: '100px',
         left: '5%',
@@ -134,7 +135,7 @@ export const ExamplePageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-//             fontSize: '4rem',
+            fontSize: '2rem',
            position: 'relative',
 //            top: '100px',
         left: '5%',
@@ -145,11 +146,15 @@ export const ExamplePageTemplate = ({
             
           }}
         >
+        
+     
           {i2Subheading}
         </h2>
         </ScrollAnimation>
         
-        
+        <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', bottom: '-30%', left: '8%',}}>
+<Popper />
+</ScrollAnimation>
 
 
     </div>

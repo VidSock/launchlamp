@@ -9,10 +9,10 @@ const ExamplePagePreview = ({ entry, getAsset }) => {
     return (
       <ExamplePageTemplate
         image={data.image}
-        image2={data.image2}
         title={data.title}
         heading={data.heading}
         subheading={data.subheading}
+        image2={data.image2}
       />
     )
   } else {

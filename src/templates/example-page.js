@@ -96,7 +96,7 @@ export const ExamplePageTemplate = ({
       style={{display: 'block',
 	      position: 'relative',
         backgroundImage: `url(${
-          !!image2.childImageSharp ? image2.childImageSharp.fluid.src : image
+          !!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2
         })`,
         backgroundPosition: `bottom left`,
         width: '100%',
@@ -122,7 +122,7 @@ ExamplePageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  image2: PropTypes.object,
+  image2: PropTypes.string,
 }
 
 

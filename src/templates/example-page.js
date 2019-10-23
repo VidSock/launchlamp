@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
-import Features from '../components/Features'
+// import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 
 
@@ -14,9 +14,10 @@ export const ExamplePageTemplate = ({
   title,
   heading,
   subheading,
-  mainpitch,
-  description,
-  intro,
+  image2,
+//   mainpitch,
+//   description,
+//   intro,
 }) => (
   <div className="outer intro">
     <div
@@ -56,7 +57,7 @@ export const ExamplePageTemplate = ({
             fontSize: '300%',
           }}
         >
-          {title}
+          {heading}
         </h1>
         <h3
           className="has-mobile"
@@ -78,41 +79,22 @@ export const ExamplePageTemplate = ({
         </h3>
       </div>
     </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h2 className="title">{mainpitch.title}</h2>
-                  </div>
-                  <div className="tile">
-                  <br />
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="">
-                  <div className="columnz">
-                    <h3>
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                
-               
-                 
-                 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     
+    
+    <div
+      className="partial-width-image"
+      style={{
+        backgroundImage: `url(${
+          !!image2.childImageSharp ? image2.childImageSharp.fluid.src : image
+        })`,
+        backgroundPosition: `top center`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        height: '70vh',
+      }}
+    >Booya
+    </div>
+       
     <div className="container"><Gallery1 /></div>
   </div>
   
@@ -124,11 +106,7 @@ ExamplePageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  image2: PropTypes.object,
 }
 
 
@@ -146,9 +124,7 @@ const ExamplePage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        image2={frontmatter.image2}
       />
     </Layout>
   )
@@ -178,31 +154,14 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid_withWebp
-        aspectRatio
-        src
-        srcSet
-        srcWebp
-        srcSetWebp
-        sizes
-                }
-              }
+        image2 {
+          childImageSharp {
+            fluid(maxWidth: 1600, quality: 64) {
+              ...GatsbyImageSharpFluid_withWebp
             }
-            text
           }
-          heading
-          description
         }
+
       }
     }
   }

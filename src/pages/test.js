@@ -16,13 +16,13 @@ const Terms = () => (
         backgroundSize: 'cover',
         height: '100vh',
         paddingTop: '55px',
-        overflow: 'scroll',
+//         overflow: 'scroll',
       }}
     >
    
-     <ScrollAnimation animateIn="bounceInUp"  delay={1000}>
+     <ScrollAnimation animateIn="bounceInDown faster delay-1s" >
         <h1
-          className="normal txtshadow-header mobile-txt"
+          className="normal txtshadow-header mobile-txt "
           style={{
             color: '#fff',
 //             fontSize: '4rem',
@@ -42,11 +42,39 @@ const Terms = () => (
         </h1>
         
         </ScrollAnimation>
+        
+<ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', bottom: '-30%', left: '8%',}}>
 <Popper />
+</ScrollAnimation>
 
-<ScrollAnimation animateIn="bounceInDown"  delay={1000} style={{position: 'absolute', right:'0', color: '#fff',}}><h3>Major Obvious</h3>
+<ScrollAnimation animateIn="fadeIn"  delay={1000} style={{position: 'absolute', left:'0', padding: '0 8%', top: '120px', color: '#fff', fontSize: '150%',}}><h3 className="txtshadow">Major Obvious has checked in here from time to time and place to place</h3>
 </ScrollAnimation>
 </div>
+
+
+
+
+<br /><br /><br />
+
+
+ <div
+      className="full-width-image margin-top-0"
+      style={{display: 'block',
+	      position: 'relative',
+        backgroundImage: `url(../img/img_3290.jpg)`,
+        backgroundPosition: `center center`,
+        width: '100%',
+        backgroundSize: 'cover',
+        height: '100vh',
+        paddingTop: '55px',
+//         overflow: 'scroll',
+      }}
+    >
+    <ScrollAnimation  animateIn="bounceInDown" animateOut="zoomOut slower" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position: 'absolute', top: '30%', right: '20%',}}>
+<Popper />
+</ScrollAnimation>
+    
+    </div>
 
 
     <section className="outer section section--gradient">

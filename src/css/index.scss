@@ -2,6 +2,8 @@
 // Hytron - by Todd Lambert
 // 
 
+@import url("animate.css");
+
 $primary: #DB2600;
 $red: #ff0000;
 
@@ -237,7 +239,7 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
     
     .full-width-image{background-size: cover !important; background-size: 100vmax 100vmax; position:relative;}
     
-//     .full-width-image:after{content: "[SCROLL - MORE]"; position: absolute; bottom:10px; right:3%; color:#fff; font-weight: normal; font-size:100%; text-shadow: 0px 1px 0px black;}
+    .full-width-image:after{content: "[SCROLL - MORE]"; position: absolute; bottom:13%; right:3%; color:#fff; font-weight: normal; font-size:100%; text-shadow: 0px 1px 0px black;}
 
 .scrolldown{}
     
@@ -472,7 +474,7 @@ body{font-family: -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Robot
 
 
 
-div.column{ padding:1rem 0rem;  animation: fadeIn 3s;}
+div.column{ padding:0 0rem !important;  animation: fadeIn 3s;}
 
 
 
@@ -638,7 +640,7 @@ input.special {
 
 
 
-h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper{font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-style: italic;}
+h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Francois One,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-style: italic;}
 
 #menu{font-size:1rem;}
 

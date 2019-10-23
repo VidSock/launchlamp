@@ -136,13 +136,11 @@ export const IndexPageTemplate = ({
       
     
     
-    <section className="section section--gradient">
-      <div className="container">
+
      
                 <Features gridItems={intro.blurbs} />
 
-      </div>
-    </section>
+
     
     
                       

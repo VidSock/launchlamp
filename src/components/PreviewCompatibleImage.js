@@ -9,16 +9,16 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <ScrollAnimation animateIn="moveLeft" animateOnce={true}><Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} /></ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}><Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} /></ScrollAnimation>
     )
   }
 
   if (!!childImageSharp) {
-    return <ScrollAnimation animateIn="moveLeft" animateOnce={true}><Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} /></ScrollAnimation>
+    return <ScrollAnimation animateIn="fadeIn" animateOnce={true}><Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} /></ScrollAnimation>
   }
 
   if (!!image && typeof image === 'string')
-    return <ScrollAnimation animateIn="moveLeft" animateOnce={true}><img style={imageStyle} src={image} alt={alt} /></ScrollAnimation>
+    return <ScrollAnimation animateIn="fadeIn" animateOnce={true}><img style={imageStyle} src={image} alt={alt} /></ScrollAnimation>
 
   return null
 }

@@ -46,7 +46,7 @@ export const ExamplePageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-//             fontSize: '4rem',
+            fontSize: '3rem',
            position: 'relative',
 //            top: '100px',
         left: '5%',
@@ -100,6 +100,7 @@ export const ExamplePageTemplate = ({
         backgroundPosition: `bottom center`,
         width: '100%',
         backgroundSize: 'cover',
+        backgroundRepeat: 'none',
         height: '100vh',
         paddingTop: '55px',
         overflowX:  'hidden',

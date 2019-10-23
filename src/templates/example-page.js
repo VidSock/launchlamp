@@ -119,7 +119,7 @@ ExamplePageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  image2: PropTypes.string,
+  image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 

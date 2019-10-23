@@ -102,7 +102,7 @@ export const ExamplePageTemplate = ({
         backgroundSize: 'cover',
         height: '100vh',
         paddingTop: '55px',
-        overflow: 'scroll',
+        overflowX:  'hidden',
       }}
     >
     
@@ -112,7 +112,7 @@ export const ExamplePageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-            fontSize: '4rem',
+            fontSize: '3rem',
            position: 'relative',
 //            top: '100px',
         left: '5%',
@@ -135,7 +135,7 @@ export const ExamplePageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-            fontSize: '2rem',
+            fontSize: '1.6rem',
            position: 'relative',
 //            top: '100px',
         left: '5%',
@@ -152,7 +152,7 @@ export const ExamplePageTemplate = ({
         </h2>
         </ScrollAnimation>
         
-        <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', bottom: '-30%', left: '8%',}}>
+        <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', bottom: '-10%', left: '8%',}}>
 <Popper />
 </ScrollAnimation>
 

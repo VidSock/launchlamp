@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import { FaEnvelope } from 'react-icons/fa';
 // const Contact = class extends React.Component {
 //   render() {
@@ -53,7 +53,7 @@ export default class Newsletter extends React.Component {
   render() {
     return (
       
-      <ScrollAnimation animateIn="fadeIn" duration={2}  animatePreScroll={false} initiallyVisible={true}>
+      
         <section className="outer section">
           <div className="container" style={{padding: '5px 0 10px 0', textAlign: 'center', maxWidth: '600px', margin: '0 auto',}}>
           
@@ -113,7 +113,7 @@ export default class Newsletter extends React.Component {
             </div>
           </div>
         </section>      
-      </ScrollAnimation>
+
     )
   }
 }

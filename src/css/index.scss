@@ -17,9 +17,10 @@ $red: #ff0000;
 
 .hidden{display: none;}
 body {overflow-x: hidden;}
-.animated{overflow: hidden !important; padding:1rem; width:100vh !important;}
+// .full-width-image{max-width:100vw !important;}
 .media{ width:100%; height:100vh;  }
-
+.animated{max-width:100vw !important; overflow-x:hidden; padding:0 1rem !important;}
+// .newsletterbox{overflow: auto !important;}
 /* Remove default padding */
 ul[class],
 ol[class] {

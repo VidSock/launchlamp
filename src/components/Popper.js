@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from "styled-components";
+
 import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 const CustomBox = styled.div`
 
@@ -10,8 +11,14 @@ const CustomBox = styled.div`
 
 .popcontainer {
   .btn {
+	  position:relative;
+	  top:30px;
+// 	  z-index:3;
     margin: 0 auto;      
     color: #fff;  
+    height:50px;
+    width:auto;
+    z-index:1;
     padding:.8rem 2rem;   
     line-height: 20px;    
     background: #DB2600;
@@ -48,9 +55,9 @@ const CustomBox = styled.div`
   
     .modal-close {
 	  position:absolute;
-	  top:25px;
+	  top:45px;
 	  right:105px;
-	  z-index:5;
+// 	  z-index:5;
 	  
     color: #999;
     padding-top: 0;
@@ -69,7 +76,7 @@ const CustomBox = styled.div`
     visibility: hidden;
     &.active ~ .modal-backdrop,
     &:checked ~ .modal-backdrop {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.8);
       width: 100vw;
       height: 100vh;
       position: fixed;
@@ -87,10 +94,10 @@ const CustomBox = styled.div`
       background-color: transparent;
 	  width:auto !important;
       height: auto;
-      padding:20px 0 0 0 !important;
+      padding:0 0 0 0 !important;
 	margin:0 auto;
 	display:block;
-      z-index: 4;
+//       z-index: 4;
       pointer-events: auto;
       cursor: auto;
       visibility: visible; 
@@ -107,37 +114,41 @@ const CustomBox = styled.div`
 `
 
 
+
+   
 const Popup = () => (
-  
+
+   
+
 
 <CustomBox style={{}}>
-<ScrollAnimation animateIn="bounceInDown">
 
-<div className="popcontainer" style={{width: '100vw', position:'relative', left: '', padding: '0 20%', height:'100%', minHeight:'200px', color:'#fff',}}>
+
+<div className="popcontainer" style={{position:'relative', padding: '0 0', marginTop: '0', display:'flex', justifyContent:'center', flexDirection:'column',}}>
   <input id="toggle" type="checkbox" style={{position: 'relative',}} />
-  <label className="btn txtshadow shadow" htmlFor="toggle">Learn More</label> 
+  
+  <label className="btn txtshadow shadow" htmlFor="toggle" >Learn More</label>
+  
   <label className="modal-backdrop" htmlFor="modal-toggle" style={{height:'100%',}}></label>
-  
-  
-  
-  <div className="content">  
-<label className="close" htmlFor="toggle" style={{position: 'absolute', right:'5%', top: '15px', fontSize:'24px', cursor:'pointer',}}><FaTimesCircle /></label>
+
+   
+  <div className=" content" style={{margin: '0 12%',}}>
+
+<label className="close" htmlFor="toggle" style={{position: 'absolute', right:'4%', top: '7%', fontSize:'24px', cursor:'pointer',}} title="Close this section"><FaTimesCircle /></label>
     
+    <div className="container" style={{margin:'0', padding:'30px',}}>
     Need some stuff
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-    
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-    
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-    
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-    
+    <br /><br />
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
 
-  </div>    
+    
+ </div>
+
+  </div> 
 </div>
 
-</ScrollAnimation>
+
 
 </CustomBox>
   

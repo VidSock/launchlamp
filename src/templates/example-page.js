@@ -7,7 +7,55 @@ import Layout from '../components/Layout'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Popper from '../components/Popper'
+import styled from "styled-components"
 
+const CustomBox = styled.div`
+*, *:before, *:after { box-sizing: border-box; }
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+//   border:20px solid red !important;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+`
 
 export const ExamplePageTemplate = ({
   image,
@@ -19,6 +67,7 @@ export const ExamplePageTemplate = ({
   i2Subheading,
 }) => (
 	
+	<CustomBox>
   <div className="outer intro">
     <div
       className="full-width-image"
@@ -32,6 +81,7 @@ export const ExamplePageTemplate = ({
         height: '100vh',
         paddingTop: '55px',
         position: 'relative',
+        overflowX: 'scroll',
       }}
     >
     
@@ -83,12 +133,12 @@ export const ExamplePageTemplate = ({
         </h2>
         </ScrollAnimation>
         
-        
+        <Popper />
     </div>
     
     
 
-    
+
     
         <div
       className="full-width-image margin-top-0"
@@ -162,15 +212,27 @@ export const ExamplePageTemplate = ({
         
         
         
-        <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', top: '30%', left: '0',}}>
-<Popper />
-</ScrollAnimation>
+        
 
 
     </div>
+    
+    
+
+
+
+
+    <div className="fullscreen-bg" style={{display:'none',}}>
+    <video loop muted autoPlay poster="../img/10K_Feet.jpg" className="fullscreen-bg__video">
+        <source src="../img/10K_Feet.webm" type="video/webm" />
+        <source src="../img/10K_Feet.mp4" type="video/mp4" />
+        <source src="../img/10K_Feet.ogv" type="video/ogg" />
+    </video>
+</div>
        
-    <div className="container"></div>
+    <div className="container" style={{display:'none',}}></div>
   </div>
+  </CustomBox>
   
 
 )

@@ -129,7 +129,7 @@ const Popupsemi = () => (
   <input id="semitoggle" type="checkbox" style={{position: 'relative',}} />
   
     
-  <label className="modal-backdrop" htmlFor="modal-semitoggle" style={{height:'100%',}}></label>
+
 
    
   <div className=" content" style={{margin: '0 12%',}}>

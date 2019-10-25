@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Contact from '../components/Contact'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
-import Popper from '../components/Popper'
+import PopMedical from '../components/PopMedical'
+import PopSemi from '../components/PopSemi'
 import styled from "styled-components"
 
 const CustomBox = styled.div`
@@ -133,7 +135,25 @@ export const ExamplePageTemplate = ({
         </h2>
         </ScrollAnimation>
         
-        <Popper />
+        <label className="btn txtshadow shadow" htmlFor="medtoggle" style={{
+	position:'relative',
+	top:'200px',
+	left:'30%',
+	width:'auto',
+    margin: '0 auto',     
+    color: '#fff',  
+    padding:'.8rem 2rem',   
+    lineHeight: '20px',    
+    background: '#DB2600',
+    fontWeight:'bold',
+    borderRadius: '3px',  
+    cursor: 'pointer',
+    textAlign: 'center', 
+    transition: 'background 0.3s ease-in',
+        }} >Learn More</label>
+        
+       <PopMedical /> 
+       
     </div>
     
     
@@ -153,12 +173,11 @@ export const ExamplePageTemplate = ({
         backgroundRepeat: 'none',
         height: '100vh',
         paddingTop: '55px',
-        overflowX:  'hidden',
       }}
     >
     
 
-     <ScrollAnimation animateIn="bounceInDown">
+     <ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -182,13 +201,13 @@ export const ExamplePageTemplate = ({
         </h2>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
         <div style={{position: 'absolute', top: '-25px', right: '-25px', width: '50px', height: '50px', display:'block', backgroundColor: '#ff0000', transform:'rotate(40deg)',}}></div>
         </ScrollAnimation>
         
         
         
-         <ScrollAnimation animateIn="bounceInLeft">
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -211,13 +230,17 @@ export const ExamplePageTemplate = ({
         </ScrollAnimation>
         
         
+
         
+        <PopSemi />
         
 
 
     </div>
     
     
+    
+    <Contact />
 
 
 

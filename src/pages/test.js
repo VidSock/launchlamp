@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Popper from '../components/Popper'
+// import Popper from '../components/Popper'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const Terms = () => (
@@ -44,7 +44,7 @@ const Terms = () => (
         </ScrollAnimation>
         
 <ScrollAnimation  animateIn="fadeIn" animateOut="zoomOut slower" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position: 'relative', bottom: '-30%', left: '8%',}}>
-<Popper />
+
 </ScrollAnimation>
 
 <ScrollAnimation animateIn="fadeIn"  delay={1000} style={{position: 'absolute', left:'0', padding: '0 8%', top: '120px', color: '#fff', fontSize: '150%',}}><h3 className="txtshadow">Major Obvious has checked in here from time to time and place to place</h3>
@@ -71,7 +71,7 @@ const Terms = () => (
       }}
     >
     <ScrollAnimation  animateIn="bounceInDown" animateOut="zoomOut slower" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position: 'absolute', top: '30%', right: '20%',}}>
-<Popper />
+
 </ScrollAnimation>
     
     </div>

@@ -122,7 +122,7 @@ const Popupsemi = () => (
 
 <CustomBox style={{}}>
 
-<ScrollAnimation animateIn="bounceInUp">
+<ScrollAnimation animateIn="bounceInUp"  animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="popsemicontainer" style={{position:'relative', padding: '0 0', marginTop: '0', display:'flex', justifyContent:'center', flexDirection:'column',}}>
 <label className="btn txtshadow shadow" htmlFor="semitoggle" >Learn More</label>
 

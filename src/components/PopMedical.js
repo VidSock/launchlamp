@@ -11,7 +11,7 @@ const CustomBox = styled.div`
 
 .popcontainer {
   .btn {
-	  position:absolute;
+	  position:relative;
 // 	  top:-30px;
 // 	  z-index:3;
     margin: 0 auto;      
@@ -107,7 +107,7 @@ const CustomBox = styled.div`
 #medtoggle {
 	&.active ~ .btn,
     &:checked ~ .btn {
-// 	display:none;
+	display:none;
 	}
 }
 `
@@ -122,7 +122,7 @@ const Popup = () => (
 
 <CustomBox style={{}}>
 
-<ScrollAnimation animateIn="zoomIn delay2 slower">
+<ScrollAnimation animateIn="zoomIn delay2 slower" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 <div className="popcontainer" style={{position:'relative', padding: '0 0', marginTop: '-20px', display:'flex', justifyContent:'center', flexDirection:'column',}}>
 
 

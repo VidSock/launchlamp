@@ -93,7 +93,7 @@ export const ExamplePageTemplate = ({
     
     
     
- <ScrollAnimation animateIn="bounceInDown"  delay={1000}>
+ <ScrollAnimation animateIn="bounceInDown"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -115,7 +115,7 @@ export const ExamplePageTemplate = ({
         
         
         
-         <ScrollAnimation animateIn="bounceInLeft"  delay={1000}>
+         <ScrollAnimation animateIn="bounceInLeft"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -171,8 +171,9 @@ export const ExamplePageTemplate = ({
         width: '100%',
         backgroundSize: 'cover',
         backgroundRepeat: 'none',
-        height: '100vh',
+        height:'100vh',
         paddingTop: '55px',
+        overflowX: 'scroll',
       }}
     >
     
@@ -201,13 +202,11 @@ export const ExamplePageTemplate = ({
         </h2>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-        <div style={{position: 'absolute', top: '-25px', right: '-25px', width: '50px', height: '50px', display:'block', backgroundColor: '#ff0000', transform:'rotate(40deg)',}}></div>
-        </ScrollAnimation>
         
         
         
-         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -245,15 +244,9 @@ export const ExamplePageTemplate = ({
 
 
 
-    <div className="fullscreen-bg" style={{display:'none',}}>
-    <video loop muted autoPlay poster="../img/10K_Feet.jpg" className="fullscreen-bg__video">
-        <source src="../img/10K_Feet.webm" type="video/webm" />
-        <source src="../img/10K_Feet.mp4" type="video/mp4" />
-        <source src="../img/10K_Feet.ogv" type="video/ogg" />
-    </video>
-</div>
+    
        
-    <div className="container" style={{display:'none',}}></div>
+    
   </div>
   </CustomBox>
   

@@ -1,7 +1,7 @@
 ---
 templateKey: example-page
 title: Highest quality machined parts & manufacturing
-image: /img/img_2487.jpg
+image: /img/img_3136.jpg
 heading: Great parts - great service
 subheading: 'We''re an ISO 9001:2015 company'
 mainpitch:

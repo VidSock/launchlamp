@@ -17,13 +17,11 @@ const ExamplePagePreview = ({ entry, getAsset }) => {
         i2Subheading={data.i2Subheading}
         i2Subsubheading={data.i2Subsubheading}
         i2Subsubheading2={data.i2Subsubheading2}
-/*
         image3={data.image3}
         i3Heading={data.i3Heading}
         i3Subheading={data.i3Subheading}
         i3Subsubheading={data.i3Subsubheading}
         i3Subsubheading2={data.i3Subsubheading2}
-*/
       />
     )
   } else {

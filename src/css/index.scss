@@ -137,7 +137,24 @@ html::-webkit-scrollbar-thumb {
 }
 
 
-
+.modal-btn {
+    display: block;
+/*     margin: 0 auto; */      
+    color: #fff;  
+    height: 60px; 
+    padding:5px 1rem 0 1rem;   
+    line-height: 50px;    
+    background: transparent;
+      
+    border: 0;
+/*     border-radius: 3px; */  
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 5px 5px -5px #333;  
+    transition: background 0.3s ease-in;
+    &:hover { background: #DB2600; cursor:pointer; 
+    }
+  }
 
 
 html{font-size: 100%;}

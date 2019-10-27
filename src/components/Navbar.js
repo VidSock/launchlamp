@@ -4,7 +4,7 @@ import logo from '../img/hytron-logo.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
-import PopContact from '../components/PopContact'
+// import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
 
 
@@ -59,7 +59,8 @@ const Navbar = class extends React.Component {
               
 
               <li>
-             <PopContact />
+             
+             <label className="modal-btn" htmlFor="modal-toggle">Request Quote</label> 
               </li>
               
               

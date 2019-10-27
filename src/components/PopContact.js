@@ -147,7 +147,7 @@ const PopupContact = () => (
 <CustomBox>
 <div className="modal-container">
   <input id="modal-toggle" type="checkbox" />
-  <label className="modal-btn" htmlFor="modal-toggle">Request Quote</label> 
+  
   <label className="modal-backdrop" htmlFor="modal-toggle"></label>
   <div className="modal-content">
     <label className="modal-close" htmlFor="modal-toggle"><FaTimesCircle /></label>

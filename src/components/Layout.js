@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
 import Navbar from '../components/Navbar'
-// import Contact from '../components/Contact'
+
+import PopContact from '../components/PopContact'
 import 'typeface-francois-one'
 import "../css/index.scss"
 
@@ -51,6 +52,7 @@ const TemplateWrapper = ({ children }) => {
       
       
       <Navbar />
+      <PopContact />
   
       <main>{children}</main>
 

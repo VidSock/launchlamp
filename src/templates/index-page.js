@@ -182,7 +182,10 @@ export const IndexPageTemplate = ({
 <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<h2>Contract Manufacturing</h2>
+<p>Hytron is a contract manufacturing service provider. Through our outsourcing services, we have partnered with Fortune 500 companies for their component part manufacturing. This has resulted in a reduced time-to-market and cost savings for our Customers.</p>
+
+<p>Our manufacturing capabilities range from prototype fabrication to close tolerance machining in production volumes to support your requirements.</p>
 </div>
 </div>
 </ScrollAnimation>
@@ -190,10 +193,27 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<h2>Lean Manufacturing</h2>
+<p>Products you need –  at the desired volume – when you want them.</p>
+
+<p>Our supply chain expertise in Build-to-Order  product assembly and our proprietary quoting, planning, quality inspection and supply chain management capability create cost effective fulfillment solutions. Let us show you how we can tailor a “Kanban” replenishment program to meet your needs and avoid supply chain disruptions</p>
 </div>
 </div>
 </ScrollAnimation>
+
+<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem',}}>
+<h2>The Hytron Difference</h2>
+
+
+<p>With our best-in-class capabilities, high quality standards and supply chain tracking system we can deliver your products in the most cost effective way.</p>
+<p>Let Hytron assist you with bringing your product to market.</p>
+</div>
+</div>
+</ScrollAnimation>
+
+
 
 <h2 style={{textAlign: 'center', marginBottom: '2rem',}}>Some of the industries we serve:</h2>
     

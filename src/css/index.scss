@@ -1139,7 +1139,8 @@ body.dark * {
 .headroom--unpinned {
   transform: translateY(-100%);
 }
-.headroom--pinned .back-to-top{ top:0; right:30%; background:transparent;}
+.headroom--pinned .back-to-top{ top:0; right:25%; background:transparent;}
+.headroom--pinned .back-to-top:after{content: ('Back to top'); font-size: 12px; top:0; position:absolute; height:20px;}
 .headroom--unfixed .back-to-top{display: none;}
 
 

@@ -12,7 +12,6 @@ const ExamplePagePreview = ({ entry, getAsset }) => {
         title={data.title}
         heading={data.heading}
         subheading={data.subheading}
-        content={widgetFor('body')}
         image2={data.image2}
         i2Heading={data.i2Heading}
         i2Subheading={data.i2Subheading}
@@ -35,7 +34,6 @@ ExamplePagePreview.propTypes = {
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
-  widgetFor: PropTypes.func,
 }
 
 export default ExamplePagePreview

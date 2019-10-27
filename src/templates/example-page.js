@@ -64,9 +64,19 @@ export const ExamplePageTemplate = ({
   title,
   heading,
   subheading,
+  subsubheading,
   image2,
   i2Heading,
   i2Subheading,
+  i2Subsubheading,
+  i2Subsubheading2,
+  image3,
+
+  i3Heading,
+ i3Subheading,
+  i3Subsubheading,
+  i3Subsubheading2,
+  
 }) => (
 	
 	<CustomBox>
@@ -134,6 +144,29 @@ export const ExamplePageTemplate = ({
           {subheading}
         </h2>
         </ScrollAnimation>
+        
+        <ScrollAnimation animateIn="bounceInLeft"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+//             fontSize: '4rem',
+           position: 'relative',
+//            top: '100px',
+        left: '5%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+            float: 'none',
+            
+          }}
+        >
+          {subsubheading}
+        </h2>
+        </ScrollAnimation>
+        
+        
+        
         
         <label className="btn txtshadow shadow" htmlFor="medtoggle" style={{
 	position:'relative',
@@ -229,13 +262,111 @@ export const ExamplePageTemplate = ({
         </ScrollAnimation>
         
         
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '1.6rem',
+           position: 'relative',
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        margin: '2rem auto',
+//            backgroundColor: '#ff0000',
+            textAlign: 'center',
+            border: '0px solid red',
+            width: '100vw',
+            
+          }}
+        >
+          {i2Subsubheading}
+        </h2>
+        </ScrollAnimation>
+        
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '1.6rem',
+           position: 'relative',
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        margin: '2rem auto',
+//            backgroundColor: '#ff0000',
+            textAlign: 'center',
+            border: '0px solid red',
+            width: '100vw',
+            
+          }}
+        >
+          {i2Subsubheading2}
+        </h2>
+        </ScrollAnimation>
 
         
         <PopSemi />
-        
-
 
     </div>
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div
+      className="full-width-image margin-top-0"
+      style={{display: 'block',
+	      position: 'relative',
+        backgroundImage: `url(${
+          !!image3.childImageSharp ? image3.childImageSharp.fluid.src : image
+        })`,
+        backgroundPosition: `bottom center`,
+        width: '100%',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'none',
+        height:'100vh',
+        paddingTop: '55px',
+        overflowX: 'scroll',
+      }}
+    >
+    <ScrollAnimation animateIn="bounceInDown"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h1
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '3rem',
+           position: 'relative',
+//            top: '100px',
+        left: '5%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+            float: 'none',
+            
+          }}
+        >
+          {i3Heading}
+          {i3Subheading}
+        {i3Subsubheading}
+        {i3Subsubheading2}
+        </h1>
+        </ScrollAnimation>
+        
+        
+    </div>
+    
+    
+    
     
     
     
@@ -258,9 +389,19 @@ ExamplePageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
+  subsubheading: PropTypes.string,
+  
   image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   i2Heading: PropTypes.string,
   i2Subheading: PropTypes.string,
+  i2Subsubheading: PropTypes.string,
+  i2Subsubheading2: PropTypes.string,
+
+  image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  i3Heading: PropTypes.string,
+  i3Subheading: PropTypes.string,
+  i3Subsubheading: PropTypes.string,
+  i3Subsubheading2: PropTypes.string,
 }
 
 
@@ -278,9 +419,19 @@ const ExamplePage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        subsubheading={frontmatter.subsubheading}
+        
         image2={frontmatter.image2}
         i2Heading={frontmatter.i2Heading}
         i2Subheading={frontmatter.i2Subheading}
+        i2Subsubheading={frontmatter.i2Subsubheading}
+        i2Subsubheading2={frontmatter.i2Subsubheading2}
+
+        image3={frontmatter.image3}
+       i3Heading={frontmatter.i3Heading}
+        i3Subheading={frontmatter.i3Subheading}
+        i3Subsubheading={frontmatter.i3Subsubheading}
+        i3Subsubheading2={frontmatter.i3Subsubheading2}
       />
     </Layout>
   )
@@ -310,6 +461,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        subsubheading
         image2 {
           childImageSharp {
             fluid(maxWidth: 1600, quality: 64) {
@@ -319,6 +471,21 @@ export const pageQuery = graphql`
         }
 		i2Heading
 		i2Subheading
+		i2Subsubheading
+		i2Subsubheading2
+		
+		 image3 {
+          childImageSharp {
+            fluid(maxWidth: 1600, quality: 64) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+		i3Heading
+		i3Subheading
+		i3Subsubheading
+		i3Subsubheading2
+		
       }
     }
   }

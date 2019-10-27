@@ -46,9 +46,17 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Heading-(h1), name: heading, widget: string}
           - {label: Subheading-(h2), name: subheading, widget: string}
+          - {label: Subsubheading-(h3), name: subsubheading, widget: string}
           - {label: Image2, name: image2, widget: image}
           - {label: Heading-(h3), name: i2Heading, widget: string}
-          - {label: SubHeading-(h3), name: i2Subheading, widget: string}     
+          - {label: SubHeading-(h3), name: i2Subheading, widget: string} 
+          - {label: Subsubheading-(h3), name: i2Subsubheading, widget: string}
+          - {label: Subsubheading2-(h3), name: i2Subsubheading2, widget: string}    
+          - {label: Image3, name: image3, widget: image}
+          - {label: Heading-(h3), name: i3Heading, widget: string}
+          - {label: SubHeading-(h3), name: i3Subheading, widget: string} 
+          - {label: Subsubheading-(h3), name: i3Subsubheading, widget: string}
+          - {label: Subsubheading2-(h3), name: i3Subsubheading2, widget: string}
                       
       - file: "src/pages/about/index.md"
         label: "About"

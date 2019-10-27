@@ -16,4 +16,3 @@ i3Subheading: Doggity
 i3Subsubheading: Doggone
 i3Subsubheading2: DogPiles
 ---
-

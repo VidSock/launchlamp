@@ -31,11 +31,19 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Heading-(h1), name: heading, widget: string}
+          - {label: Subheading-(h2), name: subheading, widget: string}
+          - {label: Subsubheading-(h3), name: subsubheading, widget: string}
+          - {label: Image2, name: image2, widget: image}
+          - {label: Heading-(h3), name: i2Heading, widget: string}
+          - {label: SubHeading-(h3), name: i2Subheading, widget: string}  
+          - {label: Subsubheading-(h3), name: i2Subsubheading, widget: string}
+          - {label: Subsubheading2-(h3), name: i2Subsubheading2, widget: string}  
+          - {label: Image3, name: image3, widget: image}
+          - {label: Heading-(h3), name: i3Heading, widget: string}
+          - {label: SubHeading-(h3), name: i3Subheading, widget: string}  
+          - {label: Subsubheading-(h3), name: i3Subsubheading, widget: string}
+          - {label: Subsubheading2-(h3), name: i3Subsubheading2, widget: string}  
           
       - file: "src/pages/example/index.md"
         label: "Example Page"
@@ -44,19 +52,11 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "example-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Heading-(h1), name: heading, widget: string}
-          - {label: Subheading-(h2), name: subheading, widget: string}
-          - {label: Subsubheading-(h3), name: subsubheading, widget: string}
-          - {label: Image2, name: image2, widget: image}
-          - {label: Heading-(h3), name: i2Heading, widget: string}
-          - {label: SubHeading-(h3), name: i2Subheading, widget: string} 
-          - {label: Subsubheading-(h3), name: i2Subsubheading, widget: string}
-          - {label: Subsubheading2-(h3), name: i2Subsubheading2, widget: string}    
-          - {label: Image3, name: image3, widget: image}
-          - {label: Heading-(h3), name: i3Heading, widget: string}
-          - {label: SubHeading-(h3), name: i3Subheading, widget: string} 
-          - {label: Subsubheading-(h3), name: i3Subsubheading, widget: string}
-          - {label: Subsubheading2-(h3), name: i3Subsubheading2, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
+          - {label: Description, name: description, widget: string}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}     
                       
       - file: "src/pages/about/index.md"
         label: "About"

@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About our values
 ---
-![Great Photography Is Easy](/img/dsc09749-version-3.jpg "Great photography is easy")
+![Great Photography Is Easy](/img/img_3532.jpg "Great photography is easy")
 
 ### Shade-grown coffee
 

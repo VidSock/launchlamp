@@ -59,19 +59,24 @@ const CustomBox = styled.div`
 
 `
 
+
+
+
+
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
   subheading,
   subsubheading,
+  
   image2,
   i2Heading,
   i2Subheading,
   i2Subsubheading,
   i2Subsubheading2,
+  
   image3,
-
   i3Heading,
  i3Subheading,
   i3Subsubheading,
@@ -108,7 +113,7 @@ export const IndexPageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-            fontSize: '3rem',
+            fontSize: '3.5rem',
            position: 'relative',
 //            top: '100px',
         left: '5%',
@@ -130,7 +135,7 @@ export const IndexPageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-//             fontSize: '4rem',
+            fontSize: '2rem',
            position: 'relative',
 //            top: '100px',
         left: '5%',
@@ -145,12 +150,12 @@ export const IndexPageTemplate = ({
         </h2>
         </ScrollAnimation>
         
-        <ScrollAnimation animateIn="bounceInLeft"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <ScrollAnimation animateIn="bounceInUp"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-//             fontSize: '4rem',
+            fontSize: '2rem',
            position: 'relative',
 //            top: '100px',
         left: '5%',
@@ -168,24 +173,7 @@ export const IndexPageTemplate = ({
         
         
         
-        <label className="btn txtshadow shadow" htmlFor="medtoggle" style={{
-	position:'relative',
-	top:'200px',
-	left:'30%',
-	width:'auto',
-    margin: '0 auto',     
-    color: '#fff',  
-    padding:'.8rem 2rem',   
-    lineHeight: '20px',    
-    background: '#DB2600',
-    fontWeight:'bold',
-    borderRadius: '3px',  
-    cursor: 'pointer',
-    textAlign: 'center', 
-    transition: 'background 0.3s ease-in',
-        }} >Learn More</label>
         
-       <PopMedical /> 
        
     </div>
     
@@ -207,6 +195,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 </ScrollAnimation>
 
+<h2 style={{textAlign: 'center', marginBottom: '2rem',}}>Some of the industries we serve:</h2>
     
         <div
       className="full-width-image margin-top-0"
@@ -264,7 +253,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 //            top: '60%',
 //         right: '5%',
 //         left: '15%',
-        margin: '2rem auto',
+        margin: '1rem auto',
 //            backgroundColor: '#ff0000',
             textAlign: 'center',
             border: '0px solid red',
@@ -288,7 +277,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 //            top: '60%',
 //         right: '5%',
 //         left: '15%',
-        margin: '2rem auto',
+        margin: '1rem auto',
 //            backgroundColor: '#ff0000',
             textAlign: 'center',
             border: '0px solid red',
@@ -312,7 +301,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 //            top: '60%',
 //         right: '5%',
 //         left: '15%',
-        margin: '2rem auto',
+        margin: '0rem auto',
 //            backgroundColor: '#ff0000',
             textAlign: 'center',
             border: '0px solid red',
@@ -354,7 +343,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         overflowX: 'scroll',
       }}
     >
-    <ScrollAnimation animateIn="bounceInDown"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+    <ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
@@ -371,13 +360,73 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
           }}
         >
           {i3Heading}
-          {i3Subheading}
-        {i3Subsubheading}
-        {i3Subsubheading2}
         </h1>
         </ScrollAnimation>
         
         
+        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '1.6rem',
+           position: 'relative',
+		   margin: '1rem 5%',
+            textAlign: 'left',
+            border: '0px solid red',
+            width: '100vw',
+          }}>{i3Subheading}</h2>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '1.6rem',
+           position: 'relative',
+		   margin: '1rem 5%',
+            textAlign: 'left',
+            border: '0px solid red',
+            width: '100vw',
+          }}>{i3Subsubheading}</h2>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '1.6rem',
+           position: 'relative',
+		   margin: '1rem 5%',
+            textAlign: 'left',
+            border: '0px solid red',
+            width: '100vw',
+          }}>{i3Subsubheading2}</h2>
+        </ScrollAnimation>
+        
+        
+        <label className="btn txtshadow shadow" htmlFor="medtoggle" style={{
+	position:'absolute',
+	top:'50%',
+	right:'20%',
+	width:'auto',
+    margin: '0 auto',     
+    color: '#fff',  
+    padding:'.8rem 2rem',   
+    lineHeight: '20px',    
+    background: '#DB2600',
+    fontWeight:'bold',
+    borderRadius: '3px',  
+    cursor: 'pointer',
+    textAlign: 'center', 
+    transition: 'background 0.3s ease-in',
+        }} >Learn More</label>
+        
+       <PopMedical /> 
+       
+       
     </div>
     
     

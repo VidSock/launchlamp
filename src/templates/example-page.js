@@ -32,9 +32,9 @@ export const ExamplePageTemplate = ({
         })`,
         backgroundPosition: `bottom left`,
         width: '100%',
-        backgroundSize: 'cover',
-        height: '100vh',
-        paddingTop: '80px',
+//         backgroundSize: 'cover',
+        height: '70vh',
+        paddingTop: '40px',
       }}
     >
     
@@ -114,7 +114,7 @@ export const ExamplePageTemplate = ({
         
         
        
-		<div style={{position:'absolute', right:'0',}}><PopNewsletter /></div>
+		<div style={{position:'absolute', right:'0', top:'40%',}}><PopNewsletter /></div>
         
         
         

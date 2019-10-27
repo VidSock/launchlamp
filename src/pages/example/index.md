@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: example-page
 title: Precision Parts
 image: /img/img_2487.jpg
 heading: Precision Parts

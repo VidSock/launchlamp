@@ -1,5 +1,5 @@
 ---
-templateKey: example-page
+templateKey: index-page
 title: Highest quality machined parts & manufacturing
 image: /img/img_2487.jpg
 heading: Great parts - great service

@@ -191,6 +191,21 @@ export const ExamplePageTemplate = ({
     
     
 
+<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem',}}>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+</div>
+</ScrollAnimation>
+
+<ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem',}}>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+</div>
+</ScrollAnimation>
 
     
         <div
@@ -420,7 +435,7 @@ const ExamplePage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         subsubheading={frontmatter.subsubheading}
-        
+
         image2={frontmatter.image2}
         i2Heading={frontmatter.i2Heading}
         i2Subheading={frontmatter.i2Subheading}

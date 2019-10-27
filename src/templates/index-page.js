@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Contact from '../components/Contact'
+import Contact from '../components/Contact-inc'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
 // import Features from '../components/Features'
@@ -103,8 +103,11 @@ export const IndexPageTemplate = ({
     >
     
     
-    
-
+<ScrollAnimation animateIn="bounceInRight"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', right:'20%', top:'40%',}}>
+<label style={{display:'flex', justifyContent:'center',}} htmlFor="modal-toggle">
+<div className="special txtshadow" style={{padding:'.5rem 2rem', backgroundColor:'#DB2600', color:'#fff', borderRadius:'6px', cursor:'pointer',}}>Contact Us</div>
+</label>
+</ScrollAnimation>
     
     
     
@@ -212,6 +215,8 @@ export const IndexPageTemplate = ({
 </div>
 </div>
 </ScrollAnimation>
+
+
 
 
 

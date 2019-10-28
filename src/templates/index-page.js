@@ -147,7 +147,7 @@ export const IndexPageTemplate = ({
            position: 'relative',
 //            top: '100px',
 //         left: '5%',
-           backgroundColor: '#ff0000',
+//            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
             float: 'none',
@@ -190,7 +190,7 @@ export const IndexPageTemplate = ({
 <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
-<img src="" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
+<img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
 <h2>Contract Manufacturing</h2>
 <p>Hytron is a contract manufacturing service provider. Through our outsourcing services, we have partnered with Fortune 500 companies for their component part manufacturing. This has resulted in a reduced time-to-market and cost savings for our Customers.</p>
 
@@ -202,7 +202,7 @@ export const IndexPageTemplate = ({
 <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
-<img src="" width="220" height="220" style={{float: 'left', margin:'0 1rem 1rem 0',}} />
+<img src="" alt="Placeholder" width="220" height="220" style={{float: 'left', margin:'0 1rem 1rem 0',}} />
 <h2>Lean Manufacturing</h2>
 <p>Products you need –  at the desired volume – when you want them.</p>
 
@@ -214,7 +214,7 @@ export const IndexPageTemplate = ({
 <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
-<img src="" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
+<img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
 <h2>The Hytron Difference</h2>
 <p>With our best-in-class capabilities, high quality standards and supply chain tracking system we can deliver your products in the most cost effective way.</p>
 <p>Let Hytron assist you with bringing your product to market.</p>
@@ -263,7 +263,7 @@ export const IndexPageTemplate = ({
             borderRadius: '8px',
             float: 'none',
 //             width: '90vw',
-            textAlign: 'right',
+            textAlign: 'center',
             
           }}
         >
@@ -287,7 +287,7 @@ export const IndexPageTemplate = ({
 //         left: '15%',
         margin: '1rem  auto 0 auto',
 //            backgroundColor: '#ff0000',
-            textAlign: 'right',
+            textAlign: 'left',
             border: '0px solid red',
 //             width: '100vw',
             
@@ -311,7 +311,7 @@ export const IndexPageTemplate = ({
 //         left: '15%',
         margin: '1rem auto',
 //            backgroundColor: '#ff0000',
-            textAlign: 'right',
+            textAlign: 'left',
             border: '0px solid red',
 //             width: '100vw',
             

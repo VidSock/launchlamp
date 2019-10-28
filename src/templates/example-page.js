@@ -30,11 +30,11 @@ export const ExamplePageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `bottom left`,
+        backgroundPosition: `bottom right`,
         width: '100%',
-//         backgroundSize: 'cover',
+        backgroundSize: 'cover',
         height: '70vh',
-        paddingTop: '40px',
+        paddingTop: '60px',
       }}
     >
     
@@ -64,7 +64,7 @@ export const ExamplePageTemplate = ({
 //             fontSize: '4rem',
            position: 'relative',
 //            top: '100px',
-        left: '5%',
+//         left: '5%',
 //            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
@@ -83,7 +83,7 @@ export const ExamplePageTemplate = ({
 //            fontSize:'2.7rem',
            color: 'white',
            position: 'relative',
-        left: '5%',
+//         left: '5%',
             textAlign: 'left', 
             paddingTop: '1rem',
             border: '0px solid red',
@@ -102,7 +102,7 @@ export const ExamplePageTemplate = ({
            color: 'white',
            position: 'relative',
 		   paddingTop: '1rem',
-        left: '5%',
+//         left: '5%',
             textAlign: 'left', 
            border: '0px solid red',
           }}

@@ -8,6 +8,8 @@ import Layout from '../components/Layout'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
+import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
+
 import PopMedical from '../components/PopMedical'
 import PopSemi from '../components/PopSemi'
 import styled from "styled-components"
@@ -93,7 +95,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `center center`,
+        backgroundPosition: `center left`,
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
@@ -122,7 +124,7 @@ export const IndexPageTemplate = ({
             fontSize: '3.5rem',
            position: 'relative',
 //            top: '100px',
-        left: '5%',
+//         left: '5%',
 //            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
@@ -144,8 +146,8 @@ export const IndexPageTemplate = ({
             fontSize: '2rem',
            position: 'relative',
 //            top: '100px',
-        left: '5%',
-//            backgroundColor: '#ff0000',
+//         left: '5%',
+           backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
             float: 'none',
@@ -164,7 +166,7 @@ export const IndexPageTemplate = ({
             fontSize: '2rem',
            position: 'relative',
 //            top: '100px',
-        left: '5%',
+//         left: '5%',
 //            backgroundColor: '#ff0000',
             textAlign: 'left',
             border: '0px solid red',
@@ -255,15 +257,16 @@ export const IndexPageTemplate = ({
 //         left: '5%',
         margin: '0 auto',
         padding: '0 1rem',
-           backgroundColor: '#ff0000',
+            backgroundImage: 'linear-gradient(#372d26 15.89%, #160e0e 80.13%)',
             border: '0px solid red',
+            borderRadius: '8px',
             float: 'none',
-            width: '90vw',
-            textAlign: 'right',
+//             width: '90vw',
+            textAlign: 'left',
             
           }}
         >
-          {i2Heading}
+          {i2Heading} 
         </h2>
         </ScrollAnimation>
         
@@ -276,20 +279,44 @@ export const IndexPageTemplate = ({
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
-            fontSize: '1.6rem',
+            fontSize: '1.4rem',
+           position: 'relative',
+//            top: '60%',
+//         right: '5%',
+//         left: '15%',
+        margin: '1rem  auto 0 auto',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left',
+            border: '0px solid red',
+//             width: '100vw',
+            
+          }}
+        >
+          {i2Subheading}. We create custom plans for your processes. 
+        </h2>
+        </ScrollAnimation>
+        
+        
+        
+         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '1.4rem',
            position: 'relative',
 //            top: '60%',
 //         right: '5%',
 //         left: '15%',
         margin: '1rem auto',
 //            backgroundColor: '#ff0000',
-            textAlign: 'center',
+            textAlign: 'left',
             border: '0px solid red',
-            width: '100vw',
+//             width: '100vw',
             
           }}
         >
-          {i2Subheading}
+          {i2Subsubheading} that are tailored to your business. 
         </h2>
         </ScrollAnimation>
         
@@ -305,35 +332,11 @@ export const IndexPageTemplate = ({
 //            top: '60%',
 //         right: '5%',
 //         left: '15%',
-        margin: '1rem auto',
+        margin: '2rem auto 0 auto',
 //            backgroundColor: '#ff0000',
             textAlign: 'center',
             border: '0px solid red',
-            width: '100vw',
-            
-          }}
-        >
-          {i2Subsubheading}
-        </h2>
-        </ScrollAnimation>
-        
-        
-        
-         <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
-          className="normal txtshadow-header mobile-txt"
-          style={{
-            color: '#fff',
-            fontSize: '1.6rem',
-           position: 'relative',
-//            top: '60%',
-//         right: '5%',
-//         left: '15%',
-        margin: '0rem auto',
-//            backgroundColor: '#ff0000',
-            textAlign: 'center',
-            border: '0px solid red',
-            width: '100vw',
+//             width: '100vw',
             
           }}
         >
@@ -372,7 +375,7 @@ export const IndexPageTemplate = ({
       }}
     >
     <ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h1
+        <h2
           className="normal txtshadow-header mobile-txt"
           style={{
             color: '#fff',
@@ -388,9 +391,37 @@ export const IndexPageTemplate = ({
           }}
         >
           {i3Heading}
-        </h1>
+        </h2>
         </ScrollAnimation>
         
+        
+        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '1.6rem',
+           position: 'relative',
+		   margin: '1rem 5% 0 5%',
+            textAlign: 'left',
+            border: '0px solid red',
+            width: '100vw',
+          }}><FaAccessibleIcon />{i3Subheading} Wheel Chairs</h2>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <h2
+          className="normal txtshadow-header mobile-txt"
+          style={{
+            color: '#fff',
+            fontSize: '1.6rem',
+           position: 'relative',
+		   margin: '1rem 5% 0 5%',
+            textAlign: 'left',
+            border: '0px solid red',
+            width: '100vw',
+          }}><FaOdnoklassniki />{i3Subsubheading} Good Helmets</h2>
+        </ScrollAnimation>
         
         <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h2
@@ -403,56 +434,13 @@ export const IndexPageTemplate = ({
             textAlign: 'left',
             border: '0px solid red',
             width: '100vw',
-          }}>{i3Subheading}</h2>
-        </ScrollAnimation>
-        
-        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
-          className="normal txtshadow-header mobile-txt"
-          style={{
-            color: '#fff',
-            fontSize: '1.6rem',
-           position: 'relative',
-		   margin: '1rem 5%',
-            textAlign: 'left',
-            border: '0px solid red',
-            width: '100vw',
-          }}>{i3Subsubheading}</h2>
-        </ScrollAnimation>
-        
-        <ScrollAnimation animateIn="FadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
-          className="normal txtshadow-header mobile-txt"
-          style={{
-            color: '#fff',
-            fontSize: '1.6rem',
-           position: 'relative',
-		   margin: '1rem 5%',
-            textAlign: 'left',
-            border: '0px solid red',
-            width: '100vw',
-          }}>{i3Subsubheading2}</h2>
+          }}><FaBlind />{i3Subsubheading2} Canes - keeping the blind upright</h2>
         </ScrollAnimation>
         
         
-        <label className="btn txtshadow shadow" htmlFor="medtoggle" style={{
-	position:'absolute',
-	top:'50%',
-	right:'20%',
-	width:'auto',
-    margin: '0 auto',     
-    color: '#fff',  
-    padding:'.8rem 2rem',   
-    lineHeight: '20px',    
-    background: '#DB2600',
-    fontWeight:'bold',
-    borderRadius: '3px',  
-    cursor: 'pointer',
-    textAlign: 'center', 
-    transition: 'background 0.3s ease-in',
-        }} >Learn More</label>
+
         
-       <PopMedical /> 
+       <PopSemi />
        
        
     </div>

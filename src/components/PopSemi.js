@@ -132,7 +132,7 @@ const Popupsemi = () => (
 
 
    
-  <div className=" content" style={{margin: '0 12%',}}>
+  <div className=" content" style={{}}>
 
 <label className="close" htmlFor="semitoggle" style={{position: 'absolute', right:'4%', top: '7%', fontSize:'24px', cursor:'pointer',}} title="Close this section"><FaTimesCircle /></label>
     

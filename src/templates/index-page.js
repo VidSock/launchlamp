@@ -10,7 +10,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
 import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 
-import PopMedical from '../components/PopMedical'
+// import PopMedical from '../components/PopMedical'
 import PopSemi from '../components/PopSemi'
 import styled from "styled-components"
 

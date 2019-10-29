@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Contact from '../components/Contact-inc'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
+import Install from '../components/Install'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -85,10 +86,20 @@ export const IndexPageTemplate = ({
   i3Subsubheading,
   i3Subsubheading2,
   
+
+
+
+  
 }) => (
 	
+	
+    
+    
 	<CustomBox>
   <div className="outer intro">
+  
+  
+  
     <div
       className="full-width-image"
       style={{
@@ -101,9 +112,16 @@ export const IndexPageTemplate = ({
         height: '100vh',
         paddingTop: '55px',
         position: 'relative',
-        overflowX: 'scroll',
+//         overflowX: 'scroll',
       }}
     >
+    
+    
+  <Install />
+
+    
+    
+
     
     <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute', width: '100%', textAlign: 'center', bottom:'14%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
         <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
@@ -184,6 +202,7 @@ export const IndexPageTemplate = ({
         
        
     </div>
+    
     
     
 

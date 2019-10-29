@@ -56,12 +56,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     {
-    resolve: 'gatsby-plugin-iubenda-cookie-footer',
-    options: {
-      iubendaOptions:{"enableCMP":true,"lang":"en","siteId":1703143,"preferenceCookie":{"expireAfter":7},"cookiePolicyId":16197532, "banner":{ "position":"float-bottom-center","textColor":"white","backgroundColor":"#222","acceptButtonDisplay":true,"acceptButtonColor":"#0073CE","acceptButtonCaptionColor":"white","customizeButtonDisplay":true,"customizeButtonColor":"#212121","customizeButtonCaptionColor":"white" }},
-    }
-  },
-    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [

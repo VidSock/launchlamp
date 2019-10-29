@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar'
 import PopContact from '../components/PopContact'
 import 'typeface-francois-one'
 import "../css/index.scss"
+import Consent from '../components/Consent'
 
 // import splash from '../img/hytron-splash.png'
 
@@ -21,6 +22,12 @@ if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]')
 }
 
+
+
+
+
+    
+    
 const TemplateWrapper = ({ children }) => {
   
 
@@ -56,7 +63,11 @@ const TemplateWrapper = ({ children }) => {
   
       <main>{children}</main>
 
-      
+      <Consent />
+    
+
+
+
 
       
       <Footer />

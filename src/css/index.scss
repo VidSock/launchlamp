@@ -106,6 +106,15 @@ html::-webkit-scrollbar-thumb {
 }
 
 
+.toggle-content {
+	display: none;
+}
+
+.toggle-content.is-visible {
+	display: block;
+}
+
+
 
 /*
 ::-webkit-scrollbar {

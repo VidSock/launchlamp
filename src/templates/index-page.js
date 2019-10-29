@@ -92,10 +92,11 @@ export const IndexPageTemplate = ({
   
 }) => (
 	
-	
-    
+	<>
+     <Install />
     
 	<CustomBox>
+	
   <div className="outer intro">
   
   
@@ -117,13 +118,13 @@ export const IndexPageTemplate = ({
     >
     
     
-  <Install />
+ 
 
     
     
 
     
-    <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute', width: '100%', textAlign: 'center', bottom:'14%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
+    <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute',  textAlign: 'center', bottom:'14%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
         <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
         
 <ScrollAnimation animateIn="bounceInRight"  delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', right:'20%', top:'40%',}}>
@@ -478,7 +479,7 @@ export const IndexPageTemplate = ({
   </div>
   </CustomBox>
   
-
+</>
 )
 
 IndexPageTemplate.propTypes = {

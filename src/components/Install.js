@@ -21,33 +21,47 @@ const CustomBox = styled.div`
 const Install = () => (
 <CustomBox style={{}} className="">
 
-<div id="installer" className="" style={{}}>
+<div id="installer" className="" style={{display:'flex', justifyContent:'center', alignItems:'center', position: 'fixed', top:'50px', width:'100%', zIndex:'1', }}>
 
 <CookieConsent
 	debug={true}
 	location="none"
-	style={{ color:'inherit', width:'auto', background:'inherit',  alignItems:'inherit',  textAlign:'left', justifyContent:'center', margin:'0 auto', top:'50px',  }}
-    className="container"
+	style={{ color:'inherit', width:'auto', background:'inherit',  alignItems:'inherit',  textAlign:'left', justifyContent:'center', margin:'0 auto', top:'50px', maxWidth:'500px', position:'', border:'0px solid red', }}
+    className=""
     buttonText="Cancel"
-	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "13px", bottom:'10%', position:'absolute', right:'40%', left:'40%', color:'inherit', }}
+	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "13px", bottom:'8%', position:'absolute', right:'40%', left:'40%', color:'inherit', }}
     expires={1}
     cookieName="Hytron.com-install-cookie"
 >
 
 
-<div className="container" style={{padding:'2rem 3rem', border:'0px solid #000',}}>
+<div className="container" style={{padding:'2rem 2rem', border:'1px solid #000',}}>
 
 	<img src="" alt="placeholder" style={{justifyContent:'center', maxWidth:'100%', width:'100%', margin:'0 auto', display:'none',}} />
 	
-	<h4 style={{textAlign:'center',}}>Install Our Web App</h4>
+	<h4 style={{textAlign:'center',}}>Install as Web App</h4>
 	<br />
-	<span style={{fontSize:'110%',}}>This website has app functionality. Add it to your home screen to get added features like fullscreen and offline browsing.</span>
+	<span style={{fontSize:'110%',}}>This website has app functionality. Add it to your home screen to get added features on-the-go, like exclusive content, offline use, and fullscreen.</span>
 	<br /><br />
 	<div style={{fontSize:'80%', textAlign:'center',}}>On your device, locate the browser menu:</div>
 	<br />
-    <div style={{fontSize:'110%', textAlign:'left', verticalAlign:'middle', lineHeight:'200%',}}><div style={{margin:'0 1rem 0 0', float:'left', fontSize:'200%',}}><FiShare style={{}} /></div> 1) Press the 'Share' button <br /><br />
+	
+    <div style={{fontSize:'110%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'100%', margin:'0 auto', padding:' 1rem', border:'1px solid #777', borderRadius:'8px',}}>
     
-    <div style={{margin:'0 1rem 0 0', fontSize:'200%', float:'left',}}><FaRegPlusSquare /></div> 2) Press 'Add to Home Screen' </div>
+  <div style={{textAlign:'left', display:'flex', alignContent:'center', marginBottom:'1rem',}}>
+ <FiShare style={{fontSize:'200%', marginLeft:'10%', marginRight:'10%', float:'',}} />
+  1) Press the 'Share' button 
+</div>
+   
+    
+ <div style={{textAlign:'left', display:'flex', alignContent:'center',}}>
+ <FaRegPlusSquare style={{fontSize:'200%', marginLeft:'10%', float:'',}} /> 
+ 
+ <div style={{float:'', marginLeft:'10%',}}>2) Press 'Add to Home Screen'</div>
+ </div>
+ 
+ </div>
+ 
     <br />
     <br />
     </div>

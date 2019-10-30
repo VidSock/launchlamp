@@ -8,7 +8,7 @@ const Consent = () => (
 
 	
 <CookieConsent
-// 	debug={true}
+	debug={true}
 	location="bottom"
 	style={{ background: "#222" }}
 	

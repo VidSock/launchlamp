@@ -17,17 +17,7 @@ const CustomBox = styled.div`
 }
 
 
-@supports (-webkit-overflow-scrolling: touch) {
-  /* CSS specific to iOS devices */ 
-  
-}
 
-/*
-@supports not (-webkit-overflow-scrolling: touch) {
-  /* CSS for other than iOS devices */ 
-  #installer{display: none !important;}
-}
-*/
 
 @media (display-mode: standalone) {
   /* All installed PWAs */

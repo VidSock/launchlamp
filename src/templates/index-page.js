@@ -93,7 +93,7 @@ export const IndexPageTemplate = ({
 }) => (
 	
 	<>
-     <Install />
+     
     
 	<CustomBox>
 	
@@ -478,7 +478,7 @@ export const IndexPageTemplate = ({
     
   </div>
   </CustomBox>
-  
+  <Install />
 </>
 )
 

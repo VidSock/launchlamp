@@ -143,6 +143,9 @@ html::-webkit-scrollbar-thumb {
 	}
 	
 	.gatsby-image-wrapper:after{content: ('+ click to zoom'); position:absolute; bottom:10px; right:10px; color:#fff;}
+	
+	
+	#installer{display: none;}
 }
 
 

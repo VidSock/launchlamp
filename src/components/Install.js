@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 const CustomBox = styled.div`
 #installer {
-  animation: cssAnimation 0s 8s forwards;
+  animation: cssAnimation 0s 1s forwards;
   visibility: hidden;
 }
 
@@ -16,10 +16,29 @@ const CustomBox = styled.div`
   to   { visibility: visible; }
 }
 
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */ 
+  
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+  /* CSS for other than iOS devices */ 
+  #installer{display: none !important;}
+}
+
+@media (display-mode: standalone) {
+  /* All installed PWAs */
+  #installer{display: none !important;}
+}
+	
+	
+
+
 `
 
 const Install = () => (
-<CustomBox style={{}} className="">
+<CustomBox style={{}} className="installer">
 
 <div id="installer" className="" style={{display:'flex', justifyContent:'center', alignItems:'center', position: 'fixed', top:'60px', width:'100%', zIndex:'1', }}>
 

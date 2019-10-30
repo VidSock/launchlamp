@@ -4,14 +4,14 @@ import React from 'react'
 import CookieConsent from "react-cookie-consent";
 
 
+
 const Consent = () => (
 
-	
+
 <CookieConsent
 	debug={true}
 	location="bottom"
-	style={{ background: "#222" }}
-	
+	style={{ background: "#222", zIndex:'0', }}
 	enableDeclineButton={true}
 	declineButtonText="No Cookies"
     declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px" }}
@@ -22,10 +22,12 @@ const Consent = () => (
     expires={30}
     cookieName="Hytron.com-site-pref-cookie"
 >
-    This website uses cookies to enhance the user experience.{" "}
-    <span style={{ fontSize: "10px" }}>
+
+    <div style={{padding:'0 0 0 1rem', fontSize:'90%',}}>This website uses cookies to enhance the user experience.{" "}
+    <span style={{ fontSize: "80%" }}>
     <a href="/privacy/" style={{color:'#fff',}}>[ privacy policy ]</a>
-    </span>
+    </span></div>
+    
 </CookieConsent>
 
 

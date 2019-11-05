@@ -14,18 +14,18 @@ const Consent = () => (
 	style={{ background: "#222", zIndex:'0', }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
-    declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px" }}
+    declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px", }}
     
     buttonText="Accept"
-	buttonStyle={{ color: "#fff", background: "#FF0000", fontSize: "13px" }}
+	buttonStyle={{ color: "#fff", background: "#FF0000", fontSize: "13px", fontWeight:'bold', borderRadius:'5px', padding:'.5rem 1rem', }}
 
     expires={30}
     cookieName="Hytron.com-site-pref-cookie"
 >
 
-    <div style={{padding:'0 0 0 1rem', fontSize:'90%',}}> We use cookies to optimize our website and our service.{" "}<br />
+    <div style={{padding:'0 0 0 1rem', fontSize:'90%',}}> We use cookies to optimize our website.{" "}<br />
     <span style={{ fontSize: "80%" }}>
-   <a href="/privacy/" style={{color:'#fff',}}>Do Not Sell My Personal Information</a> | <a href="/privacy/" style={{color:'#fff',}}>Privacy Statement</a>
+   <a href="/privacy/" style={{color:'#fff',}}>Do Not Sell My Personal Information</a> | <a href="/privacy/" style={{color:'#fff',}}>Privacy Policy</a>
     </span><br /><br /></div>
     
 </CookieConsent>
